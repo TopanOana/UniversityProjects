@@ -1,0 +1,3 @@
+C:/Users/Oana/Documents/GitHub/Graph-Algo/graph_algo_sem2/LAB4/GraphAlgoPW4/cmake-build-debug/CMakeFiles/GraphAlgoPW4.dir
+C:/Users/Oana/Documents/GitHub/Graph-Algo/graph_algo_sem2/LAB4/GraphAlgoPW4/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Oana/Documents/GitHub/Graph-Algo/graph_algo_sem2/LAB4/GraphAlgoPW4/cmake-build-debug/CMakeFiles/rebuild_cache.dir

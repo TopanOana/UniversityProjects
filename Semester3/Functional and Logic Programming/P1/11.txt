@@ -1,0 +1,23 @@
+% 11. a) Write a predicate to substitute an element from a list with another element in the list.
+% substituteElement(L:list, E:element, X:element, R:list)
+%flow model: (i,i,i,o)
+
+substituteElement([],_,_,[]).
+substituteElement([E|T], E, X, [X|R]):-
+    substituteElement(T,E,X,R).
+substituteElement([H|T], E,X,[H|R]):-
+    substituteElement(T,E,X,R).
+
+%b) Write a predicate to create the sublist (lm, …, ln) from the list (l1,…, lk).
+% sublist(L:list, M:number,N:number,I:number, R:list)
+%flow model: (i,i,i,i,o)
+sublist([],_,_,_,[]).
+sublist(_,_,N,I,[]):-
+    N<I,!.
+sublist([_|T],M,N,I,R):-
+    I<M,!,
+    I1 is I+1,
+    sublist(T,M,N,I1,R).
+sublist([H|T],M,N,I,[H|R]):-
+    I1 is I+1,
+    sublist(T,M,N,I1,R).

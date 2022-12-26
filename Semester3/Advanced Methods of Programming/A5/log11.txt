@@ -1,0 +1,8 @@
+PrgState id: 0
+ExeStack:
+(Ref(int) v;(new(v, ValueExp(value=20));(Ref(Ref(int)) a;(new(a, VarExp(id='v'));(print(VarExp(id='v'));print(VarExp(id='a')))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+

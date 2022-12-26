@@ -1,0 +1,53 @@
+%a
+% evenLength checks whether a list has an even length
+% evenLength(L:list)
+% flow model: (i)
+% mathematical model:
+% evenLength(l1l2...ln) = true, if n=0
+%					  = false, if n=1
+% 				      = evenLength(l3...ln), otherwise
+evenLength([]).
+evenLength([_,_|T]):-
+    evenLength(T).
+
+%b
+% minimumValue calculates the minimum value of a list
+% minimumValue(L:list, M:number, MV:number)
+% flow model: (i,i,o);
+% mathematical model:
+% minimumValue(l1...ln,M) = minimumValue(l2...ln,l1), if l1<M
+% 							minimumValue(l2...ln,M), if M<l1
+%                           M, if n=0
+minimumValue([],M,M).
+minimumValue([H|T],M, MV):-
+    H<M,!,
+    minimumValue(T,H,MV).
+minimumValue([_|T], M, MV):-
+    minimumValue(T,M,MV).
+
+% removeOneOcc removes a single occurrence of an element
+% removeOneOcc(L:list, E:element, OK:number, R:list)
+% flow model: (i,i,i,o)
+% mathematical model: 
+% removeOneOcc(l1...ln,E,OK) = removeOneOcc(l2...ln,E,OK-1), if l1=E and OK>0
+% 							   l1 U removeOneOcc(l2...ln,E,OK), otherwise
+%  							   [], if n=0
+removeOneOcc([],_,_,[]).
+removeOneOcc([H|T],E,OK,R):-
+    H=:=E,
+    OK>0,
+    !,
+    NewOK is OK-1,
+    removeOneOcc(T,E,NewOK,R).
+removeOneOcc([H|T],E,OK,[H|R]):-
+    removeOneOcc(T,E,OK,R).
+
+
+% removeMinimum removes a single occurrence of the minimum value in a list
+% removeMinimum(L:list, R:list)
+% flow model: (i,o)
+% mathematical model:
+% removeMinimum(l1...ln) = removeOneOcc(l1...ln,minimumValue(l1...ln),1)
+removeMinimum([H|T],R):-
+    minimumValue([H|T], H, M),
+    removeOneOcc([H|T], M, 1, R).

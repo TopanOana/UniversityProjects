@@ -1,0 +1,146 @@
+;11
+;a
+;11 a) Determine the least common multiple of the numerical values of a nonlinear list.
+
+; GCD -> returns the greatest common denominator of two numbers 
+; GCD(A:number, B:number) 
+; flow model: (i,i)
+; mathematical model
+; GCD(A,B) = A, if A=B
+;          = GCD(MAX(A,B)-MIN(A,B),MIN(A,B))
+(DEFUN GCD_ (A B)
+  (COND 
+   ((EQL A B) A)
+   (T (COND 
+       ((> A B) (GCD_ (- A B) B))
+       (T (GCD_ (- B A) A))
+       )
+      )
+  )
+)
+
+; LCM -> returns the least common multiple of two numbers
+; LCM(A:number,B:number)
+; flow model:(i,i)
+; mathematical model:
+; LCM(A,B) = A*B/GCD(A,B)
+(DEFUN LCM_ (A B)
+  (/ (* A B) (GCD_ A B))
+)
+
+; LCM_LIST -> returns the lcm of all the numbers in the list
+; LCM_LIST(L:list, COL:number)
+; flow model: (i,o)
+; mathematical model:
+; LCM_LIST(L, COL) = COL, IF L IS EMPTY
+;                 = LCM_LIST(L2L3...LN,LCM (L1, COL)), OTHERWISE 
+(DEFUN LCM_LIST (L COL)
+  (COND 
+   ((NULL L) COL)
+   ((NUMBERP (CAR L)) (LCM_LIST (CDR L) (LCM_ (CAR L) COL)))
+   (T (LCM_LIST (CDR L) (LCM_ COL (LCM_LIST (CAR L) 1))))
+  )
+)
+
+; MAIN FUNCTION
+(DEFUN MAIN_LCM (L)
+  (SETQ Col 1)
+  (LCM_LIST L Col)
+)
+
+;b
+
+;11 b)Write a function to test if a linear list of numbers has a "mountain" aspect
+; (a list has a "mountain" aspect if the items increase to a certain point and then decreases.
+; MOUNTAIN(L:list, Flag:number)
+; flow model: (i,i)
+; mathematical model:
+; MOUNTAIN(l1l2...ln, Flag) = true, if n<=1, f=1
+;                          = MOUNTAIN(l2...ln, 0), if l1<l2 f=0
+;                          = MOUNTAIN(l2...ln, 1), if l1>=l2 f=0
+;                          = MOUNTAIN(l2...ln, 1), if l1>l2 f=1
+;                          = false, otherwise
+
+(DEFUN MOUNTAIN (L Flag)
+  (COND 
+   ((AND (NULL L) (EQL 1 Flag)))
+   ((AND (NULL (CDR L)) (EQL 1 Flag)))
+   ((COND 
+        ((AND (< (CAR L) (CAR (CDR L))) (EQL 0 Flag)) (MOUNTAIN (CDR L) 0))
+        ((AND (>= (CAR L) (CAR (CDR L))) (EQL 0 Flag)) (MOUNTAIN (CDR L) 1))
+        ((AND (> (CAR L) (CAR (CDR L))) (EQL 1 Flag)) (MOUNTAIN (CDR L) 1))
+        (T NIL)
+     )
+    )
+   )
+)
+
+
+(DEFUN MAIN_MOUNTAIN (L)
+  (COND 
+   ((< (CAR L) (CAR (CDR L))) (MOUNTAIN L 0))
+   )
+)
+
+;c
+;11 c) Remove all occurrences of a maximum numerical element from a nonlinear list.
+;
+; MAXIMUM(L:list, m: number) -> returns the maximum number of a list
+; flow model: (i,o)
+; mathematical model:
+; MAXIMUM(l1l2...ln, m) = MAXIMUM(l2...ln, l1), if l1>m
+;                      = MAXIMUM(l2...ln, m), if m>l1
+;                      = m, if n=0
+
+(DEFUN MAXIMUM (L M)
+  (COND 
+   ((NULL L) M)
+   ((AND (NUMBERP (CAR L)) (> (CAR L) M)) (MAXIMUM (CDR L) (CAR L)))
+   (T (MAXIMUM (CDR L) M))
+  )
+)
+
+; REMOVE_ELEMENT(L:list, E:number)-> removes all occurrences of an element in a list
+; flow model: (i,i)
+; REMOVE_ELEMENT(l1...ln, e) = (), if n=0
+;                            = l1 U REMOVE_ELEMENT(l2...ln, e), if l1!=e
+;                            = REMOVE_ELEMENT(l2...ln, e), if l1=e
+(DEFUN REMOVE_ELEMENT (L E)
+  (COND 
+   ((NULL L) NIL)
+   ((EQL (CAR L) E) (REMOVE_ELEMENT (CDR L) E))
+   ((LISTP (CAR L)) (CONS (REMOVE_ELEMENT (CAR L) E) (REMOVE_ELEMENT (CDR L) E)))
+   (T (CONS (CAR L) (REMOVE_ELEMENT (CDR L) E)))
+   )
+)
+
+
+;MAIN REMOVE_MAXIMUM
+(DEFUN MAIN_REMOVE_MAXIMUM (L)
+  (SETQ M (MAXIMUM L (CAR L)))
+  (REMOVE_ELEMENT L M)
+)
+
+;d
+; 11 d) Write a function which returns the product of numerical even atoms from a list, to any level.
+
+; PRODUCT(L:list, P:number) -> returns the product of numerical even atoms from a list to any level
+; flow model: (i,o)
+; PRODUCT(l1...ln, P) = P, if n=0
+;                     = PRODUCT(l2...ln, P*l1), if l1 is even
+;                     = PRODUCT(l2...ln, P), otherwise
+
+(DEFUN PRODUCT (L P)
+  (COND 
+   ((NULL L) P)
+   ((AND (NUMBERP (CAR L)) (EQL (MOD (CAR L) 2) 0)) (PRODUCT (CDR L) (* P (CAR L))))
+   ((LISTP (CAR L)) (PRODUCT (CDR L) (PRODUCT (CAR L) P) ))
+   (T (PRODUCT (CDR L) P))
+   )
+)
+
+
+;main product
+(DEFUN MAIN_PRODUCT (L)
+  (PRODUCT L 1)
+)

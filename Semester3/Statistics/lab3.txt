@@ -1,0 +1,59 @@
+Review:
+
+binopdf(k,n,p)=P(x=k)
+binocdf(k,n,p)=P(x<=k)=(for continuous variables)P(x<k)
+
+P(x>k)=1-P(x<=k)
+
+P(a<k<=b)=cdf(b)-cdf(a)
+
+input for string:
+input('....','s')
+
+
+switch command:
+switch __(<-variable)
+case '_'
+...
+case '_'
+...
+otherwise:
+...
+end
+
+otherwise instead of default;
+
+
+normcdf(mu,sigma)
+tcdf(n)
+chi2cdf(n)
+fcdf(m,n)
+
+mu,sigma>0
+
+
+P(a<X<=b)=cdf(b)-cdf(a);
+
+
+inverse of cdf:
+norminv()
+tinv()
+chi2inv()
+finv()
+
+
+2
+a
+normal
+approx binopdf
+ask user for p (0.05 and 0.95)
+mu=n*p
+sigma=sqrt(n*p*(1-p))
+
+in the for
+	pause(nr sec=0.5);
+
+
+b
+poisson:
+poisspdf

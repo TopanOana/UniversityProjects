@@ -1,0 +1,45 @@
+%a
+% findElem finds an element in a list
+% findElem(L:list, E:number)
+% flow model: (i,i)
+% mathematical model:
+% findElem(l1...ln,E) = true, if l1=E
+%						false, if n=0
+%						findElem(l2...ln,E), otherwise
+findElem([],_):-fail.
+findElem([H|_],E):-
+    H=:=E,
+    !.
+findElem([_|T],E):-
+    findElem(T,E).
+
+% setDifference returns a list that is the set difference between two other lists.
+% setDifference(L1:list, L2:list, R:list)
+% flow model: (i,i,o)
+% mathematical model: 
+% setDifference(l1...ln,p1...pm) = l1 U setDifference(l2...ln,p1...pm), if findElem(p1...pm,l1) is false
+% 									setDifference(l2...ln,p1...pm), otherwise
+setDifference([],_,[]).
+setDifference([H|T],L2,[H|R]):-
+    not(findElem(L2,H)),
+    !,
+    setDifference(T,L2,R).
+setDifference([_|T],L2,R):-
+    setDifference(T,L2,R).
+
+
+%b
+% insert1Even inserts a 1 into the list after each even number
+% insert1Even(L:list, R:list)
+% flow model: (i,o)
+% mathematical model:
+% insert1Even(l1...ln) = l1 U {1} U insert1Even(l2...ln), if l1 is even
+%						 l1 U insert1Even(l2...ln), otherwise
+insert1Even([],[]).
+insert1Even([H|T],[H,1|R]):-
+    C is H mod 2,
+    C=:=0,
+    !,
+    insert1Even(T,R).
+insert1Even([H|T],[H|R]):-
+    insert1Even(T,R).

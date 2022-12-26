@@ -1,0 +1,19 @@
+25.10.2022
+
+
+Recall : 
+probability distribution function
+P(n, k) = C(n,k)*p^k * (1-p)^(n-k)
+n= number of trials
+p = probability of success
+k = 0,n = {0,1,2,3,..., n}
+
+In MatLab:
+pdf('bino', k, n, p);
+binopdf(k, n, p);
+
+
+binopdf(k,n,p) = P(x==k)
+
+binocdf(k,n,p) = P(x<=k) = Fx(x)
+cdf('bino, _, n, p);

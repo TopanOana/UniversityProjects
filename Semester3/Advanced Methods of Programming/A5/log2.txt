@@ -1,0 +1,63 @@
+ExeStack:
+int a
+(int b;(a = ArithExp(ValueExp(value=2)+ArithExp(ValueExp(value=3)*ValueExp(value=0)));(b = ArithExp(VarExp(id='a')+ValueExp(value=1));print(VarExp(id='b')))))
+SymTable:
+Out:
+FileTable:
+ExeStack:
+(int b;(a = ArithExp(ValueExp(value=2)+ArithExp(ValueExp(value=3)*ValueExp(value=0)));(b = ArithExp(VarExp(id='a')+ValueExp(value=1));print(VarExp(id='b')))))
+SymTable:
+a --> 0
+Out:
+FileTable:
+ExeStack:
+int b
+(a = ArithExp(ValueExp(value=2)+ArithExp(ValueExp(value=3)*ValueExp(value=0)));(b = ArithExp(VarExp(id='a')+ValueExp(value=1));print(VarExp(id='b'))))
+SymTable:
+a --> 0
+Out:
+FileTable:
+ExeStack:
+(a = ArithExp(ValueExp(value=2)+ArithExp(ValueExp(value=3)*ValueExp(value=0)));(b = ArithExp(VarExp(id='a')+ValueExp(value=1));print(VarExp(id='b'))))
+SymTable:
+b --> 0
+a --> 0
+Out:
+FileTable:
+ExeStack:
+a = ArithExp(ValueExp(value=2)+ArithExp(ValueExp(value=3)*ValueExp(value=0)))
+(b = ArithExp(VarExp(id='a')+ValueExp(value=1));print(VarExp(id='b')))
+SymTable:
+b --> 0
+a --> 0
+Out:
+FileTable:
+ExeStack:
+(b = ArithExp(VarExp(id='a')+ValueExp(value=1));print(VarExp(id='b')))
+SymTable:
+b --> 0
+a --> 2
+Out:
+FileTable:
+ExeStack:
+b = ArithExp(VarExp(id='a')+ValueExp(value=1))
+print(VarExp(id='b'))
+SymTable:
+b --> 0
+a --> 2
+Out:
+FileTable:
+ExeStack:
+print(VarExp(id='b'))
+SymTable:
+b --> 3
+a --> 2
+Out:
+FileTable:
+ExeStack:
+SymTable:
+b --> 3
+a --> 2
+Out:
+3
+FileTable:

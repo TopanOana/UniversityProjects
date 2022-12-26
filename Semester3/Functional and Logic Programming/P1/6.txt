@@ -1,0 +1,47 @@
+%a
+% findElem finds an element in a list
+% findElem(L:list, E:number)
+% flow model: (i,i)
+% mathematical model:
+% findElem(l1...ln,E) = true, if l1=E
+%						false, if n=0
+%						findElem(l2...ln,E), otherwise
+findElem([],_):-fail.
+findElem([H|_],E):-
+    H=:=E,
+    !.
+findElem([_|T],E):-
+    findElem(T,E).
+
+
+% checkSet checks whether a list is a set
+% checkSet(L:list)
+% flow model: (i)
+% mathematical model:
+% checkSet(l1..ln) = true, if n=0
+%					 false, if findElem(l2...ln,l1) is true
+%					 checkSet(l2...ln), otherwise
+checkSet([]):-true.
+checkSet([H|T]):-
+    findElem(T,H),
+    !,
+    fail.
+checkSet([_|T]):-
+    checkSet(T).
+
+%b
+
+% remove3Occ removes the first three occurrences of an element in a list
+% remove3Occ(L:list, E:number, Left:number, R:list)
+% flow model: (i,i,i,o)
+% mathematical model: 
+% remove3Occ(l1..ln,E,Left) = remove3Occ(l2...ln,E,Left-1), if l1=E and Left>0
+%							  l1 U remove3Occ(l2...ln, E, Left-1), if l1!=E or l1=E and Left==0
+remove3Occ([],_,_,[]).
+remove3Occ([H|T],E,Left,R):-
+    E=:=H,
+    Left>0,!,
+    NewLeft is Left-1,
+    remove3Occ(T,E,NewLeft,R).
+remove3Occ([H|T],E,Left,[H|R]):-
+    remove3Occ(T,E,Left,R).

@@ -1,0 +1,35 @@
+%remove E from list
+removeElem([],_,[]).
+removeElem([H|T],E,[H|T]):-
+    H=\=E.
+removeElem([E|T],E,R):-
+    removeElem(T,E,R).
+
+
+% merge two lists, removing double values
+   % merge(L:list, P:list,R:list)
+    %flow model (i,i,o)
+    % mathematical model: 
+
+merge([],[],[]).
+merge(L,[],L).
+merge([],P,P).
+merge([H1|T1],[H2|T2],[H1|R]):-
+    H1<H2,
+    !,
+    removeElem(T1,H1,L1),
+    merge(L1,[H2|T2],R).
+merge([H1|T1],[H2|T2],[H2|R]):-
+    removeElem([H1|T1],H2,L1),
+    removeElem(T2,H2,L2),
+    merge(L1,L2,R).
+
+
+mergeSubLists([],R,R).
+mergeSubLists([H|T],C,R):-
+    is_list(H),
+    !,
+    merge(C,H,R1),
+    mergeSubLists(T,R1,R).
+mergeSubLists([_|T],C,R):-
+    mergeSubLists(T,C,R).

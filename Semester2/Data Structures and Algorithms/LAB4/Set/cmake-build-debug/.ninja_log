@@ -1,0 +1,14 @@
+# ninja log v5
+6	1552	6748330676389926	CMakeFiles/Set.dir/App.cpp.obj	4b311a7d644e30d5
+54	395	6748330482029718	CMakeFiles/Set.dir/ShortTest.cpp.obj	980347930274f658
+6	598	6748345299896897	CMakeFiles/Set.dir/Set.cpp.obj	5bff239f5588645a
+10	639	6748339464206996	CMakeFiles/Set.dir/SetIterator.cpp.obj	f983ed686451c634
+13	1578	6748346196344199	CMakeFiles/Set.dir/ExtendedTest.cpp.obj	ccd2ac592be36274
+1581	2276	6748346202004195	Set.exe	8e3c5ef971f1bd4d
+11	479	6756771279827927	build.ninja	61cdf31535f4d8c5
+8	119	6756817674223679	CMakeFiles/Set.dir/ShortTest.cpp.obj	3b688a45f7b04d83
+18	143	6756817674536206	CMakeFiles/Set.dir/SetIterator.cpp.obj	2fc6f4213e71e6c6
+13	335	6756817676419216	CMakeFiles/Set.dir/Set.cpp.obj	72b18b001d4416ae
+24	340	6756817676419216	CMakeFiles/Set.dir/App.cpp.obj	eb7f277af2875ec6
+1	361	6756817676751781	CMakeFiles/Set.dir/ExtendedTest.cpp.obj	6f5d391d77dd09d1
+362	486	6756817677833340	Set.exe	85dc120f936e20e2

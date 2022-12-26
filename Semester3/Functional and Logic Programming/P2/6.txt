@@ -1,0 +1,55 @@
+% append
+append([],E,[E]).
+append([H|T],E,[H|R]):-
+    append(T,E,R).
+
+% inverse
+inverse([],[]).
+inverse([H|T],NR):-
+    inverse(T,R),
+    append(R,H,NR).
+
+product([],_,0,[]).
+product([],_,C,[C]):- C=\=0.
+product([H|T],E,C,[HR|R]):-
+    HR is (H*E+C) mod 10,
+    NC is (H*E+C) div 10,
+    product(T,E,NC,R).
+
+productList(L,E,R):-
+    inverse(L,LL),
+    product(LL,E,0,RL),
+    inverse(RL,R).
+
+
+maximumElement([],M,M).
+maximumElement([H|T],M,MR):-
+    H>M,
+    !,
+    maximumElement(T,H,MR).
+maximumElement([_|T],M,MR):-
+    maximumElement(T,M,MR).
+
+maximumPositions([],_,_,[]).
+maximumPositions([H|T],I,M,[I|R]):-
+    H=:=M,
+    !,
+    I1 is I+1,
+    maximumPositions(T,I1,M,R).
+maximumPositions([_|T],I,M,R):-
+    I1 is I+1,
+    maximumPositions(T,I1,M,R).
+
+firstElem([H|_],H).
+
+heteroList([],[]).
+heteroList([H|T],[H1|R]):-
+    is_list(H),
+    !,
+    firstElem(H,HH),
+    maximumElement(H,HH,MR),
+	maximumPositions(H,1,MR,H1),
+	heteroList(T,R).
+heteroList([H|T],[H|R]):-
+    heteroList(T,R).
+

@@ -1,0 +1,215 @@
+ExeStack:
+(varf = ValueExp(value=test.in);(openRFile(VarExp(id='varf'));(int varc;(readFile(VarExp(id='varf'), varc);(print(VarExp(id='varc'));(readFile(VarExp(id='varf'), varc);(print(VarExp(id='varc'));closeRFile(VarExp(id='varf')))))))))
+SymTable:
+varf --> 
+Out:
+FileTable:
+ExeStack:
+varf = ValueExp(value=test.in)
+(openRFile(VarExp(id='varf'));(int varc;(readFile(VarExp(id='varf'), varc);(print(VarExp(id='varc'));(readFile(VarExp(id='varf'), varc);(print(VarExp(id='varc'));closeRFile(VarExp(id='varf'))))))))
+SymTable:
+varf --> 
+Out:
+FileTable:
+ExeStack:
+(openRFile(VarExp(id='varf'));(int varc;(readFile(VarExp(id='varf'), varc);(print(VarExp(id='varc'));(readFile(VarExp(id='varf'), varc);(print(VarExp(id='varc'));closeRFile(VarExp(id='varf'))))))))
+SymTable:
+varf --> test.in
+Out:
+FileTable:
+ExeStack:
+openRFile(VarExp(id='varf'))
+(int varc;(readFile(VarExp(id='varf'), varc);(print(VarExp(id='varc'));(readFile(VarExp(id='varf'), varc);(print(VarExp(id='varc'));closeRFile(VarExp(id='varf')))))))
+SymTable:
+varf --> test.in
+Out:
+FileTable:
+ExeStack:
+(int varc;(readFile(VarExp(id='varf'), varc);(print(VarExp(id='varc'));(readFile(VarExp(id='varf'), varc);(print(VarExp(id='varc'));closeRFile(VarExp(id='varf')))))))
+SymTable:
+varf --> test.in
+Out:
+FileTable:
+test.in
+ExeStack:
+int varc
+(readFile(VarExp(id='varf'), varc);(print(VarExp(id='varc'));(readFile(VarExp(id='varf'), varc);(print(VarExp(id='varc'));closeRFile(VarExp(id='varf'))))))
+SymTable:
+varf --> test.in
+Out:
+FileTable:
+test.in
+ExeStack:
+(readFile(VarExp(id='varf'), varc);(print(VarExp(id='varc'));(readFile(VarExp(id='varf'), varc);(print(VarExp(id='varc'));closeRFile(VarExp(id='varf'))))))
+SymTable:
+varc --> 0
+varf --> test.in
+Out:
+FileTable:
+test.in
+ExeStack:
+readFile(VarExp(id='varf'), varc)
+(print(VarExp(id='varc'));(readFile(VarExp(id='varf'), varc);(print(VarExp(id='varc'));closeRFile(VarExp(id='varf')))))
+SymTable:
+varc --> 0
+varf --> test.in
+Out:
+FileTable:
+test.in
+ExeStack:
+(print(VarExp(id='varc'));(readFile(VarExp(id='varf'), varc);(print(VarExp(id='varc'));closeRFile(VarExp(id='varf')))))
+SymTable:
+varc --> 15
+varf --> test.in
+Out:
+FileTable:
+test.in
+ExeStack:
+print(VarExp(id='varc'))
+(readFile(VarExp(id='varf'), varc);(print(VarExp(id='varc'));closeRFile(VarExp(id='varf'))))
+SymTable:
+varc --> 15
+varf --> test.in
+Out:
+FileTable:
+test.in
+ExeStack:
+(readFile(VarExp(id='varf'), varc);(print(VarExp(id='varc'));closeRFile(VarExp(id='varf'))))
+SymTable:
+varc --> 15
+varf --> test.in
+Out:
+15
+FileTable:
+test.in
+ExeStack:
+readFile(VarExp(id='varf'), varc)
+(print(VarExp(id='varc'));closeRFile(VarExp(id='varf')))
+SymTable:
+varc --> 15
+varf --> test.in
+Out:
+15
+FileTable:
+test.in
+ExeStack:
+(print(VarExp(id='varc'));closeRFile(VarExp(id='varf')))
+SymTable:
+varc --> 50
+varf --> test.in
+Out:
+15
+FileTable:
+test.in
+ExeStack:
+print(VarExp(id='varc'))
+closeRFile(VarExp(id='varf'))
+SymTable:
+varc --> 50
+varf --> test.in
+Out:
+15
+FileTable:
+test.in
+ExeStack:
+closeRFile(VarExp(id='varf'))
+SymTable:
+varc --> 50
+varf --> test.in
+Out:
+15
+50
+FileTable:
+test.in
+ExeStack:
+SymTable:
+varc --> 50
+varf --> test.in
+Out:
+15
+50
+FileTable:
+ExeStack:
+(varf = ValueExp(value=test.in);(openRFile(VarExp(id='varf'));(int varc;(readFile(VarExp(id='varf'), varc);(print(VarExp(id='varc'));(readFile(VarExp(id='varf'), varc);(print(VarExp(id='varc'));closeRFile(VarExp(id='varf')))))))))
+SymTable:
+varf --> 
+Out:
+FileTable:
+ExeStack:
+varf = ValueExp(value=test.in)
+(openRFile(VarExp(id='varf'));(int varc;(readFile(VarExp(id='varf'), varc);(print(VarExp(id='varc'));(readFile(VarExp(id='varf'), varc);(print(VarExp(id='varc'));closeRFile(VarExp(id='varf'))))))))
+SymTable:
+varf --> 
+Out:
+FileTable:
+ExeStack:
+(openRFile(VarExp(id='varf'));(int varc;(readFile(VarExp(id='varf'), varc);(print(VarExp(id='varc'));(readFile(VarExp(id='varf'), varc);(print(VarExp(id='varc'));closeRFile(VarExp(id='varf'))))))))
+SymTable:
+varf --> test.in
+Out:
+FileTable:
+ExeStack:
+openRFile(VarExp(id='varf'))
+(int varc;(readFile(VarExp(id='varf'), varc);(print(VarExp(id='varc'));(readFile(VarExp(id='varf'), varc);(print(VarExp(id='varc'));closeRFile(VarExp(id='varf')))))))
+SymTable:
+varf --> test.in
+Out:
+FileTable:
+ExeStack:
+(int varc;(readFile(VarExp(id='varf'), varc);(print(VarExp(id='varc'));(readFile(VarExp(id='varf'), varc);(print(VarExp(id='varc'));closeRFile(VarExp(id='varf')))))))
+SymTable:
+varf --> test.in
+Out:
+FileTable:
+test.in
+ExeStack:
+int varc
+(readFile(VarExp(id='varf'), varc);(print(VarExp(id='varc'));(readFile(VarExp(id='varf'), varc);(print(VarExp(id='varc'));closeRFile(VarExp(id='varf'))))))
+SymTable:
+varf --> test.in
+Out:
+FileTable:
+test.in
+ExeStack:
+(readFile(VarExp(id='varf'), varc);(print(VarExp(id='varc'));(readFile(VarExp(id='varf'), varc);(print(VarExp(id='varc'));closeRFile(VarExp(id='varf'))))))
+SymTable:
+varc --> 0
+varf --> test.in
+Out:
+FileTable:
+test.in
+ExeStack:
+readFile(VarExp(id='varf'), varc)
+(print(VarExp(id='varc'));(readFile(VarExp(id='varf'), varc);(print(VarExp(id='varc'));closeRFile(VarExp(id='varf')))))
+SymTable:
+varc --> 0
+varf --> test.in
+Out:
+FileTable:
+test.in
+ExeStack:
+(print(VarExp(id='varc'));(readFile(VarExp(id='varf'), varc);(print(VarExp(id='varc'));closeRFile(VarExp(id='varf')))))
+SymTable:
+varc --> 15
+varf --> test.in
+Out:
+FileTable:
+test.in
+ExeStack:
+print(VarExp(id='varc'))
+(readFile(VarExp(id='varf'), varc);(print(VarExp(id='varc'));closeRFile(VarExp(id='varf'))))
+SymTable:
+varc --> 15
+varf --> test.in
+Out:
+FileTable:
+test.in
+ExeStack:
+(readFile(VarExp(id='varf'), varc);(print(VarExp(id='varc'));closeRFile(VarExp(id='varf'))))
+SymTable:
+varc --> 15
+varf --> test.in
+Out:
+15
+FileTable:
+test.in

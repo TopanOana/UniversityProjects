@@ -1,0 +1,27 @@
+package Model.Expressions;
+
+import Exceptions.InterpreterException;
+import Model.ADT.InterfaceDictionary;
+import Model.Values.Value;
+
+public class VarExp implements Expression{
+    String id;
+
+    public VarExp(String id) {
+        this.id = id;
+    }
+
+    @Override
+    public Value eval(InterfaceDictionary<String, Value> tbl) throws InterpreterException {
+        if (tbl.lookUp(id)==null)
+            throw new InterpreterException("variable "+id+" is not defined.");
+        return tbl.lookUp(id);
+    }
+
+    @Override
+    public String toString() {
+        return "VarExp(" +
+                "id='" + id + '\'' +
+                ')';
+    }
+}

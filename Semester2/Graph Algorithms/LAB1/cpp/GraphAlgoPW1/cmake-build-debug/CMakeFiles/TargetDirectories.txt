@@ -1,0 +1,3 @@
+C:/Users/Oana/CLionProjects/GraphAlgoPW1/cmake-build-debug/CMakeFiles/GraphAlgoPW1.dir
+C:/Users/Oana/CLionProjects/GraphAlgoPW1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Oana/CLionProjects/GraphAlgoPW1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

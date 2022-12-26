@@ -1,0 +1,46 @@
+%a
+% check whether an element exists in a list
+% exists(E: number, L: list)
+% (i,i)
+% mathematical model:
+% exists(E, l1l2l3..ln) =
+%     true, if E is l1
+%     false, if list is empty
+%     exists(E, l2l3..ln), otherwise
+exists(E,[E|_]).
+exists(E,[_|T]):-
+    exists(E, T).
+
+
+% compute the intersection of two lists
+% intersection(L1: list, L2: list, LF: list)
+% (i,i,o)(i,i,i)
+%
+% mathematical model:
+% intersectionhw(l11l12...l1n, l21l22...l2m, lf1lf2..lfn)
+%     lf is empty, if l1 is empty
+%     l1 U intersection(l12l13..l1n,l21l22..l2m), if l1 exists in l2
+%     intersection(l12l13..l1n,l21l22..l2m), otherwise
+%
+intersectionhw([],_,[]).
+intersectionhw([H1|T1], L2, [H1|LF]):-
+    exists(H1, L2),
+    intersection(T1, L2, LF),!.
+intersectionhw([_|T1], L2, LF):-
+    intersection(T1, L2, LF).
+
+
+
+%b
+% all integer number from the interval [m,n]
+% interval(M: number, N: number, L: list)
+% (i,i,o), (i,i,i)
+% mathematical model:
+% interval(m,n)=
+%     n, if n==m
+%     m U interval(m+1,n), otherwise
+interval(N,N,[N]).
+interval(M,N,[M|L]):-
+    X is M+1,
+    interval(X,N,L),!.
+

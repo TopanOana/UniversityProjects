@@ -1,0 +1,71 @@
+ExeStack:
+bool a
+(int v;(a = ValueExp(value=true);(IF(VarExp(id='a')) THEN (v = ValueExp(value=2)) ELSE (v = ValueExp(value=3)));print(VarExp(id='v')))))
+SymTable:
+Out:
+FileTable:
+ExeStack:
+(int v;(a = ValueExp(value=true);(IF(VarExp(id='a')) THEN (v = ValueExp(value=2)) ELSE (v = ValueExp(value=3)));print(VarExp(id='v')))))
+SymTable:
+a --> false
+Out:
+FileTable:
+ExeStack:
+int v
+(a = ValueExp(value=true);(IF(VarExp(id='a')) THEN (v = ValueExp(value=2)) ELSE (v = ValueExp(value=3)));print(VarExp(id='v'))))
+SymTable:
+a --> false
+Out:
+FileTable:
+ExeStack:
+(a = ValueExp(value=true);(IF(VarExp(id='a')) THEN (v = ValueExp(value=2)) ELSE (v = ValueExp(value=3)));print(VarExp(id='v'))))
+SymTable:
+a --> false
+v --> 0
+Out:
+FileTable:
+ExeStack:
+a = ValueExp(value=true)
+(IF(VarExp(id='a')) THEN (v = ValueExp(value=2)) ELSE (v = ValueExp(value=3)));print(VarExp(id='v')))
+SymTable:
+a --> false
+v --> 0
+Out:
+FileTable:
+ExeStack:
+(IF(VarExp(id='a')) THEN (v = ValueExp(value=2)) ELSE (v = ValueExp(value=3)));print(VarExp(id='v')))
+SymTable:
+a --> true
+v --> 0
+Out:
+FileTable:
+ExeStack:
+IF(VarExp(id='a')) THEN (v = ValueExp(value=2)) ELSE (v = ValueExp(value=3)))
+print(VarExp(id='v'))
+SymTable:
+a --> true
+v --> 0
+Out:
+FileTable:
+ExeStack:
+v = ValueExp(value=2)
+print(VarExp(id='v'))
+SymTable:
+a --> true
+v --> 0
+Out:
+FileTable:
+ExeStack:
+print(VarExp(id='v'))
+SymTable:
+a --> true
+v --> 2
+Out:
+FileTable:
+ExeStack:
+SymTable:
+a --> true
+v --> 2
+Out:
+2
+FileTable:

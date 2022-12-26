@@ -1,0 +1,10 @@
+Chocolate chip muffins,John Kanell,https://www.youtube.com/watch?v=aEFvNsBDCWs,7,30,10
+Butter cookies,John Kanell,https://www.youtube.com/watch?v=CMrkchcWHNo,6,15,9
+Baked Feta Pasta,Feelgoodfoodie,https://www.youtube.com/watch?v=LuroDGsJkMA,4,58,10
+The Ultimate Vegetable Lasagna,Jamie Oliver,https://www.youtube.com/watch?v=yMJw-X6Ea3w,4,54,9
+Pizza,Joshua Weissman,https://www.youtube.com/watch?v=_jOMIdietUQ,15,46,6
+Eggs Benedict with Crispy Parma Ham,Gordon Ramsay,https://www.youtube.com/watch?v=gBJjRYk0yC0,4,35,10
+Classic Carbonara,Jamie Oliver,https://www.youtube.com/watch?v=D_2DBLAt57c,4,40,9
+Ground Beef Tacos,Philip Lemoine,https://www.youtube.com/watch?v=qL6ml7x56p4,7,41,7
+Oreo Fudge,Fitwaffle,https://www.youtube.com/watch?v=2LEwTuDELsg,1,26,8
+Garlic Bread,Joshua Weissman,https://www.youtube.com/watch?v=FkV_fU5GoXM,8,6,9

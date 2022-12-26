@@ -1,0 +1,24 @@
+%insert an element
+insert([],L,L).
+insert([H|T],L,[H|R]):-
+    insert(T,L,R).
+% replace element
+replace([],_,_,[]).
+replace([E|T],E,L,R):-
+    !,
+    insert(L,T,R1),
+    replace(R1,E,L,R).
+replace([H|T],E,L,[H|R]):-
+    replace(T,E,L,R).
+
+firstElem([H|_],H).
+
+heteroList([],_,[]).
+heteroList([H|T],L,[H1|R]):-
+    is_list(H),
+    !,
+    firstElem(H,HH),
+    replace(H,HH,L,H1),
+    heteroList(T,L,R).
+heteroList([H|T],L,[H|R]):-
+    heteroList(T,L,R).

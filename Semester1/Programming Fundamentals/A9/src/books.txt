@@ -1,0 +1,10 @@
+1,Pride and Prejudice,Jane Austen
+2,The Picture of Dorian Gray,Oscar Wilde
+3,Great Expectations,Charles Dickens
+4,Fahrenheit 451,Ray Bradbury
+5,The Great Gatsby,F. Scott Fitzgerald
+6,A Christmas Carol,Charles Dickens
+7,Ship of Magic,Robin Hobb
+8,The Invisible Life of Addie LaRue,V.E. Schwab
+9,Turtles All the Way Down,John Green
+10,Ninth House,Leigh Bardugo

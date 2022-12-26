@@ -1,0 +1,14 @@
+# ninja log v5
+651	903	6704056762473032	GraphAlgoPW1.exe	2303e771483ea42a
+16	149	6746401354209875	CMakeFiles/GraphAlgoPW4.dir/Edge.cpp.obj	68850590719326b1
+0	855	6746401361309865	CMakeFiles/GraphAlgoPW4.dir/main.cpp.obj	3eb2e633593dfdd8
+26	1045	6746401363199853	CMakeFiles/GraphAlgoPW4.dir/UserInterface.cpp.obj	1d70defc89b9888f
+9	1297	6746401365719377	CMakeFiles/GraphAlgoPW4.dir/Graph.cpp.obj	a04da3f6d8164c52
+3	745	6746402912111986	CMakeFiles/GraphAlgoPW4.dir/main.cpp.obj	3eb2e633593dfdd8
+21	1053	6746402915192029	CMakeFiles/GraphAlgoPW4.dir/UserInterface.cpp.obj	1d70defc89b9888f
+13	1935	6746402923341962	CMakeFiles/GraphAlgoPW4.dir/Graph.cpp.obj	a04da3f6d8164c52
+1936	2781	6746402932251948	GraphAlgoPW4.exe	d9ebedfab3a9c8f9
+4	966	6746406620693950	CMakeFiles/GraphAlgoPW4.dir/Graph.cpp.obj	a04da3f6d8164c52
+967	1255	6746406623436587	GraphAlgoPW4.exe	d9ebedfab3a9c8f9
+4	1698	6746412808097866	CMakeFiles/GraphAlgoPW4.dir/Graph.cpp.obj	a04da3f6d8164c52
+1699	2556	6746412814997893	GraphAlgoPW4.exe	d9ebedfab3a9c8f9

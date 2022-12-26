@@ -1,0 +1,3 @@
+C:/Users/Oana/Documents/Facultate/DSA/SortedSet/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Oana/Documents/Facultate/DSA/SortedSet/cmake-build-debug/CMakeFiles/SortedSet.dir
+C:/Users/Oana/Documents/Facultate/DSA/SortedSet/cmake-build-debug/CMakeFiles/rebuild_cache.dir

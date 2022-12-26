@@ -1,0 +1,3 @@
+H0=null hypothesis
+H1=alternative hypothesis
+

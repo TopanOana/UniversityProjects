@@ -1,0 +1,64 @@
+%%a
+
+% lowest common multiple of two numbers 
+% lcm(A: Number, B:number, R:number)
+% flow model: (i,i,o)
+% mathematical model:
+% lcm(A,B) = A*B/gcd(A,B)
+lcm(A,B,R):-
+    P is A*B,
+    gcd(A,B,D),
+    R is P/D.
+
+
+% greatest common denominator
+% gcd(A:number, B:number, R:number)
+% flow model: (i,i,o)
+% mathematical model:
+% gcd(A,B) = 
+%     A, if A!=0 and B=0,
+%     gcd(B,A%B), otherwise
+gcd(A,0,A).
+gcd(A,B,R):-
+    A1 is B,
+    B1 is A mod B,
+    gcd(A1,B1,R).
+
+% the lowest common multiple of a list formed from integer numbers
+% listLCM(L:list, R:number)
+% flow model: (i,o)
+% mathematical model:
+% listLCM(l1l2...ln)=
+%      lcm(l1, listLCM(l2...ln)), if n>0
+%      1, if n==0.
+listLCM([],I,I).
+listLCM([H|T],I,R):-
+    R1 is lcm(I,H),
+    listLCM(T,R1,R).
+
+
+%%%b
+% pow2 calculates the power of 2\
+% pow2(X:number,R:number)
+% flow model: (i,o)
+% mathematical model:
+% pow2(x) = 1 , if x=0
+%		  = 2*pow2(x-1) otherwise
+pow2(0,1).
+pow2(X,R):-
+    X1 is X-1,
+    pow2(X1,R1),
+    R is R1*2.
+
+
+% insertInPos inserts the value V into the list at the posiition 1,2,4,8 etc
+% insertInPos(L:list, V:number, I:number, P:number, R:list)
+insertInPos([],_,_,_,[]).
+insertInPos([H|T],V,I,P,[H,V|R]):-
+    I=:=P,
+    P1 is 2*P,
+    I1 is I+1,
+    insertInPos(T,V,I1,P1,R).
+insertInPos([H|T],V,I,P,[H|R]):-
+    I1 is I+1,
+    insertInPos(T,V,I1,P,R).

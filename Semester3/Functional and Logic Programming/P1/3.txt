@@ -1,0 +1,93 @@
+
+%a
+% nrOcc returns the number of times an element is in a list
+% nrOcc(L:list. A:atom,R:number)
+% flow model: (i,i,o)
+% mathematical model:
+% nrOcc(l1...ln,A) = 1 + nrOcc(l2..ln,A), if l1=A
+%				     nrOcc(l2...ln,A), otherwise
+nrOcc([],_,0).
+nrOcc([H|T],A,R):-
+    H=:=A,
+    !,
+    nrOcc(T,A,R1),
+    R is 1+R1.
+nrOcc([_|T],A,R):-
+    nrOcc(T,A,R).
+
+
+% removeElem removes an element from a list
+% removeElem(L:list, A:atom, R:list)
+% flow model: (i,i,o)
+% mathematical model:
+% removeElem(l1...ln,A) = l1 U removeElem(l2...ln,A), if A!=l1
+%					       removeElem(l2...ln,A), if l1=A.
+removeElem([],_,[]).
+removeElem([H|T],A,[H|R]):-
+    H\=A,
+    !,
+    removeElem(T,A,R).
+removeElem([_|T],A,R):-
+    removeElem(T,A,R).
+
+% removeRepetitive removes all the repetitive elements
+% removeRepetitive(L:list, R:list)
+% flow model: (i,o)
+% mathematical model:
+% removeRepetitive(l1...ln) = l1 U removeRepetitive(l2...ln), if nrOcc(l1...ln,l1)=1
+%							  removeRepetitive(l2...ln), otherwise
+removeRepetitive([],[]).
+removeRepetitive([H|T],[H|R]):-
+    nrOcc([H|T],H,OC),
+    OC=:=1,
+    !,
+    removeRepetitive(T,R).
+removeRepetitive([H|T],R):-
+    removeElem(T,H,RR),
+    removeRepetitive(RR,R).
+
+
+%b 
+% maximumValue returns the maximuum value from a list of integers
+% maximumValue(L:list, M:number, CM:number)
+% flow model: (i,i,o)
+% mathematical model:
+% maximumValue(l1...ln, M) = maximumValue(l2...ln,l1), if M<l1
+%							maximumValue(l2...ln,M), otherwise
+maximumValue([],M,M).
+maximumValue([H|T],M, CM):-
+    H>M,
+    !,
+    maximumValue(T,H,CM).
+maximumValue([_|T],M,CM):-
+    maximumValue(T,M,CM).
+
+% removeElem removes an element from a list
+% removeElem(L:list, A:atom, R:list)
+% flow model: (i,i,o)
+% mathematical model:
+% removeElem(l1...ln,A) = l1 U removeElem(l2...ln,A), if A!=l1
+%					       removeElem(l2...ln,A), if l1=A.
+removeElem([],_,[]).
+removeElem([H|T],A,[H|R]):-
+    H\=A,
+    !,
+    removeElem(T,A,R).
+removeElem([_|T],A,R):-
+    removeElem(T,A,R).
+
+% removeMaximum removes from the list all the occurrences of the maximum value
+% removeMaximum(L:list,R:list)
+% flow model: (i,o)
+removeMaximum([H|T],R):-
+    maximumValue([H|T],H,MV),
+    removeElem([H|T],MV,R).            
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    

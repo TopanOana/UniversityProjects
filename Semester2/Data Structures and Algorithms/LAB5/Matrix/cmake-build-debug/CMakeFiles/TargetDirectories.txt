@@ -1,0 +1,3 @@
+C:/Users/Oana/OneDrive/Documents/Facultate/DSA/Matrix/cmake-build-debug/CMakeFiles/Matrix.dir
+C:/Users/Oana/OneDrive/Documents/Facultate/DSA/Matrix/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Oana/OneDrive/Documents/Facultate/DSA/Matrix/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,16 @@
+%a
+% insertAt inserts an element on the position n in a list
+% insertAt(L:list, E:number, Index:number, N:number, R:list)
+% flow model: (i,i,i,i,o)
+% mathematical model:
+% insertAt(l1...ln, E, I, N) = l1 U E U insertAt(l2...ln,E,I+1,N), if I=N
+% 							   l1 U insertAt(l2...ln,E,I+1,N), otherwise
+insertAt([],_,_,_,[]).
+insertAt([H|T],E,I,N,[E,H|R]):-
+    I=:=N,
+    !,
+    I1 is I+1,
+    insertAt(T,E,I1,N,R).
+insertAt([H|T],E,I,N,[H|R]):-
+    I1 is I+1,
+    insertAt(T,E,I1,N,R).

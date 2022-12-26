@@ -1,0 +1,16 @@
+%a
+% valleyAspect(L:list, OK:number)
+% flow model: (i,o)
+% mathematical model:
+% valleyAspect(l1...ln, OK) = true, if n=1 and OK=0
+%                             valleyAspect(l2...ln, 0), if l1<l2
+%							  valleyAspect(l2...ln, 1), if l1>l2
+% 							  false, otherwise
+valleyAspect([_],0).
+valleyAspect([H1,H2|T], _):-
+    H1<H2,
+    !,
+    valleyAspect([H2|T], 0).
+valleyAspect([H1,H2|T], 1):-
+    H1>H2,
+    valleyAspect([H2|T],1).

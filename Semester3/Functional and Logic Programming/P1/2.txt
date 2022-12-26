@@ -1,0 +1,58 @@
+%%a
+% removeOcc removes all occurrences of a certain atom from a list
+% removeOcc(L:list, A:atom, R:list)
+% flow model: (i,i,o)
+% mathematical model:
+% removeOcc(l1l2..ln,A) = 
+%         l1 U removeOcc(l2..ln,A), if l1=A
+%         removeOcc(l2..ln,A), otherwise
+removeOcc([],_,[]).
+removeOcc([H|T],A,[H|R]):-
+    H\=A,
+    !,
+    removeOcc(T,A,R).
+removeOcc([_|T],A,R):-
+    removeOcc(T,A,R).
+
+
+%%b
+% nrOcc calculates the nr of occurrences of an atom in a list
+% nrOcc(L:list, A:atom, R:number)
+% flow model: (i,i,o)
+% mathematical model:
+% nrOcc(l1...ln,A) = 1+nrOcc(l2...ln,A), if l1=A
+% 					nrOcc(l2...ln,A), otherwise.
+nrOcc([],_,0).
+nrOcc([H|T],A,R):-
+    H=:=A,!,
+    nrOcc(T,A,R1),
+    R is R1+1.
+nrOcc([_|T],A,R):-
+    nrOcc(T,A,R).
+
+% removeOcc removes all occurrences of a certain atom from a list
+% removeOcc(L:list, A:atom, R:list)
+% flow model: (i,i,o)
+% mathematical model:
+% removeOcc(l1l2..ln,A) = 
+%         l1 U removeOcc(l2..ln,A), if l1=A
+%         removeOcc(l2..ln,A), otherwise
+removeOcc([],_,[]).
+removeOcc([H|T],A,[H|R]):-
+    H\=A,
+    !,
+    removeOcc(T,A,R).
+removeOcc([_|T],A,R):-
+    removeOcc(T,A,R).
+
+
+% numberAtom numbers all the distinct atoms and produces a list of pairs of the two values
+% numberAtom(L:list, X:list)
+% flow model: (i,o)
+% mathematical model:
+% numberAtom(l1...ln) = [l1 U nrOcc(l1...ln)] U numberAtom(removeOcc(l1...ln,l1,p1...pm))
+numberAtom([],[]).
+numberAtom([H|T],[[H,NH]|R]):-
+    nrOcc([H|T],H,NH),
+    removeOcc(T,H,RF),
+    numberAtom(RF,R).

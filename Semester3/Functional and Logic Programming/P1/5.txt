@@ -1,0 +1,51 @@
+%a
+% findElem finds an element in a list
+% findElem(L:list, E:number)
+% flow model: (i,i)
+% mathematical model:
+% findElem(l1...ln,E) = true, if l1=E
+%						false, if n=0
+%						findElem(l2...ln,E), otherwise
+findElem([],_):-fail.
+findElem([H|_],E):-
+    H=:=E,
+    !.
+findElem([_|T],E):-
+    findElem(T,E).
+
+
+% unionSet computes the union of two sets
+% unionSet(L:list, P:list, R:list)
+% flow model: (i,i,o)
+% mathematical model:
+% unionSet(l1...ln,p1...pm) = l1 U unionSet(l2...ln,p1...pm), if m=0 or where m!=0 and p1..pm removes l1 from it
+%							= p1 U unionSet(l1...ln,p2...pm), if n=0 or where n!=0 and l1..ln removes p1 from it
+% 							= [], if n=0 and m=0
+unionSet([],[],[]).
+unionSet(L,[],L).
+unionSet([],P,P).
+unionSet([H|T],P,[H|R]):-
+    unionSet(T,P,R),
+    not(findElem(R,H)),
+    !.
+unionSet([H|T],P,R):-
+    unionSet(T,P,R),
+    findElem(R,H).
+
+    
+%b
+% pairs gets the set of all the elements
+% pairs(L:list, R:list)
+% flow model: (i,o)
+pairs(_,0,[]).
+pairs([H|T],K,[H|R]):-
+    K1 is K-1,
+    pairs(T,K1,R).
+pairs([_|T],K,R):-
+    pairs(T,K,R).
+    
+    
+gen_pairs([],[]).
+gen_pairs(L,R):-
+    findall(X,pairs(L,2,X),R).
+    
