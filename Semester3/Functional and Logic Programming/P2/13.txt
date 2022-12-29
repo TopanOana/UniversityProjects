@@ -1,0 +1,39 @@
+%13.
+%a. Given a linear numerical list write a predicate to remove all sequences of consecutive values.
+%remove(L:list, R:list)
+%flow model: (i,o)
+remove([],[]).
+remove([H1],[H1]).
+remove([H1,H2],[]):-
+    H1=:=H2-1.
+remove([H1,H2],[H1,H2]):-
+    H2=\=H1+1.
+%X,X+1,X+2
+remove([H1,H2,H3|T],R):-
+    H2=:=H1+1,
+    H3=:=H2+1,
+    remove([H2,H3|T],R).
+%X,X+1,Y
+remove([H1,H2,H3|T],R):-
+    H2=:=H1+1,
+    remove([H3|T],R).
+%X,Y,Y+1
+remove([H1,H2,H3|T],[H1|R]):-
+    H3=:=H2+1,
+    remove([H2,H3|T],R).
+%X,Y,Z
+remove([H1,H2,H3|T],[H1|R]):-
+    remove([H2,H3|T],R).
+                    
+
+%b.For a heterogeneous list, formed from integer numbers and list of numbers; 
+%write a predicate to delete from every sublist all sequences of consecutive values.
+%heteroConsecutive(L:list,R:list)
+%flow model: (i,o)
+heteroConsecutive([],[]).
+heteroConsecutive([H|T],[H1|R]):-
+    is_list(H),
+    remove(H,H1),
+    heteroConsecutive(T,R).
+heteroConsecutive([H|T],[H|R]):-
+    heteroConsecutive(T,R).

@@ -1,0 +1,106 @@
+% mergeList(L:list, P:list, R:list)
+% flow model : (i,i,o)
+% mathematical model : 
+% mergeList(l1...ln,p1...pm) = [], if n=0 and m=0
+% 							  P, if n=0
+%							  L, if m=0
+%							  l1 U mergeList(l2...ln,p1...pm), if l1<p1
+%							  p1 U mergeList(l1...ln,p2...pm), otherwise
+mergeList([],[],[]).
+mergeList([],P,P).
+mergeList(L,[],L).
+mergeList([HL|TL],[HP|TP],[HL|R]):-
+    HL<HP,
+    !,
+    mergeList(TL,[HP|TP],R).
+mergeList([HL|TL],[HP|TP],[HP|R]):-
+    mergeList([HL|TL],TP,R).
+	
+
+% lengthList(L:list, C:number, Length:number)
+% flow model: (i,i,o)
+% mathematical model:
+% lengthList(l1...ln,C) = C, if n=0
+%						  lengthList(l2...ln,C+1), otherwise
+lengthList([],C,C).
+lengthList([_|T],C,R):-
+    NewC is C+1,
+	lengthList(T,NewC,R).
+
+% appendToList(L:list, E:number, R:list)
+% flow model : (i,i,o)
+appendToList([],E,[E]).
+appendToList([H|T], E, [H|R]):-
+    appendToList(T,E,R).
+
+
+% split list
+% splitLists(L:list, LC:list, LR:List, LL:List)
+% flow model : (i,i,o,o)
+% mathematical model:
+splitLists(L,LC,LC,L):-
+    lengthList(L,0,RL),
+    lengthList(LC,0,RLC),
+    Diff is RLC-RL,
+    abs(Diff, AUX),
+    AUX =< 1.
+splitLists([H|T],LC,L,R):-
+    appendToList(LC,H,RA),
+    splitLists(T,RA,L,R).
+
+split(P,L,R):-
+    splitLists(P,[],L,R).
+
+%mergesort
+mergeSort([],[]).
+mergeSort([E],[E]).
+mergeSort(L, R):-
+    split(L,L1,R1),
+    mergeSort(L1,RL),
+    mergeSort(R1,RR),
+    mergeList(RL,RR,R).
+
+%remove duplicates
+%exists(L:list, E:element)
+%flow model: (i,i)
+exists([],_):-fail.
+exists([E|_],E):-!.
+exists([_|T],E):-
+    exists(T,E).
+
+%removeDuplicates(L:list, R:list)
+%flow model: (i,o)
+removeDuplicates([],[]).
+removeDuplicates([H|T],[H|R]):-
+    removeDuplicates(T,R),
+    not(exists(R,H)),!.
+removeDuplicates([_|T],R):-
+    removeDuplicates(T,R).
+
+%sortAndRemove(L:list, R:list)
+%flow model: (i,o)
+sortAndRemove(L,R):-
+    mergeSort(L,R1),
+    removeDuplicates(R1,R).
+
+
+%b
+%For a heterogeneous list, formed from integer numbers and list of numbers,
+% write a predicate to sort every sublist with removing the doubles.
+
+
+%heteroSorting(L:list, R:list)
+%flow model: (i,o)
+
+heteroSorting([],[]).
+heteroSorting([H|T],[H1|R]):-
+    is_list(H),!,
+    sortAndRemove(H,H1),
+    heteroSorting(T,R).
+heteroSorting([H|T],[H|R]):-
+    heteroSorting(T,R).
+
+
+
+
+

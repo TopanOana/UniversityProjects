@@ -1,0 +1,52 @@
+%13
+%a. Transform a list in a set, 
+%in the order of the last occurrences of elements. 
+%Eg.: [1,2,3,1,2] is transformed in [3,1,2].
+
+%moreOcc(L:list, E:number, A:number,R:number)
+%flow model (i,i,i,o)
+moreOcc([],_,A,A).
+moreOcc([E|T],E,A,R):-
+    A1 is A+1,
+    moreOcc(T,E,A1,R).
+moreOcc([_|T],E,A,R):-
+    moreOcc(T,E,A,R).
+
+
+%set(L:list, R:list)
+%flow model (i,o)
+set([],[]).
+set([H|T],R):-
+    moreOcc(T,H,0,A),
+    A=\=0,
+    set(T,R).
+set([H|T],[H|R]):-
+    set(T,R).
+
+
+%b. Define a predicate to determine the greatest common divisor of all numbers in a list.
+%gcd(A:number, B:number, R:number)
+%flow model : (i,i,o)
+
+gcd(A,A,A).
+gcd(A,B,R):-
+    A>B,
+    Dif is A-B,
+    gcd(Dif,B,R).
+gcd(A,B,R):-
+    A<B,
+    Dif is B-A,
+    gcd(Dif,A,R).
+
+
+
+%gcdList(L:list, Aux:number, R:result)
+%flow model: (i,i,o)
+gcdList([],Aux,Aux).
+gcdList([H|T],Aux,R):-
+    number(H),!,
+    gcd(H,Aux,NewAux),
+    gcdList(T,NewAux,R).
+gcdList([_|T],Aux,R):-
+    gcdList(T,Aux,R).
+

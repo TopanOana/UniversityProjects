@@ -1,0 +1,36 @@
+%7.
+%a.Determine the position of the maximal element of a linear list.
+%Eg.: maxpos([10,14,12,13,14], L) produces L = [2,5].
+
+%maxPosition(L:list, Max:number, Index:number, Aux:list, LI:list)
+%flow model: (i,i,i,i,o)
+maxPosition([],_,_,LI,LI).
+maxPosition([H|T],Max,Index,_,LI):-
+    H>Max,!,
+    I1 is Index+1,
+    maxPosition(T,H,I1,[Index],LI).
+maxPosition([H|T],Max,Index,Aux,LI):-
+    H=:=Max,!,
+    I1 is Index+1,
+    maxPosition(T,Max,I1,[Index|Aux],LI).
+maxPosition([_|T],Max,Index,Aux,LI):-
+    I1 is Index+1,
+    maxPosition(T,Max,I1,Aux,LI).
+
+%maxPos(L:list, R:list)
+%flow model:(i,o)
+maxPos([H|T],R):-
+    maxPosition([H|T],H,1,[],R).
+
+%b. For a heterogeneous list, formed from integer numbers and list of numbers, 
+%replace every sublist with the position of the maximum element from that sublist.
+
+%heteroMax(L:list, R:list)
+%flow model: (i,o)
+heteroMax([],[]).
+heteroMax([H|T],[H1|R]):-
+    is_list(H),!,
+    maxPos(H,H1),
+    heteroMax(T,R).
+heteroMax([H|T],[H|R]):-
+    heteroMax(T,R).

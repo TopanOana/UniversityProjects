@@ -1,0 +1,57 @@
+%14. 
+%a. Define a predicate to determine the longest sequences of consecutive 
+%even numbers (if exist more maximal sequences one of them)
+
+%maxEvenSeq(L:list,AuxN:number,Aux:list,MaxN:number,Max:list,RN:number,R:list)
+%flow model: (i,i,i,i,i)
+maxEvenSeq([],_,_,RN,R,RN,R).
+maxEvenSeq([H],AuxN,Aux,MaxN,_,RN,R):-
+    H mod 2 =:= 0,
+    NewAuxN is AuxN+1,
+    NewAuxN>MaxN,
+    maxEvenSeq([],NewAuxN,[H|Aux],NewAuxN,[H|Aux],RN,R).
+maxEvenSeq([H],AuxN,Aux,MaxN,_,RN,R):-
+    H mod 2 =:= 1,
+    AuxN>MaxN,
+    maxEvenSeq([],AuxN,Aux,AuxN,Aux,RN,R).
+maxEvenSeq([H|T],AuxN,Aux,MaxN,Max,RN,R):-
+    H mod 2 =:= 0,
+    NewAuxN is AuxN+1,
+    maxEvenSeq(T,NewAuxN,[H|Aux],MaxN,Max,RN,R).
+maxEvenSeq([H|T],AuxN,Aux,MaxN,_,RN,R):-
+    H mod 2 =:= 1,
+    AuxN>MaxN,
+    maxEvenSeq(T,0,[],AuxN,Aux,RN,R).
+maxEvenSeq([H|T],_,_,MaxN,Max,RN,R):-
+    H mod 2 =:= 1,
+    maxEvenSeq(T,0,[],MaxN,Max,RN,R).
+
+%b.For a heterogeneous list, formed from integer numbers and list of numbers, 
+%define a predicate to replace every sublist with the longest sequences of 
+%even numbers from that sublist.
+%
+%appendElement(L:list, E:element, R:list)
+%flow model: (i,i,o)
+appendElement([],E,[E]).
+appendElement([H|T],E,[H|R]):-
+    appendElement(T,E,R).
+
+
+%reverseList(L:list, R:list)
+%flow model:(i,o)
+reverseList([],[]).
+reverseList([H|T],R):-
+    reverseList(T,R1),
+    appendElement(R1,H,R).
+
+%heteroEven(L:list,R:list)
+%flow model: (i,o)
+heteroEven([],[]).
+heteroEven([H|T],[H1|R]):-
+    is_list(H),
+    maxEvenSeq(H,0,[],0,[],_,H11),
+    reverseList(H11,H1),
+    heteroEven(T,R).
+heteroEven([H|T],[H|R]):-
+    heteroEven(T,R).
+

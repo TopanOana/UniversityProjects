@@ -1,0 +1,51 @@
+%11. 
+%a. Replace all occurrences of an element from a list with another element e.
+
+%replace(L:list, X:element, E:element, R:list)
+%flow model: (i,i,i,o)
+replace([],_,_,[]).
+replace([X|T],X,E,[E|R]):-
+    replace(T,X,E,R).
+replace([H|T],X,E,[H|R]):-
+    replace(T,X,E,R).
+
+%b. For a heterogeneous list, formed from integer numbers and list of numbers,
+% define a predicate to determine the maximum number of the list, and then to 
+% replace this value in sublists with the maximum value of sublist.
+
+%maximum(L:list, Aux:element, Max:element)
+%flow model: (i,i,o)
+maximum([],Max,Max).
+maximum([H|T],Aux,Max):-
+    not(is_list(H)),
+    H>Aux,!,
+    maximum(T,H,Max).
+maximum([_|T],Aux,Max):-
+    maximum(T,Aux,Max).
+
+%transformMaxReplace(L:list,X:Number,R:list)
+%flow model: (i,i,o)
+transformMaxReplace([H|T],X,R):-
+    maximum(T,H,Max),
+    replace([H|T],X,Max,R).
+    
+
+
+%heteroMaxReplace(L:list,X:number,R:list)
+%flow model: (i,i,o)
+heteroMaxReplace([],_,[]).
+heteroMaxReplace([H|T],X,[H1|R]):-
+    is_list(H),!,
+    transformMaxReplace(H,X,H1),
+    heteroMaxReplace(T,X,R).
+heteroMaxReplace([H|T],X,[H|R]):-
+    heteroMaxReplace(T,X,R).
+
+
+%heteroWrapper(L:list, R:list)
+%flow model: (i,o)
+heteroWrapper(L,R):-
+    maximum(L,0,Max),
+    heteroMaxReplace(L,Max,R).
+
+    

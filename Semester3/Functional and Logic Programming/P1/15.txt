@@ -1,0 +1,35 @@
+%15. 
+% a. Write a predicate to transform a list in a set, considering the first occurrence.
+% Eg: [1,2,3,1,2] is transform in [1,2,3].
+%removeEl(L:list,E:element,R:list)
+removeEl([],_,[]).
+removeEl([E|T],E,R):-
+    removeEl(T,E,R).
+removeEl([H|T],E,[H|R]):-
+    removeEl(T,E,R).
+
+%set(L:list, R:list)
+%flow model: (i,i)
+set([],[]).
+set([H|T],[H|R]):-
+    removeEl(T,H,R1),
+    set(R1,R).
+
+%b. Write a predicate to decompose a list in a list respecting the following:
+% [list of even numbers list of odd numbers] and also return the number of even 
+% numbers and the numbers of odd numbers.
+
+%decompose(L:list, LEven:list, NEven:number, LOdd:list, NOdd:number)
+%flow model: (i,o,o,o,o)
+
+decompose([],[],0,[],0).
+decompose([H|T], [H|LEven], NEven, LOdd, NOdd):-
+    H mod 2 =:= 0,
+    decompose(T,LEven,NEven1,LOdd,NOdd),
+    NEven is NEven1+1.
+decompose([H|T],LEven,NEven,[H|LOdd],NOdd):-
+    decompose(T,LEven,NEven,LOdd,NOdd1),
+    NOdd is NOdd1+1.
+    
+    
+    

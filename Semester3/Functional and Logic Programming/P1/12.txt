@@ -1,0 +1,37 @@
+%12
+%a) Write a predicate to substitute in a list a value with all the elements of another list.
+
+%replace(L:list, E:element, L1:list, R:list)
+%flow model: (i,i,i,o)
+replace([],_,_,[]).
+replace([E|T],E,L1,R1):-
+    replace(T,E,L1,R),
+    concat(L1,R,R1).
+replace([H|T],E,L1,[H|R]):-
+    replace(T,E,L1,R).
+
+
+
+
+%concat(L:list,P:list,R:list)
+%flow model : (i,i,o)
+concat([],[],[]).
+concat(L,[],L).
+concat([],P,P).
+concat([H|T],P,[H|R]):-
+    concat(T,P,R).
+
+
+%b) Remove the n-th element of a list.
+
+%removeN(L:list, I:number, N:number, R:list)
+%flow model (i,i,i,o)
+
+removeN([],_,_,[]).
+removeN([_|T],N,N,R):-
+    I1 is N+1,
+    removeN(T,I1,N,R).
+removeN([H|T],I,N,[H|R]):-
+    I1 is I+1,
+    removeN(T,I1,N,R).
+

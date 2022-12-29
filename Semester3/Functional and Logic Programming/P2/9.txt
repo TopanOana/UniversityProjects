@@ -1,0 +1,67 @@
+%9.
+%a. For a list of integer number, write a predicate to add in list 
+%after 1-st, 3-rd, 7-th, 15-th element a given value e.
+
+%appendElement(L:list, E:element, R:list)
+%flow model: (i,i,o)
+appendElement([],E,[E]).
+appendElement([H|T],E,[H|R]):-
+    appendElement(T,E,R).
+
+
+%insertAt(L:list, Index:number, N:number, E:number, Aux:list, R:list)
+%flow model: (i,i,i,i,i,o)	
+insertAt([],_,_,_,R,R).
+insertAt([H|T],Index,N,E,Aux,R):-
+    Index =:= N-1,!,
+    appendElement(Aux, H, NewAux),
+    appendElement(NewAux, E, NewerAux),
+    Index1 is Index+1,
+    N1 is N*2,
+    insertAt(T, Index1,N1,E,NewerAux,R).
+insertAt([H|T],Index,N,E,Aux,R):-
+    appendElement(Aux, H, NewAux),
+    Index1 is Index+1,
+    insertAt(T, Index1,N,E,NewAux,R).
+
+%addIn(L:list, E:Number, R:list)
+%flow model: (i,i,o)
+addIn(L,E,R):-
+    insertAt(L,1,2,E,[],R).
+
+%b. For a heterogeneous list, formed from integer numbers and list of numbers; 
+%add in every sublist after 1-st, 3-rd, 7-th, 15-th element the value found 
+%before the sublist in the heterogenous list. The list has the particularity 
+%that starts with a number and there aren’t two consecutive elements lists.
+
+%heteroAddIn(L:list, El:number, R:list)
+%heteroAddIn(i,i,o)
+heteroAddIn([],_,[]).
+heteroAddIn([H|T],E,[H1|R]):-
+    is_list(H),!,
+    addIn(H,E,H1),
+    heteroAddIn(T,E,R).
+heteroAddIn([H|T],_,[H|R]):-
+    heteroAddIn(T,H,R).
+
+%heteroAddInWrapper(L:list, R:list)
+%flow model: (i,o)
+heteroAddInWrapper(L,R):-
+    heteroAddIn(L,_,R).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

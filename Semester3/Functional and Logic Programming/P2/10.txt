@@ -1,0 +1,70 @@
+%10.
+%a. For a list of integer numbers, define a predicate to write twice in list every prime number.
+
+%prime(A:number,D:number)
+%flow model: (i,i)
+prime(A,_):-
+    A<2,!,
+    fail.
+prime(A,A).
+prime(A,D):-
+    A mod D =:= 0,
+    fail.
+prime(A,D):-
+    A mod D =\= 0,
+    NewD is D+1,
+    prime(A, NewD).
+
+
+%checkPrime(A:number)
+%flow model: (i)
+checkPrime(A):-
+    prime(A,2).
+
+%appendElement(L:list, E:element, R:list)
+%flow model: (i,i,o)
+appendElement([],E,[E]).
+appendElement([H|T],E,[H|R]):-
+    appendElement(T,E,R).
+
+%writeTwicePrimes(L:list, Aux:list, R:list)
+%flow model: (i,i,o)
+writeTwicePrimes([],R,R).
+writeTwicePrimes([H|T],Aux,R):-
+    checkPrime(H),!,
+    appendElement(Aux,H,NAux),
+    appendElement(NAux,H,NewAux),
+    writeTwicePrimes(T,NewAux,R).
+writeTwicePrimes([H|T],Aux,R):-
+    appendElement(Aux,H,NewAux),
+    writeTwicePrimes(T,NewAux,R).
+
+%write2Primes(L:list, R:list)
+%flow model: (i,o)
+write2Primes([],[]).
+write2Primes([H|T],[H,H|R]):-
+	checkPrime(H),!,
+    write2Primes(T,R).
+write2Primes([H|T],[H|R]):-
+    write2Primes(T,R).
+
+
+%b. For a heterogeneous list, formed from integer numbers and list of numbers, 
+%define a predicate to write in every sublist twice every prime number
+
+
+%heteroPrimes(L:list,R:list)
+%flow model: (i,o)
+
+heteroPrimes([],[]).
+heteroPrimes([H|T],[H1|R]):-
+    is_list(H),!,
+    write2Primes(H,H1),
+    heteroPrimes(T,R).
+heteroPrimes([H|T],[H|R]):-
+    heteroPrimes(T,R).
+
+
+
+
+

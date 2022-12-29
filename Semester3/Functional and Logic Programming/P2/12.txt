@@ -1,0 +1,49 @@
+%12. 
+%a. Define a predicate to add after every element from a list, the divisors of that number.
+
+%divisors(N:number, D:number, R:list)
+%flow model: (i,i,o)
+divisors(N,D,[]):-
+    D > N div 2.
+divisors(N,D,[D|R]):-
+    N mod D =:= 0,!,
+    D1 is D+1,
+    divisors(N,D1,R).
+divisors(N,D,R):-
+    D1 is D+1,
+    divisors(N,D1,R).
+
+%appendElement(L:list, E:element, R:list)
+%flow model: (i,i,o)
+appendElement([],E,[E]).
+appendElement([H|T],E,[H|R]):-
+    appendElement(T,E,R).
+
+%concatenateLists(L1:list, L2:list,R:list)
+%flow model: (i,i,o)
+concatenateLists([],L2,L2).
+concatenateLists([H|T],L2,[H|R]):-
+    concatenateLists(T,L2,R).
+
+%divisorsList(L:list, Aux:list ,R:list)
+%flow model: (i,i,o)
+divisorsList([],R,R).
+divisorsList([H|T],Aux,R):-
+    divisors(H,2,Div),
+    appendElement(Aux,H,NewAux),
+    concatenateLists(NewAux,Div,NewerAux),
+    divisorsList(T,NewerAux,R).
+
+%b. For a heterogeneous list, formed from integer numbers and list of numbers,
+% define a predicate to add in every sublist the divisors of every element.
+%heteroDivisors(L:list, R:list)
+%flow model: (i,o)
+heteroDivisors([],[]).
+heteroDivisors([H|T],[H1|R]):-
+    is_list(H),!,
+    divisorsList(H,[],H1),
+    heteroDivisors(T,R).
+heteroDivisors([H|T],[H|R]):-
+    heteroDivisors(T,R).
+
+

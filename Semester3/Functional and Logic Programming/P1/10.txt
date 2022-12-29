@@ -14,3 +14,21 @@ valleyAspect([H1,H2|T], _):-
 valleyAspect([H1,H2|T], 1):-
     H1>H2,
     valleyAspect([H2|T],1).
+
+
+%10b
+%Calculate the alternate sum of list’s elements (l1 - l2 + l3 ...).
+%sumAlternative(L:list, I:number,S:number, R:number)
+%flow model: (i,i,i,o)
+
+sumAlternative([],_,0).
+sumAlternative([H|T],I,R):-
+    I mod 2 =:= 1,
+    I1 is I+1,
+    sumAlternative(T, I1, R1),
+    R is R1+H.
+sumAlternative([H|T],I,R):-
+    I mod 2 =:= 0,
+    I1 is I+1,
+    sumAlternative(T,I1,R1),
+     R is R1-H.

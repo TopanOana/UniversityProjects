@@ -1,0 +1,65 @@
+%8. 
+%a. Determine the successor of a number represented as digits in a list.
+%
+%appendElement(L:list, E:element, R:list)
+%flow model: (i,i,o)
+appendElement([],E,[E]).
+appendElement([H|T],E,[H|R]):-
+    appendElement(T,E,R).
+
+
+%reverseList(L:list, R:list)
+%flow model:(i,o)
+reverseList([],[]).
+reverseList([H|T],R):-
+    reverseList(T,R1),
+    appendElement(R1,H,R).
+
+%carryFlag(A:number, B:number, C:number, F:number,R:number)
+%flow model: (i,i,i,o,o)
+carryFlag(A,B,C,CF,R1):-
+    R is A+B+C,
+    R1 is R mod 10,
+    CF is R div 10.
+    
+%addition(L:list, P:list, CF:number, Aux:list, R:list)
+%flow model: (i,i,i,o)
+addition([],[],_,R,R).
+addition([],[H|T],CF,Aux,R):-
+    carryFlag(0,H,CF,NewCF,El),
+    appendElement(Aux,El,NewAux),
+    addition([],T,NewCF,NewAux,R).
+addition([H|T],[],CF,Aux,R):-
+    carryFlag(H,0,CF,NewCF,El),
+    appendElement(Aux,El,NewAux),
+    addition(T,[],NewCF,NewAux,R).
+addition([H1|T1],[H2|T2],CF,Aux,R):-
+    carryFlag(H1,H2,CF,NewCF,El),
+    appendElement(Aux,El,NewAux),
+    addition(T1,T2,NewCF,NewAux,R).
+
+%successor(L:list,R:list)
+%flow model: (i,o)
+successor(L,R):-
+    reverseList(L,L1),
+    addition(L1,[1],0,[],R1),
+    reverseList(R1,R).
+
+
+
+%b.For a heterogeneous list, formed from integer numbers and list of numbers, 
+%determine the successor of a sublist considered as a number.
+%heteroSuccessor(L:list, R:list)
+%flow model: (i,o)
+heteroSuccessor([],[]).
+heteroSuccessor([H|T],[H1|R]):-
+    is_list(H),!,
+    successor(H,H1),
+    heteroSuccessor(T,R).
+heteroSuccessor([H|T],[H|R]):-
+    heteroSuccessor(T,R).
+
+
+
+
+

@@ -14,3 +14,30 @@ insertAt([H|T],E,I,N,[E,H|R]):-
 insertAt([H|T],E,I,N,[H|R]):-
     I1 is I+1,
     insertAt(T,E,I1,N,R).
+
+%9b
+%Define a predicate to determine the greatest common divisor of all numbers from a list.
+%gcd(A:number, B:number, R:number)
+%flow model : (i,i,o)
+
+gcd(A,A,A).
+gcd(A,B,R):-
+    A>B,
+    Dif is A-B,
+    gcd(Dif,B,R).
+gcd(A,B,R):-
+    A<B,
+    Dif is B-A,
+    gcd(Dif,A,R).
+
+
+
+%gcdList(L:list, Aux:number, R:result)
+%flow model: (i,i,o)
+gcdList([],Aux,Aux).
+gcdList([H|T],Aux,R):-
+    number(H),!,
+    gcd(H,Aux,NewAux),
+    gcdList(T,NewAux,R).
+gcdList([_|T],Aux,R):-
+    gcdList(T,Aux,R).

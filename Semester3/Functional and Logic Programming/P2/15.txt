@@ -1,0 +1,70 @@
+%15. 
+%a. Define a predicate to determine the predecessor of a number represented as digits in a list.
+%appendElement(L:list, E:element, R:list)
+%flow model: (i,i,o)
+appendElement([],E,[E]).
+appendElement([H|T],E,[H|R]):-
+    appendElement(T,E,R).
+
+
+%reverseList(L:list, R:list)
+%flow model:(i,o)
+reverseList([],[]).
+reverseList([H|T],R):-
+    reverseList(T,R1),
+    appendElement(R1,H,R).
+
+%transportFlag(A:number,B:number,C:number,F:number,N:number)
+%flow model: (i,i,i,o,o)
+transportFlag(A,B,C,F,N):-
+    R is A-B-C,
+    R>=0,!,
+    F is 0,
+    N is R.
+transportFlag(A,B,C,F,N):-
+    R is A-B-C,
+    F is 1,
+    N is 10-abs(R).
+
+
+%subtraction(L:list, P:list, CF:number, Aux:list, R:list)
+%flow model: (i,i,i,i,o)
+subtraction([],[],_,R,R).
+subtraction([H|T],[],TF,Aux,R):-
+    transportFlag(H,0,TF,NewTF,H1),
+    appendElement(Aux,H1,NewAux),
+    subtraction(T,[],NewTF,NewAux,R).
+subtraction([H1|T1],[H2|T2],TF,Aux,R):-
+    transportFlag(H1,H2,TF,NewTF,El),
+    appendElement(Aux,El,NewAux),
+    subtraction(T1,T2,NewTF,NewAux,R).
+
+%subtractionWrapper(L:list,P:list,R:list)
+%flow model: (i,i,o)
+subtractionWrapper(L,P,R):-
+    reverseList(L,LL),
+    reverseList(P,PP),
+    subtraction(LL,PP,0,[],RR),
+    reverseList(RR,R).
+
+%predecessor(L:list,R:list)
+%flow model: (i,o)
+predecessor(L,R):-
+    subtractionWrapper(L,[1],R).
+
+%b. For a heterogeneous list, formed from integer numbers and list of numbers, 
+%define a predicate to determine the predecessor of the every sublist 
+%considered as numbers.
+%heteroPredecessor(L:list,R:list)
+%flow model:(i,o)
+heteroPredecessor([],[]).
+heteroPredecessor([H|T],[H1|R]):-
+    is_list(H),
+    predecessor(H,H1),
+    heteroPredecessor(T,R).
+heteroPredecessor([H|T],[H|R]):-
+    heteroPredecessor(T,R).
+
+
+
+
