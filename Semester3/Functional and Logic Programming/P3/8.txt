@@ -1,0 +1,34 @@
+%8. Generate all strings of n parenthesis correctly closed
+
+%parenthesis(X)
+parenthesis("(").
+parenthesis(")").
+
+%checkString(L:list, N:number)
+checkString([],0).
+checkString([H|T],N):-
+    H=:="(",!,
+    NewN is N+1,
+    checkString(T,NewN).
+checkString([H|T], N):-
+    H=:=")",
+    N>0,
+    NewN is N-1,
+    checkString(T,NewN).
+
+
+%generate(N:number, R:list)
+generate(0,[]).
+generate(N,[X|R]):-
+    N>0,
+    parenthesis(X),
+    NewN is N-1,
+    generate(NewN, R).
+
+oneSolution(N,R):-
+    generate(N,R),
+    checkString(R,0).
+    
+allSolutions(N,R):-
+    findall(X, oneSolution(N,X),R).
+

@@ -1,0 +1,30 @@
+%15. For a given n, positive, determine all 
+%decomposition of n as a sum of consecutive natural numbers.
+
+%sumN(Index:number, N:number, Sum:number, R:list)
+sumN(_,N,N,[]):-!.
+sumN(Index,N,Sum,[Index|R]):-
+    NewSum is Sum+Index,
+    N >= NewSum,
+    NewIndex is Index+1,
+    sumN(NewIndex,N,NewSum, R).
+sumN(Index,N,Sum,R):-
+    N>=Sum,
+    Index=<N,
+    NewIndex is Index+1,
+    sumN(NewIndex,N,Sum,R).
+
+
+%checkConsecutive(L:list)
+checkConsecutive([_]):-!.
+checkConsecutive([H1,H2|T]):-
+    H2 =:= H1+1,!,
+    checkConsecutive([H2|T]).
+
+
+oneSolution(N,R):-
+    sumN(1,N,0,R),
+    checkConsecutive(R).
+
+allSolutions(N,R):-
+    findall(X,oneSolution(N,X),R).

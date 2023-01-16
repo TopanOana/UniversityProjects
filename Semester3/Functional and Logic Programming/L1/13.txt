@@ -1,0 +1,67 @@
+;13. 
+;a. A linear list is given. Eliminate from the list all elements from N to N steps, N-given.
+
+(defun eliminateN (L N Index) 
+  (cond 
+   ((null l) nil)
+   ((equal (mod Index N) 0) (eliminateN (cdr L) N (+ Index 1)))
+   (T (cons (car L) (eliminateN (cdr L) N (+ Index 1))))
+   )
+)
+
+;b. Write a function to test if a linear list of integer numbers has a "valley" aspect 
+;(a list has a valley aspect if the items decrease to a certain point and then increase. 
+;Eg. 10 8 6 17 19 20). A list must have at least 3 elements to fullfill this condition.
+
+
+(defun valleyAspect (L Flag)
+  (cond 
+   ((and (null (cdr L)) (equal flag 1)) T)
+   ((null (cadr l)) nil)
+   ((and (equal flag 1) (> (car l) (cadr l))) nil)
+   ((< (car l) (cadr l)) (valleyaspect (cdr l) 1))
+   (T (valleyaspect (cdr l) flag))
+   )
+)
+
+(defun valleyMain (L)
+  (cond 
+   ((null (cddr L)) NIL)
+   ((< (car L) (cadr L)) NIL)
+   (T (valleyAspect L 0))
+   )
+)
+
+
+;c. Build a function that returns the minimum numeric atom from a list, at any level.
+
+(defun minValue (L M)
+  (cond 
+   ((null L) M)
+   ((and (numberp (car L)) (< (car L) M)) (minValue (cdr L) (car L)))
+   ((atom (car L)) (minValue (cdr L) M))
+   (T (minValue (cdr L) (minValue (car L) M)))
+   )
+)
+
+;d. Write a function that deletes from a linear list of all occurrences of the maximum element
+
+(defun maxValue (L E)
+  (cond 
+   ((null L) E)
+   ((> (car L) E) (maxValue (cdr L) (car L)))
+   (T (maxValue (cdr L) E))
+   )
+)
+
+(defun elim (L E)
+  (cond 
+   ((null L) NIL)
+   ((equal (car L) E) (elim (cdr L) E))
+   (T (cons (car L) (elim (cdr L) E)))
+   )
+)
+
+(defun elimMax (L)
+  (elim L (maxValue L (car L)))
+)

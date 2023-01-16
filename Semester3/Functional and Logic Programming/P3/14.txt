@@ -1,0 +1,23 @@
+%14. Write a program to generate the list of all subsets 
+%of sum S with the elements of a list (S - given).
+
+
+subsets([],[]).
+subsets([H|T],[H|R]):-
+    subsets(T,R).
+subsets([_|T],R):-
+    subsets(T,R).
+
+
+sumEl([],S,S).
+sumEl([H|T],S,R):-
+    NewSum is H+S,
+    sumEl(T,NewSum,R).
+
+
+oneSolution(L,S,R):-
+    subsets(L,R),
+    sumEl(R,0,S).
+
+allSolutions(L,S,R):-
+    findall(X,oneSolution(L,S,X),R).

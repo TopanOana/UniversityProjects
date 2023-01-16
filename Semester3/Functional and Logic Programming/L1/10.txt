@@ -1,0 +1,88 @@
+;10.
+;a. Write a function to return the product of all the numerical atoms from a list, at superficial level.
+
+(defun productS (L)
+  (cond 
+   ((null L) 1)
+   ((numberp (car l)) (* (car l) (productS (cdr L))))
+   (T (productS (cdr L)))
+   )
+)
+
+;b. Write a function to replace the first occurence of an element E in a given list with an other element O
+
+(defun memberList (L E)
+  (cond 
+   ((null l) nil)
+   ((equal (car l) e) T)
+   (T (memberlist (cdr l) e))
+   )
+)
+
+(defun replaceOcc2 (L E O I)
+  (cond 
+   ((null l) nil)
+   ((and (equal (car l) e) (equal i 0)) (cons o (replaceocc2 (cdr L) e o 1)))
+   ((and (listp (Car l)) (equal i 0) (memberlist (car l) e)) (cons (replaceocc2 (car l) e o 0) (replaceocc2 (cdr L) e o 1)))
+   (T (cons (car l) (replaceocc2 (cdr l) e o i)))
+   )
+)
+
+
+
+;c. Write a function to compute the result of an arithmetic expression memorised in preorder on a stack.
+
+(defun reverselist (L aux)
+  (cond 
+   ((null l) aux)
+   (T (reverselist (cdr L) (cons (car l) aux)))
+   )
+)
+
+(defun compute (L Stack)
+  (cond 
+   ((null l) (car Stack))
+   ((numberp (car L)) (compute (cdr L) (cons (car L) Stack)))
+   (T (cond 
+       ((equal (car L) '+) (compute (cdr L) (cons (+ (car Stack) (cadr Stack)) (cddr Stack))))
+       ((equal (car L) '-) (compute (cdr L) (cons (- (car Stack) (cadr Stack)) (cddr Stack))))
+       ((equal (car L) '*) (compute (cdr L) (cons (* (car Stack) (cadr Stack)) (cddr Stack))))
+       ((equal (car L) '/) (compute (cdr L) (cons (floor (car Stack) (cadr Stack)) (cddr Stack))))
+       )
+      )
+   )
+)
+
+
+(defun mainCompute (L)
+  (compute (reverselist L ()) ())
+)
+
+;d. Write a function to produce the list of pairs (atom n), where atom appears for n times in the parameter list
+
+(defun nrOcc (L E)
+  (cond 
+   ((null l) 0)
+   ((equal (car l) e) (+ 1 (nrocc (cdr L) e)))
+   (T (nrOcc (cdr L) e))
+   )
+)
+
+(defun set1 (L Aux) 
+  (cond 
+   ((null l) aux)
+   ((= (nrocc aux (car L)) 0) (set1 (cdr L) (cons (car l) aux)))
+   (T (set1 (cdr L) aux))
+   )
+)
+
+(defun producepairs (S L)
+  (cond 
+   ((null S) nil)
+   (T (cons (list (car s) (nrocc L (car s))) (producepairs (cdr s) l)))
+   )
+)
+
+(defun mainpairs (L)
+  (producepairs (set1 L ()) l)
+)

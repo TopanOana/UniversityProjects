@@ -1,0 +1,38 @@
+
+%“Colouring” a map. n countries are given; 
+%write a predicate to determine all possibilities of 
+%colouring n countries with m colours, 
+%such that two adjacent countries not having the same colour.
+
+%candidate(N:number, I:number)
+%(i,o)
+candidate(N,N).
+candidate(N,I):-
+    N>1,
+    N1 is N-1,
+    candidate(N1, I).
+
+
+
+%checkList(L:list)
+checkList([_]).
+checkList([H1,H2|T]):-
+    H1=\=H2,
+    !,
+    checkList([H2|T]).
+
+%generate(N:number, M:number, R:list)
+generate(0,_,[]).
+generate(N,M,[X|R]):-
+    N>0,
+    candidate(M,X),
+    NewN is N-1,
+    generate(NewN, M,R).
+
+
+oneSolution(N,M,R):-
+    generate(N,M,R),
+    checkList(R).
+
+allSolutions(N,M,R):-
+    findall(X,oneSolution(N,M,X),R).

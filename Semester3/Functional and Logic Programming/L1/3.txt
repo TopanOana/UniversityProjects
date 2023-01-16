@@ -1,0 +1,65 @@
+;3. 
+;a. Write a function that inserts in a linear list a given atom A after the 2nd, 4th, 6th, ... element.
+
+(defun insertA (L Index N A)
+  (cond 
+   ((null L) NIL)
+   ((equal Index N) (cons (car L) (cons A (insertA (cdr L) (+ Index 1) (+ N 2) A))))
+   (T (cons (car L) (insertA (cdr L) (+ Index 1) N A)))
+   )
+)
+
+;b. Write a function to get from a given list the list of all atoms, on any level, but reverse order.
+
+(defun appendE (L E)
+  (cond 
+   ((null L) (list E))
+   (T (cons (car L) (appendE (cdr L) E)))
+   )
+)
+
+(defun appendL (L1 L2)
+  (COND 
+   ((NULL L1) L2)
+   ((NULL L2) L1)
+   (T (CONS (CAR L1) (APPENDL (CDR L1) L2)))
+   )
+)
+
+(defun reverseAtoms (L)
+  (cond 
+   ((null l) NIL)
+   ((atom (car L)) (appendL (reverseAtoms (cdr L)) (LIST (car L))))
+   (T (APPENDL (reverseAtoms (cdr L)) (reverseAtoms (car L))))
+   )
+)
+
+
+;c. Write a function that returns the greatest common divisor of all numbers in a nonlinear list.
+(defun gcd1 (A B)
+  (cond
+   ((equal 0 A) B)
+  ; ((EQUAL 0 B) B)
+   (T (GCD1 (MOD B A) A))
+   )
+)
+
+(defun gcdList (L)
+  (cond 
+   ((and (null (cdr l)) (atom (car l))) (car L))
+   ((atom (car L)) (gcd1 (car L) (gcdList (cdr L))))
+   ((null (cdr L)) (gcdlist (car L)))
+   (T (gcd1 (gcdList (car L)) (gcdList (cdr L))))
+   )
+)
+
+;d. Write a function that determines the number of occurrences of a given atom in a nonlinear list
+
+(defun nrOcc (L E)
+  (cond 
+   ((null L) 0)
+   ((and (atom (Car L)) (equal (car L) e)) (+ 1 (nrOcc (cdr L) E)))
+   ((atom (car L)) (nrOcc (cdr L) E))
+   (T (+ (nrOcc (car L) E) (nrOcc (CDR L) E)))
+   )
+)

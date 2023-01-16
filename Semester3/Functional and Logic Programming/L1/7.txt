@@ -1,0 +1,62 @@
+;7. 
+;a. Write a function to eliminate the n-th element of a linear list.
+
+(defun eliminateN (L N Index)
+  (cond 
+   ((null L) nil)
+   ((equal N Index) (eliminateN (cdr L) N (+ Index 1)))
+   (T (cons (car L) (eliminateN (cdr L) N (+ Index 1))))
+   )
+)
+
+;b. Write a function to determine the successor of a number represented digit by digit as a list,
+; without transforming the representation of the number from list to number.
+
+(defun reverseList (L Aux)
+  (cond 
+   ((null l) aux)
+   (T (reverseList (cdr L) (cons (car L) aux)))
+   )
+)
+
+(defun add1 (L CF)
+  (cond 
+   ((and (null L) (equal cf 0)) nil)
+   ((null L) (list cf))
+   ((> (+ (car L) CF) 9) (cons (mod (+ (car L) CF) 10) (add1 (cdr L) (floor (+ (car L) CF) 10))))
+   (T (cons (+ (car L) cf) (add1 (cdr L) 0)))
+   )
+)
+
+(defun successor (L)
+  (reverselist (add1 (reverseList L ()) 1) ())
+)
+
+
+;c. Write a function to return the set of all the atoms of a list
+(defun memberlist (L E)
+  (cond 
+   ((null L) NIL)
+   ((equal (car L) e) t)
+   (t (MEMBERLIST (CDR L) E))
+   )
+)
+
+
+(defun setAtoms (L Aux)
+  (cond 
+   ((null l) aux)
+   ((and (atom (car l)) (not (memberlist AUX (CAR L)))) (setAtoms (cdr L) (cons (car L) aux)))
+   ((listp (car l)) (setAtoms (cdr L) (setatoms (car L) aux)))
+   (T (setatoms (cdr L) aux))
+   )
+)
+
+;d. Write a function to test whether a linear list is a set
+(defun testSet (L)
+  (cond 
+   ((null L) T)
+   ((memberList (cdr L) (car L)) NIL)
+   (T (testset (cdr L)))
+   )
+)

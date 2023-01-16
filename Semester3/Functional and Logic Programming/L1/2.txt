@@ -1,0 +1,60 @@
+;2
+;a) Write a function to return the product of two vectors.
+
+(defun dotProduct (L1 L2)
+  (cond 
+   ((NULL L1) 0)
+   (T (+ (* (car L1) (car L2)) (dotProduct (cdr L1) (cdr L2))))
+   )
+)
+
+;b) Write a function to return the depth of a list. Example: the depth of a linear list is 1.
+(defun depthList (L)
+  (cond 
+   ((null L) 1)
+   ((listp (CAR L)) (max (+ (depthList (car L)) 1) (depthList (cdr L))))
+   (T (depthList (cdr L)))
+   )
+)
+
+;c) Write a function to sort a linear list without keeping the double values.
+
+(defun insert1 (L E)
+  (cond 
+   ((NULL L) (LIST E))
+   ((< E (car L)) (cons E L))
+   ((equal E (car L)) L)
+   (T (cons (car L) (insert1 (cdr L) E)))
+   )
+)
+
+
+(defun insertionSort (L LF)
+  (cond 
+   ((NULL L) LF)
+   (T (INSERTIONSORT (CDR L) (INSERT1 LF (CAR L))))
+   )
+)
+
+(DEFUN MAINSORT (L)
+  (insertionSort (cdr L) (list (car L)))
+)
+
+
+;d) Write a function to return the intersection of two sets.
+
+(defun memberList (L E)
+  (cond 
+   ((NULL L) NIL)
+   ((EQUAL (CAR L) E) T)
+   (T (MEMBERLIST (CDR L) E))
+   )
+)
+
+(DEFUN INTERSECTIONSETS (L1 L2)
+  (COND
+   ((NULL L1) NIL)
+   ((MEMBERLIST L2 (CAR L1)) (CONS (CAR L1) (INTERSECTIONSETS (CDR L1) L2)))
+   (T (INTERSECTIONSETS (CDR L1) L2))
+   )
+)

@@ -1,0 +1,39 @@
+;5. 
+;a. Write twice the n-th element of a linear list.
+
+(defun DoubleN (L N Index)
+  (cond 
+   ((null l) nil)
+   ((equal N Index) (cons (car L) (cons (car L) (doubleN (cdr L) N (+ Index 1)))))
+   (T (cons (car L) (doubleN (cdr L) N (+ Index 1))))
+   )
+)
+
+
+;b. Write a function to return an association list with the two lists given as parameters.
+(defun assoc1 (L1 L2)
+  (cond 
+   ((null L1) nil)
+   (T (cons (cons (car L1) (car L2)) (assoc1 (cdr L1) (cdr L2))))
+   )
+)
+
+;c. Write a function to determine the number of all sublists of a given list, on any level.
+
+(defun nrSublists (L)
+  (cond 
+   ((null L) 1)
+   ((atom (car L)) (nrSublists (cdr L)))
+   ((listp (car L)) (+ (nrSublists (car L)) (nrSublists (cdr L))))
+   )
+)
+
+;d. Write a function to return the number of all numerical atoms in a list at superficial level
+
+(defun nrNumbers (L)
+  (cond 
+   ((null l) 0)
+   ((numberp (car L)) (+ 1 (nrNumbers (cdr L))))
+   (T (nrNumbers (cdr L)))
+   )
+)

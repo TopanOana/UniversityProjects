@@ -1,0 +1,43 @@
+%12. Generate all sub-strings of a length 2*n+1, 
+%formed from values of 0, 1 or -1, so a1 = ..., a2n+1 = 0 
+%and |a(i+1) - ai| = 1 or 2, for every 1 <= i <= 2n.
+
+%candidate(X)
+candidate(0).
+candidate(1).
+candidate(-1).
+
+
+sumElements([],0).
+sumElements([H|T],S):-
+    sumElements(T,S1),
+    S is S1+H.
+
+
+differenceEl([_]).
+differenceEl([H1,H2|T]):-
+    Dif is abs(H2-H1),
+    Dif>0,
+    Dif<3,!,
+    differenceEl([H2|T]).
+
+%generate(N:number, R:list)
+generate(0,[]).
+generate(N,[X|R]):-
+    N>0,
+    candidate(X),
+    NewN is N-1,
+    generate(NewN,R).
+
+
+oneSolution(N,R):-
+    Length is 2*N+1,
+	generate(Length,R),
+    sumElements(R,S),
+    S=:=0,
+    differenceEl(R).
+
+allSolutions(N,R):-
+    findall(X,oneSolution(N,X),R).
+
+

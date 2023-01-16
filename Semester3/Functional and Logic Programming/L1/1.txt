@@ -1,0 +1,62 @@
+;1.
+;1.
+;a) Write a function to return the n-th element of a list, or NIL if such an element does not exist.
+(defun nElement (L N)
+  (cond
+   ((NULL L) NIL)
+   ((EQUAL N 1) (CAR L))
+   (T (nElement (CDR L) (- N 1)))
+   )
+)
+
+;b) Write a function to check whether an atom E is a member of a list which is not necessarily linear.
+
+(defun exists (L E)
+  (cond 
+   ((AND (ATOM (CAR L)) (EQUAL (CAR L) E)) T)
+   ((LISTP (CAR L)) (or (exists (car L) E) (exists (cdr L) E)))
+   (T (exists (cdr L) E))
+   )
+)
+
+;c) Write a function to determine the list of all sublists of a given list, on any level.
+;A sublist is either the list itself, or any element that is a list, at any level.
+(defun appendList (L E)
+  (cond 
+   ((NULL L) (list E))
+   (T (cons (car L) (appendList (cdr L) E)))
+   )
+)
+(defun sublists (L X)
+    (cond 
+        ((NULL L)  X)
+        ((ATOM (CAR L)) (SUBLISTS (CDR L) X))
+        ((LISTP (CAR L)) (cons (car L) (SUBLISTS (car L) (SUBLISTS (cdr L) X))))
+    )
+)
+
+(DEFUN MAINSUB (L)
+  (SUBLISTS L (list L))
+)
+
+;d) Write a function to transform a linear list into a set
+(defun existsLinear (L E)
+  (cond 
+   ((NULL L) NIL)
+   ((EQUAL (CAR L) E) T)
+   (T (EXISTSLinear (CDR L) E))
+   )
+)
+
+(DEFUN linearset (L LF)
+  (cond 
+   ((null L) LF)
+   ((existsLinear LF (car L)) (linearset (cdr L) LF))
+   (T (linearset (cdr L) (cons (car L) LF)))
+   )
+)
+
+(defun mainLinearToSet (L)
+  (linearset L '())
+)
+

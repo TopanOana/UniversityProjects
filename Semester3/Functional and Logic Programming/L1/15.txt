@@ -1,0 +1,58 @@
+;15. 
+;a. Write a function to insert an element E on the n-th position of a linear list.
+(defun ins (L E N Index)
+  (cond 
+   ((null L) nil)
+   ((equal N Index) (cons (car L) (cons E (ins (cdr L) E N (+ Index 1)))))
+   (T (cons (car L) (ins (cdr L) E N (+ Index 1))))
+   )
+)
+
+;b. Write a function to return the sum of all numerical atoms of a list, at any level
+(defun sumL (L)
+  (cond
+   ((null l) 0)
+   ((numberp (car L)) (+ (car L) (sumL (cdr L))))
+   ((atom (car L)) (sumL (cdr L)))
+   (T (+ (sumL (car L)) (sumL (cdr L))))
+   )
+)
+
+;c. Write a function to return the set of all sublists of a given linear list
+
+(defun memberlist (L E)
+  (cond 
+   ((null l) nil)
+   ((equal (car L) e) T)
+   (T (memberlist (cdr L) e))
+  )
+)
+
+
+(defun setSub (L Aux)
+  (cond 
+   ((null L) Aux)
+   ((atom (car L)) (setsub (cdr L) aux))
+   ((and (listp (car l)) (memberlist aux (car L))) (setsub (cdr L) aux))
+   (T (setsub (cdr l) (cons (car L) (setsub (car L) aux))))
+   )
+)
+
+;d. Write a function to test the equality of two sets, without using the difference of two sets.
+
+(defun removeE (L E)
+  (cond
+   ((null l) nil)
+   ((equal (car l) e) (removeE (cdr L) e))
+   (T (cons (car L) (removeE (cdr L) E)))
+   )
+)
+
+(defun equalSets (L1 L2)
+  (cond 
+   ((and (null L1) (null l2)) T)
+   ((null l1) nil)
+   ((null l2) nil)
+   (T (equalSets (cdr L1) (removeE L2 (car L1))))
+   )
+)

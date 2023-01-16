@@ -1,0 +1,31 @@
+%5. Two integers, n and m are given. Write a predicate to determine 
+% all possible sequences of numbers from 1 to n, 
+%such that between any two numbers from consecutive positions, 
+%the absolute difference to be >= m.
+
+%sequences(Index:number, N:number, R:list)
+sequences(Index,N,[]):- Index=:=N+1,!.
+sequences(Index,N, [Index|R]):-
+    N >= Index,
+    NewIndex is Index+1,
+    sequences(NewIndex, N,R).
+sequences(Index,N,R):-
+    N >= Index,
+    NewIndex is Index+1,
+    sequences(NewIndex, N,R).
+
+
+%checkSequence(L:list, M:number)
+checkSequence([H1,H2],M):-
+    abs(H1-H2) >= M.
+checkSequence([H1,H2|T],M):-
+    Dif is abs(H1-H2),
+    Dif>=M,
+ 	checkSequence([H2|T],M).
+
+oneSolution(N,M,R):-
+    sequences(1,N,R),
+    checkSequence(R,M).
+
+allSolutions(N,M,R):-
+    findall(X,oneSolution(N,M,X), R).

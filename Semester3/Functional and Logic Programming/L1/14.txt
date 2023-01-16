@@ -1,0 +1,61 @@
+;14.
+;a. Write a function to return the union of two sets.
+(defun memberlist (L E)
+  (cond 
+   ((null l) nil)
+   ((equal E (CAR L)) t)
+   (t (memberlist (cdr l) e))
+   )
+)
+
+(defun unionSets (L1 L2)
+  (cond 
+   ((null l1) L2)
+   ((memberlist l2 (car l1)) (unionsets (cdr l1) l2))
+   (T (cons (car l1) (unionsets (cdr l1) l2)))
+   )
+)
+
+;b. Write a function to return the product of all numerical atoms in a list, at any level
+(defun prodL (L)
+  (cond 
+   ((null L) 1)
+   ((numberp (car l)) (* (car l) (prodL (cdr L))))
+   ((atom (car l)) (prodL (cdr L)))
+   (T (* (prodL (car L)) (prodL (cdr L))))
+  )
+)
+
+;c. Write a function to sort a linear list with keeping the double values.
+
+(defun insert1 (L E)
+  (cond 
+   ((NULL L) (LIST E))
+   ((< E (car L)) (cons E L))
+   (T (cons (car L) (insert1 (cdr L) E)))
+   )
+)
+
+
+(defun insertionSort (L LF)
+  (cond 
+   ((NULL L) LF)
+   (T (INSERTIONSORT (CDR L) (INSERT1 LF (CAR L))))
+   )
+)
+
+(DEFUN MAINSORT (L)
+  (insertionSort (cdr L) (list (car L)))
+)
+
+
+;d. Build a list which contains positions of a minimum numeric element from a given linear list.
+
+(defun minPos (L M Pos Index)
+  (cond
+   ((null l) pos)
+   ((equal (car L) M) (minPos (cdr L) M (cons Index Pos) (+ Index 1)))
+   ((< (car L) M) (minPos (cdr L) (car L) (list Index) (+ Index 1)))
+   (T (minPos (cdr L) M Pos (+ Index 1)))
+   )
+)

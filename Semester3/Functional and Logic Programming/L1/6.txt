@@ -1,0 +1,68 @@
+;6.
+;a. Write a function to test whether a list is linear
+(defun checkLinear (L)
+  (cond 
+   ((null l) T)
+   ((listp (car l)) NIL)
+   (T (checkLinear (cdr L)))
+   )
+)
+
+;b. Write a function to replace the first occurence of an element E in a given list with an other element O.
+(defun replaceOcc1 (L E O I)
+  (cond 
+   ((null l) nil)
+   ((and (equal (car L) E) (equal I 0)) (cons O (replaceOcc1 (cdr L) E O 1)))
+   ((and (listp (car L)) (equal I 0)) (cons (replaceOcc1 (CAR L) E O I) (replaceOcc1 (cdr L) E O I)))
+   (T (cons (car L) (replaceOcc1 (CDR L) E O I)))
+   )
+)
+
+(defun memberList (L E)
+  (cond 
+   ((null l) nil)
+   ((equal (car l) e) T)
+   (T (memberlist (cdr l) e))
+   )
+)
+
+(defun replaceOcc2 (L E O I)
+  (cond 
+   ((null l) nil)
+   ((and (equal (car l) e) (equal i 0)) (cons o (replaceocc2 (cdr L) e o 1)))
+   ((and (listp (Car l)) (equal i 0) (memberlist (car l) e)) (cons (replaceocc2 (car l) e o 0) (replaceocc2 (cdr L) e o 1)))
+   (T (cons (car l) (replaceocc2 (cdr l) e o i)))
+   )
+)
+
+
+;c. Write a function to replace each sublist of a list with its last element.
+
+(defun lastEl (L)
+  (cond 
+   ((null (cdr l)) (car l))
+   (T (lastEl (cdr L)))
+   )
+)
+
+(defun replaceSubLastEl (L)
+  (cond 
+   ((null l) nil)
+   ((atom l) l)
+   ((atom (car l)) (cons (car l) (replacesublastel (cdr l))))
+   ((listp (car l)) (cons (lastel (replacesublastel (car l))) (replacesublastel (cdr l))))
+   )
+)
+
+
+;d. Write a function to merge two sorted lists without keeping double values.
+
+(defun mergeLists (L1 L2)
+  (cond 
+   ((null L1) L2)
+   ((null l2) L1)
+   ((< (car l1) (car l2)) (cons (car l1) (mergelists (cdr l1) l2)))
+   ((< (car l2) (car l1)) (cons (car l2) (mergelists l1 (cdr l2))))
+   ((equal (car l1) (car l2)) (cons (car l1) (mergelists (cdr l1) (cdr l2))))
+   )
+)

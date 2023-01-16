@@ -1,0 +1,62 @@
+;4. 
+;a. Write a function to return the sum of two vectors.
+
+(defun sumVectors (L1 L2)
+  (cond 
+   ((NULL L1) NIL)
+   (T (cons (+ (car L1) (car L2)) (sumvectors (cdr l1) (cdr l2))))
+   )
+)
+
+;b. Write a function to get from a given list the list of all atoms, on any level, but on the same order.
+(defun linear (L)
+  (cond 
+   ((null L) nil)
+   ((atom (car L)) (cons (car L) (linear (cdr L))))
+   (T (nconc (linear (car L)) (linear (cdr L))))
+   )
+)
+
+;c. Write a function that, with a list given as parameter, inverts only continuous sequences of atoms
+(defun appL(L E)
+  (cond 
+   ((null L) (list e))
+   (T (cons (car l) (appl (cdr L) e)))
+   )
+)
+
+(defun appe (l1 l2)
+  (cond 
+   ((null l1) l2)
+   ((null l2) l1)
+   (T (cons (car l1) (appe (cdr l1) l2)))
+   )
+)
+
+(defun reverseCont (L)
+  (cond 
+   ((null l) nil)
+   ((atom (car l)) (appe (reverseCont (cdr L)) (list (car l))))
+   ((listp (car l)) (cons (reverseCont (car L)) (reverseCont (cdr L))))
+   )
+)
+
+(defun reverseCont1 (L Aux LF)
+  (cond 
+;   ((null l) lf)
+   ((null l) aux)
+   ((atom (car l)) (reverseCont1 (cdr L) (cons (car L) Aux) LF))
+  ; ((listp (car l)) (reverseCont1 (cdr l) () (appe (appe lf aux) (reverseCont1 (car L) () ()))))
+   ((listp (car l)) (appe (appl aux (print (reverseCont1 (car L) () ()))) (reverseCont1 (cdr L) () ())))
+   )
+)
+
+;d. Write a list to return the maximum value of the numerical atoms from a list, at superficial level.
+
+(defun maximumSuper (L M)
+  (cond 
+   ((null L) M)
+   ((and (numberp (car L)) (> (car L) M)) (maximumSuper (cdr L) (Car L)))
+   (T (maximumSuper (cdr L) M))
+   )
+)

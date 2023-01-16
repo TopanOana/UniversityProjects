@@ -1,0 +1,62 @@
+;12.
+;a. Write a function to return the dot product of two vectors
+
+(defun dotProduct (L1 L2)
+  (cond 
+   ((null l1) 0)
+   (T (+ (* (car l1) (car l2)) (dotproduct (cdr l1) (cdr l2))))
+   )
+)
+
+
+;b. Write a function to return the maximum value of all the numerical atoms of a list, at any level.
+
+(defun maxVal (L M)
+  (cond 
+   ((null L) M)
+   ((and (numberp (car L)) (> (car L) M)) (maxVal (cdr L) (car L)))
+   ((atom (car L)) (maxVal (cdr L) M))
+   (T (maxVal (cdr L) (maxVal (car L) M)))
+   )
+)
+
+;c. Write a function to compute the result of an arithmetic expression memorised
+; in preorder on a stack.
+
+(defun reverselist (L aux)
+  (cond 
+   ((null l) aux)
+   (T (reverselist (cdr L) (cons (car l) aux)))
+   )
+)
+
+(defun compute (L Stack)
+  (cond 
+   ((null l) (car Stack))
+   ((numberp (car L)) (compute (cdr L) (cons (car L) Stack)))
+   (T (cond 
+       ((equal (car L) "+") (compute (cdr L) (cons (+ (car Stack) (cadr Stack)) (cddr Stack))))
+       ((equal (car L) "-") (compute (cdr L) (cons (- (car Stack) (cadr Stack)) (cddr Stack))))
+       ((equal (car L) "*") (compute (cdr L) (cons (* (car Stack) (cadr Stack)) (cddr Stack))))
+       ((equal (car L) "/") (compute (cdr L) (cons (floor (car Stack) (cadr Stack)) (cddr Stack))))
+       )
+      )
+   )
+)
+
+
+(defun mainCompute (L)
+  (compute (reverselist L ()) ())
+)
+
+
+;d. Write a function to return T if a list has an even number of elements on the first level,
+; and NIL on the contrary case, without counting the elements of the list.
+
+(defun evenList (L)
+  (cond
+   ((null L) T)
+   ((null (cdr L)) NIL)
+   (T (evenList (cddr L)))
+   )
+)

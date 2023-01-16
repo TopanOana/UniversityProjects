@@ -1,0 +1,23 @@
+%4. The list a1... an is given. Write a predicate to 
+%determine all sublists strictly ascending of this list a.
+
+subsets([],[]).
+subsets([H|T],[H|R]):-
+    subsets(T,R).
+subsets([_|T],R):-
+    subsets(T,R).
+    
+strictlyAsc([_]).
+strictlyAsc([H1,H2|T]):-
+    H1<H2,
+    strictlyAsc([H2|T]).
+    
+oneSolution(L,R):-
+    subsets(L,R),
+    strictlyAsc(R).
+
+allSolutions(L,R):-
+    findall(X,oneSolution(L,X),R).
+
+
+

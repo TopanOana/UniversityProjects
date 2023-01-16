@@ -1,0 +1,77 @@
+;8.
+;a. Write a function to return the difference of two sets
+
+(defun memberlist (L E)
+  (cond 
+   ((null l) nil)
+   ((equal (car l) e) t)
+   (T (memberlist (cdr l) e))
+   )
+)
+
+(defun differencesets (l1 l2)
+  (cond
+   ((null l1) nil)
+   ((memberlist l2 (car l1)) (differencesets (cdr l1) l2))
+   (T (cons (car l1) (differencesets (cdr l1) l2)))
+   )
+)
+
+
+;b. Write a function to reverse a list with its all sublists, on all levels.
+
+(defun appe (l1 l2)
+  (cond 
+   ((null l1) l2)
+   ((null l2) l1)
+   (T (cons (car l1) (appe (cdr l1) l2)))
+   )
+)
+
+(defun reverselists (L)
+  (cond 
+   ((null l) nil)
+   ((atom (car l)) (appe (reverselists (cdr l)) (list (car l))))
+   ((listp (car l)) (cons (reverselists (car l)) (reverselists (cdr l))))
+   )
+)
+
+
+;c. Write a function to return the list of the first elements of all list elements of a given list with an odd number of elements at superficial level
+
+(defun oddList (L)
+  (cond
+   ((null L) NIL)
+   ((null (cdr L)) T)
+   (T (oddList (cddr L)))
+   )
+)
+
+
+(defun subfirst1 (L)
+  (cond 
+   ((null l) nil)
+   ((and (listp (car l)) (oddList (car L))) (appe (subfirst1 (car l)) (cons (car (car l)) (subfirst1 (cdr l)))))
+   (T (subfirst1 (cdr L)))
+   )
+)
+
+(defun mainSubfirst (L)
+  (cond
+   ((oddList L) (cons (car L) (subfirst1 L)))
+   (T (subfirst1 L))
+   )
+)
+
+
+
+;d. Write a function to return the sum of all numerical atoms in a list at superficial level.
+
+(defun sum (L)
+  (cond 
+   ((null l) 0)
+   ((numberp (car l)) (+ (car l) (sum (cdr l))))
+   (T (sum (cdr l)))
+   )
+)
+

@@ -1,0 +1,81 @@
+;9. 
+;a. Write a function that merges two sorted linear lists and keeps double values.
+(defun mergelists (L1 L2)
+  (cond 
+   ((null l1) l2)
+   ((null l2) l1)
+   ((< (car l1) (car l2)) (cons (car l1) (mergelists (cdr l1) l2)))
+   (T (cons (car l2) (mergelists l1 (cdr l2))))
+   )
+)
+
+
+;b. Write a function to replace an element E by all elements of a list L1 at all levels of a given list L.
+
+(defun appe (L1 L2)
+  (cond 
+   ((null l1) l2)
+   ((null l2) l1)
+   (T (cons (car l1) (appe (cdr l1) l2)))
+   )
+)
+
+(defun replace1 (L E L1)
+  (cond 
+   ((null l) nil)
+   ((and (atom (car l)) (equal (car l) e)) (appe l1 (replace1 (cdr l) e l1)))
+   ((atom (car l)) (cons (car l) (replace1 (cdr l) e l1)))
+   (T (cons (replace1 (car l) e l1) (replace1 (cdr l) e l1)))
+   )
+)
+
+;c. Write a function to determines the sum of two numbers in list representation, and returns the corresponding decimal number,
+; without transforming the representation of the number from list to number.
+
+(defun reverselist (L Aux)
+  (cond 
+   ((null l) aux)
+   (T (reverselist (cdr l) (cons (car l) aux)))
+   )
+)
+
+(defun carryFlag (A B CF)
+  (FLOOR (+ A B CF) 10)
+)
+
+(defun digit (A B CF)
+  (MOD (+ A B CF) 10)
+)
+
+(defun add (l1 l2 cf)
+  (cond
+   ((and (null l1) (null l2) (> cf 0)) (list cf))
+   ((and (null l1) (null l2)) nil)
+   ((null l1) (cons (digit 0 (car l2) cf) (add l1 (cdr l2) (carryflag 0 (car l2) cf))))
+   ((null l2) (cons (digit (car l1) 0 cf) (add (cdr l1) l2 (carryflag (car l1) 0 cf))))
+   (T (cons (digit (car l1) (car l2) cf) (add (cdr l1) (cdr l2) (carryflag (car l1) (car l2) cf))))
+  )
+)
+
+
+(defun addTwo (L1 L2)
+  (reverselist (add (reverselist l1 ()) (reverselist l2 ()) 0) ())
+)
+
+
+;d. Write a function to return the greatest common divisor of all numbers in a linear list.
+
+(defun gcd1 (a b)
+  (cond 
+   ((equal a 0) b)
+   (T (gcd1 (mod b a) a))
+  )
+)
+
+
+(defun gcdList (L)
+  (cond 
+   ((null (cdr l)) (car l))
+   (T (gcd1 (car l) (gcdlist (cdr l))))
+   )
+)

@@ -1,0 +1,58 @@
+%2. Are given n points in a plan (represented using its coordinates). 
+%Write a predicate to determine all subsets of collinear points
+
+%first: generate all the subsets =
+%subsets(L:list, R:list)
+subsets([],[]).
+subsets([H|T],[H|R]):-
+    subsets(T,R).
+subsets([_|T],R):-
+    subsets(T,R).
+
+
+%superficial length of list:
+lengthList([],0).
+lengthList([_|T],S):-
+    lengthList(T,S1),
+    S is S1+1.
+
+%collinear(A:point, B:point, C:point)
+collinear(X,Y,X,Y,_,_).
+collinear(X,Y,_,_,X,Y).
+collinear(_,_,X,Y,X,Y).
+collinear(X1,Y1,X2,Y2,X3,Y3):-
+    Dif1 is X2-X1,
+    Dif2 is X3-X2,
+    Dif3 is X1-X3,
+    Dif1 =\= 0,
+    Dif2 =\= 0,
+    Dif3 =\= 0,
+    Slope1 is (Y2 - Y1)/Dif1,
+    Slope2 is (Y3 - Y2)/Dif2,
+    Slope3 is (Y1 - Y3)/Dif3,
+    Slope1 =:= Slope2,
+    Slope2 =:= Slope3.
+
+%collinearList(L:list)
+collinearList([_,_]).
+collinearList([[X1,Y1],[X2,Y2],[X3,Y3]|T]):-
+    collinear(X1,Y1,X2,Y2,X3,Y3),
+    collinearList([[X2,Y2],[X3,Y3]|T]).
+
+
+%oneSolution(L:list, R:list)
+oneSolution(L,R):-
+    subsets(L,R),
+    lengthList(R,LR),
+    LR > 2,
+    collinearList(R).
+
+
+allSolutions(L,R):-
+    findall(X,oneSolution(L,X),R).
+    
+    
+    
+    
+    
+    

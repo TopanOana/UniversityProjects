@@ -1,0 +1,22 @@
+%1. Write a predicate to generate the list of all subsets with all elements of a given list.
+% Eg: [2, 3, 4] N=2 => [[2,3],[2,4],[3,4]]
+
+%combinations of K length of a list
+%comb(L:list, K:number, R:list)
+%flow model: (i,i,o)
+%comb(l1...ln, K)=
+%	= l1, if K=1
+%	= l1 U comb(l2..ln,K-1), if K>1
+%	= comb(l2..ln,K), otherwise
+
+comb([E|_], 1, [E]).
+comb([_|T], K, R):-
+    comb(T,K,R).
+comb([H|T],K,[H|R]):-
+    K>1,
+    K1 is K-1,
+    comb(T, K1, R).
+
+
+allsubs(L,N,R):-
+    findall(X, comb(L,N,X),R).
