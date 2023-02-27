@@ -1,0 +1,1114 @@
+PrgState id: 3
+ExeStack:
+(int v;(v = ValueExp(value=4);((while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))));print(VarExp(id='v')))))
+SymTable:
+Out:
+FileTable:
+Heap:
+
+PrgState id: 3
+ExeStack:
+int v
+(v = ValueExp(value=4);((while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))));print(VarExp(id='v'))))
+SymTable:
+Out:
+FileTable:
+Heap:
+
+PrgState id: 3
+ExeStack:
+int v
+(v = ValueExp(value=4);((while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))));print(VarExp(id='v'))))
+SymTable:
+Out:
+FileTable:
+Heap:
+
+PrgState id: 3
+ExeStack:
+(v = ValueExp(value=4);((while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))));print(VarExp(id='v'))))
+SymTable:
+v --> 0
+Out:
+FileTable:
+Heap:
+
+PrgState id: 3
+ExeStack:
+(v = ValueExp(value=4);((while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))));print(VarExp(id='v'))))
+SymTable:
+v --> 0
+Out:
+FileTable:
+Heap:
+
+PrgState id: 3
+ExeStack:
+v = ValueExp(value=4)
+((while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))));print(VarExp(id='v')))
+SymTable:
+v --> 0
+Out:
+FileTable:
+Heap:
+
+PrgState id: 3
+ExeStack:
+v = ValueExp(value=4)
+((while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))));print(VarExp(id='v')))
+SymTable:
+v --> 0
+Out:
+FileTable:
+Heap:
+
+PrgState id: 3
+ExeStack:
+((while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))));print(VarExp(id='v')))
+SymTable:
+v --> 4
+Out:
+FileTable:
+Heap:
+
+PrgState id: 3
+ExeStack:
+((while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))));print(VarExp(id='v')))
+SymTable:
+v --> 4
+Out:
+FileTable:
+Heap:
+
+PrgState id: 3
+ExeStack:
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 4
+Out:
+FileTable:
+Heap:
+
+PrgState id: 3
+ExeStack:
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 4
+Out:
+FileTable:
+Heap:
+
+PrgState id: 3
+ExeStack:
+(print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1)))
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 4
+Out:
+FileTable:
+Heap:
+
+PrgState id: 3
+ExeStack:
+(print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1)))
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 4
+Out:
+FileTable:
+Heap:
+
+PrgState id: 3
+ExeStack:
+print(VarExp(id='v'))
+v = ArithExp(VarExp(id='v')-ValueExp(value=1))
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 4
+Out:
+FileTable:
+Heap:
+
+PrgState id: 3
+ExeStack:
+print(VarExp(id='v'))
+v = ArithExp(VarExp(id='v')-ValueExp(value=1))
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 4
+Out:
+FileTable:
+Heap:
+
+PrgState id: 3
+ExeStack:
+v = ArithExp(VarExp(id='v')-ValueExp(value=1))
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 4
+Out:
+4
+FileTable:
+Heap:
+
+PrgState id: 3
+ExeStack:
+v = ArithExp(VarExp(id='v')-ValueExp(value=1))
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 4
+Out:
+4
+FileTable:
+Heap:
+
+PrgState id: 3
+ExeStack:
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 3
+Out:
+4
+FileTable:
+Heap:
+
+PrgState id: 3
+ExeStack:
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 3
+Out:
+4
+FileTable:
+Heap:
+
+PrgState id: 3
+ExeStack:
+(print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1)))
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 3
+Out:
+4
+FileTable:
+Heap:
+
+PrgState id: 3
+ExeStack:
+(print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1)))
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 3
+Out:
+4
+FileTable:
+Heap:
+
+PrgState id: 3
+ExeStack:
+print(VarExp(id='v'))
+v = ArithExp(VarExp(id='v')-ValueExp(value=1))
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 3
+Out:
+4
+FileTable:
+Heap:
+
+PrgState id: 3
+ExeStack:
+print(VarExp(id='v'))
+v = ArithExp(VarExp(id='v')-ValueExp(value=1))
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 3
+Out:
+4
+FileTable:
+Heap:
+
+PrgState id: 3
+ExeStack:
+v = ArithExp(VarExp(id='v')-ValueExp(value=1))
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 3
+Out:
+4
+3
+FileTable:
+Heap:
+
+PrgState id: 3
+ExeStack:
+v = ArithExp(VarExp(id='v')-ValueExp(value=1))
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 3
+Out:
+4
+3
+FileTable:
+Heap:
+
+PrgState id: 3
+ExeStack:
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 2
+Out:
+4
+3
+FileTable:
+Heap:
+
+PrgState id: 3
+ExeStack:
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 2
+Out:
+4
+3
+FileTable:
+Heap:
+
+PrgState id: 3
+ExeStack:
+(print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1)))
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 2
+Out:
+4
+3
+FileTable:
+Heap:
+
+PrgState id: 3
+ExeStack:
+(print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1)))
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 2
+Out:
+4
+3
+FileTable:
+Heap:
+
+PrgState id: 3
+ExeStack:
+print(VarExp(id='v'))
+v = ArithExp(VarExp(id='v')-ValueExp(value=1))
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 2
+Out:
+4
+3
+FileTable:
+Heap:
+
+PrgState id: 3
+ExeStack:
+print(VarExp(id='v'))
+v = ArithExp(VarExp(id='v')-ValueExp(value=1))
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 2
+Out:
+4
+3
+FileTable:
+Heap:
+
+PrgState id: 3
+ExeStack:
+v = ArithExp(VarExp(id='v')-ValueExp(value=1))
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 2
+Out:
+4
+3
+2
+FileTable:
+Heap:
+
+PrgState id: 3
+ExeStack:
+v = ArithExp(VarExp(id='v')-ValueExp(value=1))
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 2
+Out:
+4
+3
+2
+FileTable:
+Heap:
+
+PrgState id: 3
+ExeStack:
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 1
+Out:
+4
+3
+2
+FileTable:
+Heap:
+
+PrgState id: 3
+ExeStack:
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 1
+Out:
+4
+3
+2
+FileTable:
+Heap:
+
+PrgState id: 3
+ExeStack:
+(print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1)))
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 1
+Out:
+4
+3
+2
+FileTable:
+Heap:
+
+PrgState id: 3
+ExeStack:
+(print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1)))
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 1
+Out:
+4
+3
+2
+FileTable:
+Heap:
+
+PrgState id: 3
+ExeStack:
+print(VarExp(id='v'))
+v = ArithExp(VarExp(id='v')-ValueExp(value=1))
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 1
+Out:
+4
+3
+2
+FileTable:
+Heap:
+
+PrgState id: 3
+ExeStack:
+print(VarExp(id='v'))
+v = ArithExp(VarExp(id='v')-ValueExp(value=1))
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 1
+Out:
+4
+3
+2
+FileTable:
+Heap:
+
+PrgState id: 3
+ExeStack:
+v = ArithExp(VarExp(id='v')-ValueExp(value=1))
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 1
+Out:
+4
+3
+2
+1
+FileTable:
+Heap:
+
+PrgState id: 3
+ExeStack:
+v = ArithExp(VarExp(id='v')-ValueExp(value=1))
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 1
+Out:
+4
+3
+2
+1
+FileTable:
+Heap:
+
+PrgState id: 3
+ExeStack:
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 0
+Out:
+4
+3
+2
+1
+FileTable:
+Heap:
+
+PrgState id: 3
+ExeStack:
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 0
+Out:
+4
+3
+2
+1
+FileTable:
+Heap:
+
+PrgState id: 3
+ExeStack:
+print(VarExp(id='v'))
+SymTable:
+v --> 0
+Out:
+4
+3
+2
+1
+FileTable:
+Heap:
+
+PrgState id: 3
+ExeStack:
+print(VarExp(id='v'))
+SymTable:
+v --> 0
+Out:
+4
+3
+2
+1
+FileTable:
+Heap:
+
+PrgState id: 3
+ExeStack:
+SymTable:
+v --> 0
+Out:
+4
+3
+2
+1
+0
+FileTable:
+Heap:
+
+PrgState id: 5
+ExeStack:
+(int v;(v = ValueExp(value=4);((while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))));print(VarExp(id='v')))))
+SymTable:
+Out:
+FileTable:
+Heap:
+
+PrgState id: 5
+ExeStack:
+int v
+(v = ValueExp(value=4);((while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))));print(VarExp(id='v'))))
+SymTable:
+Out:
+FileTable:
+Heap:
+
+PrgState id: 5
+ExeStack:
+int v
+(v = ValueExp(value=4);((while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))));print(VarExp(id='v'))))
+SymTable:
+Out:
+FileTable:
+Heap:
+
+PrgState id: 5
+ExeStack:
+(v = ValueExp(value=4);((while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))));print(VarExp(id='v'))))
+SymTable:
+v --> 0
+Out:
+FileTable:
+Heap:
+
+PrgState id: 5
+ExeStack:
+(v = ValueExp(value=4);((while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))));print(VarExp(id='v'))))
+SymTable:
+v --> 0
+Out:
+FileTable:
+Heap:
+
+PrgState id: 5
+ExeStack:
+v = ValueExp(value=4)
+((while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))));print(VarExp(id='v')))
+SymTable:
+v --> 0
+Out:
+FileTable:
+Heap:
+
+PrgState id: 5
+ExeStack:
+v = ValueExp(value=4)
+((while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))));print(VarExp(id='v')))
+SymTable:
+v --> 0
+Out:
+FileTable:
+Heap:
+
+PrgState id: 5
+ExeStack:
+((while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))));print(VarExp(id='v')))
+SymTable:
+v --> 4
+Out:
+FileTable:
+Heap:
+
+PrgState id: 5
+ExeStack:
+((while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))));print(VarExp(id='v')))
+SymTable:
+v --> 4
+Out:
+FileTable:
+Heap:
+
+PrgState id: 5
+ExeStack:
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 4
+Out:
+FileTable:
+Heap:
+
+PrgState id: 5
+ExeStack:
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 4
+Out:
+FileTable:
+Heap:
+
+PrgState id: 5
+ExeStack:
+(print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1)))
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 4
+Out:
+FileTable:
+Heap:
+
+PrgState id: 5
+ExeStack:
+(print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1)))
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 4
+Out:
+FileTable:
+Heap:
+
+PrgState id: 5
+ExeStack:
+print(VarExp(id='v'))
+v = ArithExp(VarExp(id='v')-ValueExp(value=1))
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 4
+Out:
+FileTable:
+Heap:
+
+PrgState id: 5
+ExeStack:
+print(VarExp(id='v'))
+v = ArithExp(VarExp(id='v')-ValueExp(value=1))
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 4
+Out:
+FileTable:
+Heap:
+
+PrgState id: 5
+ExeStack:
+v = ArithExp(VarExp(id='v')-ValueExp(value=1))
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 4
+Out:
+4
+FileTable:
+Heap:
+
+PrgState id: 5
+ExeStack:
+v = ArithExp(VarExp(id='v')-ValueExp(value=1))
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 4
+Out:
+4
+FileTable:
+Heap:
+
+PrgState id: 5
+ExeStack:
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 3
+Out:
+4
+FileTable:
+Heap:
+
+PrgState id: 5
+ExeStack:
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 3
+Out:
+4
+FileTable:
+Heap:
+
+PrgState id: 5
+ExeStack:
+(print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1)))
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 3
+Out:
+4
+FileTable:
+Heap:
+
+PrgState id: 5
+ExeStack:
+(print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1)))
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 3
+Out:
+4
+FileTable:
+Heap:
+
+PrgState id: 5
+ExeStack:
+print(VarExp(id='v'))
+v = ArithExp(VarExp(id='v')-ValueExp(value=1))
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 3
+Out:
+4
+FileTable:
+Heap:
+
+PrgState id: 5
+ExeStack:
+print(VarExp(id='v'))
+v = ArithExp(VarExp(id='v')-ValueExp(value=1))
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 3
+Out:
+4
+FileTable:
+Heap:
+
+PrgState id: 5
+ExeStack:
+v = ArithExp(VarExp(id='v')-ValueExp(value=1))
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 3
+Out:
+4
+3
+FileTable:
+Heap:
+
+PrgState id: 5
+ExeStack:
+v = ArithExp(VarExp(id='v')-ValueExp(value=1))
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 3
+Out:
+4
+3
+FileTable:
+Heap:
+
+PrgState id: 5
+ExeStack:
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 2
+Out:
+4
+3
+FileTable:
+Heap:
+
+PrgState id: 5
+ExeStack:
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 2
+Out:
+4
+3
+FileTable:
+Heap:
+
+PrgState id: 5
+ExeStack:
+(print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1)))
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 2
+Out:
+4
+3
+FileTable:
+Heap:
+
+PrgState id: 5
+ExeStack:
+(print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1)))
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 2
+Out:
+4
+3
+FileTable:
+Heap:
+
+PrgState id: 5
+ExeStack:
+print(VarExp(id='v'))
+v = ArithExp(VarExp(id='v')-ValueExp(value=1))
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 2
+Out:
+4
+3
+FileTable:
+Heap:
+
+PrgState id: 5
+ExeStack:
+print(VarExp(id='v'))
+v = ArithExp(VarExp(id='v')-ValueExp(value=1))
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 2
+Out:
+4
+3
+FileTable:
+Heap:
+
+PrgState id: 5
+ExeStack:
+v = ArithExp(VarExp(id='v')-ValueExp(value=1))
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 2
+Out:
+4
+3
+2
+FileTable:
+Heap:
+
+PrgState id: 5
+ExeStack:
+v = ArithExp(VarExp(id='v')-ValueExp(value=1))
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 2
+Out:
+4
+3
+2
+FileTable:
+Heap:
+
+PrgState id: 5
+ExeStack:
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 1
+Out:
+4
+3
+2
+FileTable:
+Heap:
+
+PrgState id: 5
+ExeStack:
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 1
+Out:
+4
+3
+2
+FileTable:
+Heap:
+
+PrgState id: 5
+ExeStack:
+(print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1)))
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 1
+Out:
+4
+3
+2
+FileTable:
+Heap:
+
+PrgState id: 5
+ExeStack:
+(print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1)))
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 1
+Out:
+4
+3
+2
+FileTable:
+Heap:
+
+PrgState id: 5
+ExeStack:
+print(VarExp(id='v'))
+v = ArithExp(VarExp(id='v')-ValueExp(value=1))
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 1
+Out:
+4
+3
+2
+FileTable:
+Heap:
+
+PrgState id: 5
+ExeStack:
+print(VarExp(id='v'))
+v = ArithExp(VarExp(id='v')-ValueExp(value=1))
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 1
+Out:
+4
+3
+2
+FileTable:
+Heap:
+
+PrgState id: 5
+ExeStack:
+v = ArithExp(VarExp(id='v')-ValueExp(value=1))
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 1
+Out:
+4
+3
+2
+1
+FileTable:
+Heap:
+
+PrgState id: 5
+ExeStack:
+v = ArithExp(VarExp(id='v')-ValueExp(value=1))
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 1
+Out:
+4
+3
+2
+1
+FileTable:
+Heap:
+
+PrgState id: 5
+ExeStack:
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 0
+Out:
+4
+3
+2
+1
+FileTable:
+Heap:
+
+PrgState id: 5
+ExeStack:
+(while(RelExp(VarExp(id='v')>ValueExp(value=0))) (print(VarExp(id='v'));v = ArithExp(VarExp(id='v')-ValueExp(value=1))))
+print(VarExp(id='v'))
+SymTable:
+v --> 0
+Out:
+4
+3
+2
+1
+FileTable:
+Heap:
+
+PrgState id: 5
+ExeStack:
+print(VarExp(id='v'))
+SymTable:
+v --> 0
+Out:
+4
+3
+2
+1
+FileTable:
+Heap:
+
+PrgState id: 5
+ExeStack:
+print(VarExp(id='v'))
+SymTable:
+v --> 0
+Out:
+4
+3
+2
+1
+FileTable:
+Heap:
+
+PrgState id: 5
+ExeStack:
+SymTable:
+v --> 0
+Out:
+4
+3
+2
+1
+0
+FileTable:
+Heap:
+

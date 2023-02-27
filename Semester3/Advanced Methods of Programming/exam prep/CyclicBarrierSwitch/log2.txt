@@ -1,0 +1,400 @@
+PrgState id: 1
+ExeStack:
+(bool a;(int v;(a = ValueExp(value=true);(IF(VarExp(id='a')) THEN (v = ValueExp(value=2)) ELSE (v = ValueExp(value=3)));print(VarExp(id='v'))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+bool a
+(int v;(a = ValueExp(value=true);(IF(VarExp(id='a')) THEN (v = ValueExp(value=2)) ELSE (v = ValueExp(value=3)));print(VarExp(id='v')))))
+SymTable:
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+bool a
+(int v;(a = ValueExp(value=true);(IF(VarExp(id='a')) THEN (v = ValueExp(value=2)) ELSE (v = ValueExp(value=3)));print(VarExp(id='v')))))
+SymTable:
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+(int v;(a = ValueExp(value=true);(IF(VarExp(id='a')) THEN (v = ValueExp(value=2)) ELSE (v = ValueExp(value=3)));print(VarExp(id='v')))))
+SymTable:
+a --> false
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+(int v;(a = ValueExp(value=true);(IF(VarExp(id='a')) THEN (v = ValueExp(value=2)) ELSE (v = ValueExp(value=3)));print(VarExp(id='v')))))
+SymTable:
+a --> false
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+int v
+(a = ValueExp(value=true);(IF(VarExp(id='a')) THEN (v = ValueExp(value=2)) ELSE (v = ValueExp(value=3)));print(VarExp(id='v'))))
+SymTable:
+a --> false
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+int v
+(a = ValueExp(value=true);(IF(VarExp(id='a')) THEN (v = ValueExp(value=2)) ELSE (v = ValueExp(value=3)));print(VarExp(id='v'))))
+SymTable:
+a --> false
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+(a = ValueExp(value=true);(IF(VarExp(id='a')) THEN (v = ValueExp(value=2)) ELSE (v = ValueExp(value=3)));print(VarExp(id='v'))))
+SymTable:
+a --> false
+v --> 0
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+(a = ValueExp(value=true);(IF(VarExp(id='a')) THEN (v = ValueExp(value=2)) ELSE (v = ValueExp(value=3)));print(VarExp(id='v'))))
+SymTable:
+a --> false
+v --> 0
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+a = ValueExp(value=true)
+(IF(VarExp(id='a')) THEN (v = ValueExp(value=2)) ELSE (v = ValueExp(value=3)));print(VarExp(id='v')))
+SymTable:
+a --> false
+v --> 0
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+a = ValueExp(value=true)
+(IF(VarExp(id='a')) THEN (v = ValueExp(value=2)) ELSE (v = ValueExp(value=3)));print(VarExp(id='v')))
+SymTable:
+a --> false
+v --> 0
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+(IF(VarExp(id='a')) THEN (v = ValueExp(value=2)) ELSE (v = ValueExp(value=3)));print(VarExp(id='v')))
+SymTable:
+a --> true
+v --> 0
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+(IF(VarExp(id='a')) THEN (v = ValueExp(value=2)) ELSE (v = ValueExp(value=3)));print(VarExp(id='v')))
+SymTable:
+a --> true
+v --> 0
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+IF(VarExp(id='a')) THEN (v = ValueExp(value=2)) ELSE (v = ValueExp(value=3)))
+print(VarExp(id='v'))
+SymTable:
+a --> true
+v --> 0
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+IF(VarExp(id='a')) THEN (v = ValueExp(value=2)) ELSE (v = ValueExp(value=3)))
+print(VarExp(id='v'))
+SymTable:
+a --> true
+v --> 0
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+v = ValueExp(value=2)
+print(VarExp(id='v'))
+SymTable:
+a --> true
+v --> 0
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+v = ValueExp(value=2)
+print(VarExp(id='v'))
+SymTable:
+a --> true
+v --> 0
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+print(VarExp(id='v'))
+SymTable:
+a --> true
+v --> 2
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+print(VarExp(id='v'))
+SymTable:
+a --> true
+v --> 2
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+SymTable:
+a --> true
+v --> 2
+Out:
+2
+FileTable:
+Heap:
+
+PrgState id: 2
+ExeStack:
+(bool a;(int v;(a = ValueExp(value=true);(IF(VarExp(id='a')) THEN (v = ValueExp(value=2)) ELSE (v = ValueExp(value=3)));print(VarExp(id='v'))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+
+PrgState id: 2
+ExeStack:
+bool a
+(int v;(a = ValueExp(value=true);(IF(VarExp(id='a')) THEN (v = ValueExp(value=2)) ELSE (v = ValueExp(value=3)));print(VarExp(id='v')))))
+SymTable:
+Out:
+FileTable:
+Heap:
+
+PrgState id: 2
+ExeStack:
+bool a
+(int v;(a = ValueExp(value=true);(IF(VarExp(id='a')) THEN (v = ValueExp(value=2)) ELSE (v = ValueExp(value=3)));print(VarExp(id='v')))))
+SymTable:
+Out:
+FileTable:
+Heap:
+
+PrgState id: 2
+ExeStack:
+(int v;(a = ValueExp(value=true);(IF(VarExp(id='a')) THEN (v = ValueExp(value=2)) ELSE (v = ValueExp(value=3)));print(VarExp(id='v')))))
+SymTable:
+a --> false
+Out:
+FileTable:
+Heap:
+
+PrgState id: 2
+ExeStack:
+(int v;(a = ValueExp(value=true);(IF(VarExp(id='a')) THEN (v = ValueExp(value=2)) ELSE (v = ValueExp(value=3)));print(VarExp(id='v')))))
+SymTable:
+a --> false
+Out:
+FileTable:
+Heap:
+
+PrgState id: 2
+ExeStack:
+int v
+(a = ValueExp(value=true);(IF(VarExp(id='a')) THEN (v = ValueExp(value=2)) ELSE (v = ValueExp(value=3)));print(VarExp(id='v'))))
+SymTable:
+a --> false
+Out:
+FileTable:
+Heap:
+
+PrgState id: 2
+ExeStack:
+int v
+(a = ValueExp(value=true);(IF(VarExp(id='a')) THEN (v = ValueExp(value=2)) ELSE (v = ValueExp(value=3)));print(VarExp(id='v'))))
+SymTable:
+a --> false
+Out:
+FileTable:
+Heap:
+
+PrgState id: 2
+ExeStack:
+(a = ValueExp(value=true);(IF(VarExp(id='a')) THEN (v = ValueExp(value=2)) ELSE (v = ValueExp(value=3)));print(VarExp(id='v'))))
+SymTable:
+a --> false
+v --> 0
+Out:
+FileTable:
+Heap:
+
+PrgState id: 2
+ExeStack:
+(a = ValueExp(value=true);(IF(VarExp(id='a')) THEN (v = ValueExp(value=2)) ELSE (v = ValueExp(value=3)));print(VarExp(id='v'))))
+SymTable:
+a --> false
+v --> 0
+Out:
+FileTable:
+Heap:
+
+PrgState id: 2
+ExeStack:
+a = ValueExp(value=true)
+(IF(VarExp(id='a')) THEN (v = ValueExp(value=2)) ELSE (v = ValueExp(value=3)));print(VarExp(id='v')))
+SymTable:
+a --> false
+v --> 0
+Out:
+FileTable:
+Heap:
+
+PrgState id: 2
+ExeStack:
+a = ValueExp(value=true)
+(IF(VarExp(id='a')) THEN (v = ValueExp(value=2)) ELSE (v = ValueExp(value=3)));print(VarExp(id='v')))
+SymTable:
+a --> false
+v --> 0
+Out:
+FileTable:
+Heap:
+
+PrgState id: 2
+ExeStack:
+(IF(VarExp(id='a')) THEN (v = ValueExp(value=2)) ELSE (v = ValueExp(value=3)));print(VarExp(id='v')))
+SymTable:
+a --> true
+v --> 0
+Out:
+FileTable:
+Heap:
+
+PrgState id: 2
+ExeStack:
+(IF(VarExp(id='a')) THEN (v = ValueExp(value=2)) ELSE (v = ValueExp(value=3)));print(VarExp(id='v')))
+SymTable:
+a --> true
+v --> 0
+Out:
+FileTable:
+Heap:
+
+PrgState id: 2
+ExeStack:
+IF(VarExp(id='a')) THEN (v = ValueExp(value=2)) ELSE (v = ValueExp(value=3)))
+print(VarExp(id='v'))
+SymTable:
+a --> true
+v --> 0
+Out:
+FileTable:
+Heap:
+
+PrgState id: 2
+ExeStack:
+IF(VarExp(id='a')) THEN (v = ValueExp(value=2)) ELSE (v = ValueExp(value=3)))
+print(VarExp(id='v'))
+SymTable:
+a --> true
+v --> 0
+Out:
+FileTable:
+Heap:
+
+PrgState id: 2
+ExeStack:
+v = ValueExp(value=2)
+print(VarExp(id='v'))
+SymTable:
+a --> true
+v --> 0
+Out:
+FileTable:
+Heap:
+
+PrgState id: 2
+ExeStack:
+v = ValueExp(value=2)
+print(VarExp(id='v'))
+SymTable:
+a --> true
+v --> 0
+Out:
+FileTable:
+Heap:
+
+PrgState id: 2
+ExeStack:
+print(VarExp(id='v'))
+SymTable:
+a --> true
+v --> 2
+Out:
+FileTable:
+Heap:
+
+PrgState id: 2
+ExeStack:
+print(VarExp(id='v'))
+SymTable:
+a --> true
+v --> 2
+Out:
+FileTable:
+Heap:
+
+PrgState id: 2
+ExeStack:
+SymTable:
+a --> true
+v --> 2
+Out:
+2
+FileTable:
+Heap:
+

@@ -1,0 +1,241 @@
+PrgState id: 2
+ExeStack:
+(Ref(int) v;(new(v, ValueExp(value=20));(Ref(Ref(int)) a;(new(a, VarExp(id='v'));(print(ReadHeapExp(VarExp(id='v')));print(ArithExp(ReadHeapExp(ReadHeapExp(VarExp(id='a')))+ValueExp(value=5))))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+
+PrgState id: 2
+ExeStack:
+Ref(int) v
+(new(v, ValueExp(value=20));(Ref(Ref(int)) a;(new(a, VarExp(id='v'));(print(ReadHeapExp(VarExp(id='v')));print(ArithExp(ReadHeapExp(ReadHeapExp(VarExp(id='a')))+ValueExp(value=5)))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+
+PrgState id: 2
+ExeStack:
+Ref(int) v
+(new(v, ValueExp(value=20));(Ref(Ref(int)) a;(new(a, VarExp(id='v'));(print(ReadHeapExp(VarExp(id='v')));print(ArithExp(ReadHeapExp(ReadHeapExp(VarExp(id='a')))+ValueExp(value=5)))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+
+PrgState id: 2
+ExeStack:
+(new(v, ValueExp(value=20));(Ref(Ref(int)) a;(new(a, VarExp(id='v'));(print(ReadHeapExp(VarExp(id='v')));print(ArithExp(ReadHeapExp(ReadHeapExp(VarExp(id='a')))+ValueExp(value=5)))))))
+SymTable:
+v --> RefValue(0, int)
+Out:
+FileTable:
+Heap:
+
+PrgState id: 2
+ExeStack:
+(new(v, ValueExp(value=20));(Ref(Ref(int)) a;(new(a, VarExp(id='v'));(print(ReadHeapExp(VarExp(id='v')));print(ArithExp(ReadHeapExp(ReadHeapExp(VarExp(id='a')))+ValueExp(value=5)))))))
+SymTable:
+v --> RefValue(0, int)
+Out:
+FileTable:
+Heap:
+
+PrgState id: 2
+ExeStack:
+new(v, ValueExp(value=20))
+(Ref(Ref(int)) a;(new(a, VarExp(id='v'));(print(ReadHeapExp(VarExp(id='v')));print(ArithExp(ReadHeapExp(ReadHeapExp(VarExp(id='a')))+ValueExp(value=5))))))
+SymTable:
+v --> RefValue(0, int)
+Out:
+FileTable:
+Heap:
+
+PrgState id: 2
+ExeStack:
+new(v, ValueExp(value=20))
+(Ref(Ref(int)) a;(new(a, VarExp(id='v'));(print(ReadHeapExp(VarExp(id='v')));print(ArithExp(ReadHeapExp(ReadHeapExp(VarExp(id='a')))+ValueExp(value=5))))))
+SymTable:
+v --> RefValue(0, int)
+Out:
+FileTable:
+Heap:
+
+PrgState id: 2
+ExeStack:
+(Ref(Ref(int)) a;(new(a, VarExp(id='v'));(print(ReadHeapExp(VarExp(id='v')));print(ArithExp(ReadHeapExp(ReadHeapExp(VarExp(id='a')))+ValueExp(value=5))))))
+SymTable:
+v --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->20
+
+PrgState id: 2
+ExeStack:
+(Ref(Ref(int)) a;(new(a, VarExp(id='v'));(print(ReadHeapExp(VarExp(id='v')));print(ArithExp(ReadHeapExp(ReadHeapExp(VarExp(id='a')))+ValueExp(value=5))))))
+SymTable:
+v --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->20
+
+PrgState id: 2
+ExeStack:
+Ref(Ref(int)) a
+(new(a, VarExp(id='v'));(print(ReadHeapExp(VarExp(id='v')));print(ArithExp(ReadHeapExp(ReadHeapExp(VarExp(id='a')))+ValueExp(value=5)))))
+SymTable:
+v --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->20
+
+PrgState id: 2
+ExeStack:
+Ref(Ref(int)) a
+(new(a, VarExp(id='v'));(print(ReadHeapExp(VarExp(id='v')));print(ArithExp(ReadHeapExp(ReadHeapExp(VarExp(id='a')))+ValueExp(value=5)))))
+SymTable:
+v --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->20
+
+PrgState id: 2
+ExeStack:
+(new(a, VarExp(id='v'));(print(ReadHeapExp(VarExp(id='v')));print(ArithExp(ReadHeapExp(ReadHeapExp(VarExp(id='a')))+ValueExp(value=5)))))
+SymTable:
+a --> RefValue(0, Ref(int))
+v --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->20
+
+PrgState id: 2
+ExeStack:
+(new(a, VarExp(id='v'));(print(ReadHeapExp(VarExp(id='v')));print(ArithExp(ReadHeapExp(ReadHeapExp(VarExp(id='a')))+ValueExp(value=5)))))
+SymTable:
+a --> RefValue(0, Ref(int))
+v --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->20
+
+PrgState id: 2
+ExeStack:
+new(a, VarExp(id='v'))
+(print(ReadHeapExp(VarExp(id='v')));print(ArithExp(ReadHeapExp(ReadHeapExp(VarExp(id='a')))+ValueExp(value=5))))
+SymTable:
+a --> RefValue(0, Ref(int))
+v --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->20
+
+PrgState id: 2
+ExeStack:
+new(a, VarExp(id='v'))
+(print(ReadHeapExp(VarExp(id='v')));print(ArithExp(ReadHeapExp(ReadHeapExp(VarExp(id='a')))+ValueExp(value=5))))
+SymTable:
+a --> RefValue(0, Ref(int))
+v --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->20
+
+PrgState id: 2
+ExeStack:
+(print(ReadHeapExp(VarExp(id='v')));print(ArithExp(ReadHeapExp(ReadHeapExp(VarExp(id='a')))+ValueExp(value=5))))
+SymTable:
+a --> RefValue(2, Ref(int))
+v --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->20
+2->RefValue(1, int)
+
+PrgState id: 2
+ExeStack:
+(print(ReadHeapExp(VarExp(id='v')));print(ArithExp(ReadHeapExp(ReadHeapExp(VarExp(id='a')))+ValueExp(value=5))))
+SymTable:
+a --> RefValue(2, Ref(int))
+v --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->20
+2->RefValue(1, int)
+
+PrgState id: 2
+ExeStack:
+print(ReadHeapExp(VarExp(id='v')))
+print(ArithExp(ReadHeapExp(ReadHeapExp(VarExp(id='a')))+ValueExp(value=5)))
+SymTable:
+a --> RefValue(2, Ref(int))
+v --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->20
+2->RefValue(1, int)
+
+PrgState id: 2
+ExeStack:
+print(ReadHeapExp(VarExp(id='v')))
+print(ArithExp(ReadHeapExp(ReadHeapExp(VarExp(id='a')))+ValueExp(value=5)))
+SymTable:
+a --> RefValue(2, Ref(int))
+v --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->20
+2->RefValue(1, int)
+
+PrgState id: 2
+ExeStack:
+print(ArithExp(ReadHeapExp(ReadHeapExp(VarExp(id='a')))+ValueExp(value=5)))
+SymTable:
+a --> RefValue(2, Ref(int))
+v --> RefValue(1, int)
+Out:
+20
+FileTable:
+Heap:
+1->20
+2->RefValue(1, int)
+
+PrgState id: 2
+ExeStack:
+print(ArithExp(ReadHeapExp(ReadHeapExp(VarExp(id='a')))+ValueExp(value=5)))
+SymTable:
+a --> RefValue(2, Ref(int))
+v --> RefValue(1, int)
+Out:
+20
+FileTable:
+Heap:
+1->20
+2->RefValue(1, int)
+
+PrgState id: 2
+ExeStack:
+SymTable:
+a --> RefValue(2, Ref(int))
+v --> RefValue(1, int)
+Out:
+20
+25
+FileTable:
+Heap:
+1->20
+2->RefValue(1, int)
+

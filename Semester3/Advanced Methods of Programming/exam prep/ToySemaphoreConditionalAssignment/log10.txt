@@ -1,0 +1,361 @@
+PrgState id: 1
+ExeStack:
+(bool b;(int c;(b = ValueExp(value=true);(c=(VarExp(id='b'))?ValueExp(value=100):ValueExp(value=200);(print(VarExp(id='c'));(c=(ValueExp(value=false))?ValueExp(value=100):ValueExp(value=200);print(VarExp(id='c'))))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+bool b
+(int c;(b = ValueExp(value=true);(c=(VarExp(id='b'))?ValueExp(value=100):ValueExp(value=200);(print(VarExp(id='c'));(c=(ValueExp(value=false))?ValueExp(value=100):ValueExp(value=200);print(VarExp(id='c')))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+bool b
+(int c;(b = ValueExp(value=true);(c=(VarExp(id='b'))?ValueExp(value=100):ValueExp(value=200);(print(VarExp(id='c'));(c=(ValueExp(value=false))?ValueExp(value=100):ValueExp(value=200);print(VarExp(id='c')))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+(int c;(b = ValueExp(value=true);(c=(VarExp(id='b'))?ValueExp(value=100):ValueExp(value=200);(print(VarExp(id='c'));(c=(ValueExp(value=false))?ValueExp(value=100):ValueExp(value=200);print(VarExp(id='c')))))))
+SymTable:
+b --> false
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+(int c;(b = ValueExp(value=true);(c=(VarExp(id='b'))?ValueExp(value=100):ValueExp(value=200);(print(VarExp(id='c'));(c=(ValueExp(value=false))?ValueExp(value=100):ValueExp(value=200);print(VarExp(id='c')))))))
+SymTable:
+b --> false
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+int c
+(b = ValueExp(value=true);(c=(VarExp(id='b'))?ValueExp(value=100):ValueExp(value=200);(print(VarExp(id='c'));(c=(ValueExp(value=false))?ValueExp(value=100):ValueExp(value=200);print(VarExp(id='c'))))))
+SymTable:
+b --> false
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+int c
+(b = ValueExp(value=true);(c=(VarExp(id='b'))?ValueExp(value=100):ValueExp(value=200);(print(VarExp(id='c'));(c=(ValueExp(value=false))?ValueExp(value=100):ValueExp(value=200);print(VarExp(id='c'))))))
+SymTable:
+b --> false
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+(b = ValueExp(value=true);(c=(VarExp(id='b'))?ValueExp(value=100):ValueExp(value=200);(print(VarExp(id='c'));(c=(ValueExp(value=false))?ValueExp(value=100):ValueExp(value=200);print(VarExp(id='c'))))))
+SymTable:
+b --> false
+c --> 0
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+(b = ValueExp(value=true);(c=(VarExp(id='b'))?ValueExp(value=100):ValueExp(value=200);(print(VarExp(id='c'));(c=(ValueExp(value=false))?ValueExp(value=100):ValueExp(value=200);print(VarExp(id='c'))))))
+SymTable:
+b --> false
+c --> 0
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+b = ValueExp(value=true)
+(c=(VarExp(id='b'))?ValueExp(value=100):ValueExp(value=200);(print(VarExp(id='c'));(c=(ValueExp(value=false))?ValueExp(value=100):ValueExp(value=200);print(VarExp(id='c')))))
+SymTable:
+b --> false
+c --> 0
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+b = ValueExp(value=true)
+(c=(VarExp(id='b'))?ValueExp(value=100):ValueExp(value=200);(print(VarExp(id='c'));(c=(ValueExp(value=false))?ValueExp(value=100):ValueExp(value=200);print(VarExp(id='c')))))
+SymTable:
+b --> false
+c --> 0
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+(c=(VarExp(id='b'))?ValueExp(value=100):ValueExp(value=200);(print(VarExp(id='c'));(c=(ValueExp(value=false))?ValueExp(value=100):ValueExp(value=200);print(VarExp(id='c')))))
+SymTable:
+b --> true
+c --> 0
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+(c=(VarExp(id='b'))?ValueExp(value=100):ValueExp(value=200);(print(VarExp(id='c'));(c=(ValueExp(value=false))?ValueExp(value=100):ValueExp(value=200);print(VarExp(id='c')))))
+SymTable:
+b --> true
+c --> 0
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+c=(VarExp(id='b'))?ValueExp(value=100):ValueExp(value=200)
+(print(VarExp(id='c'));(c=(ValueExp(value=false))?ValueExp(value=100):ValueExp(value=200);print(VarExp(id='c'))))
+SymTable:
+b --> true
+c --> 0
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+c=(VarExp(id='b'))?ValueExp(value=100):ValueExp(value=200)
+(print(VarExp(id='c'));(c=(ValueExp(value=false))?ValueExp(value=100):ValueExp(value=200);print(VarExp(id='c'))))
+SymTable:
+b --> true
+c --> 0
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+IF(VarExp(id='b')) THEN (c = ValueExp(value=100)) ELSE (c = ValueExp(value=200)))
+(print(VarExp(id='c'));(c=(ValueExp(value=false))?ValueExp(value=100):ValueExp(value=200);print(VarExp(id='c'))))
+SymTable:
+b --> true
+c --> 0
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+IF(VarExp(id='b')) THEN (c = ValueExp(value=100)) ELSE (c = ValueExp(value=200)))
+(print(VarExp(id='c'));(c=(ValueExp(value=false))?ValueExp(value=100):ValueExp(value=200);print(VarExp(id='c'))))
+SymTable:
+b --> true
+c --> 0
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+c = ValueExp(value=100)
+(print(VarExp(id='c'));(c=(ValueExp(value=false))?ValueExp(value=100):ValueExp(value=200);print(VarExp(id='c'))))
+SymTable:
+b --> true
+c --> 0
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+c = ValueExp(value=100)
+(print(VarExp(id='c'));(c=(ValueExp(value=false))?ValueExp(value=100):ValueExp(value=200);print(VarExp(id='c'))))
+SymTable:
+b --> true
+c --> 0
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+(print(VarExp(id='c'));(c=(ValueExp(value=false))?ValueExp(value=100):ValueExp(value=200);print(VarExp(id='c'))))
+SymTable:
+b --> true
+c --> 100
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+(print(VarExp(id='c'));(c=(ValueExp(value=false))?ValueExp(value=100):ValueExp(value=200);print(VarExp(id='c'))))
+SymTable:
+b --> true
+c --> 100
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+print(VarExp(id='c'))
+(c=(ValueExp(value=false))?ValueExp(value=100):ValueExp(value=200);print(VarExp(id='c')))
+SymTable:
+b --> true
+c --> 100
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+print(VarExp(id='c'))
+(c=(ValueExp(value=false))?ValueExp(value=100):ValueExp(value=200);print(VarExp(id='c')))
+SymTable:
+b --> true
+c --> 100
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+(c=(ValueExp(value=false))?ValueExp(value=100):ValueExp(value=200);print(VarExp(id='c')))
+SymTable:
+b --> true
+c --> 100
+Out:
+100
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+(c=(ValueExp(value=false))?ValueExp(value=100):ValueExp(value=200);print(VarExp(id='c')))
+SymTable:
+b --> true
+c --> 100
+Out:
+100
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+c=(ValueExp(value=false))?ValueExp(value=100):ValueExp(value=200)
+print(VarExp(id='c'))
+SymTable:
+b --> true
+c --> 100
+Out:
+100
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+c=(ValueExp(value=false))?ValueExp(value=100):ValueExp(value=200)
+print(VarExp(id='c'))
+SymTable:
+b --> true
+c --> 100
+Out:
+100
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+IF(ValueExp(value=false)) THEN (c = ValueExp(value=100)) ELSE (c = ValueExp(value=200)))
+print(VarExp(id='c'))
+SymTable:
+b --> true
+c --> 100
+Out:
+100
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+IF(ValueExp(value=false)) THEN (c = ValueExp(value=100)) ELSE (c = ValueExp(value=200)))
+print(VarExp(id='c'))
+SymTable:
+b --> true
+c --> 100
+Out:
+100
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+c = ValueExp(value=200)
+print(VarExp(id='c'))
+SymTable:
+b --> true
+c --> 100
+Out:
+100
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+c = ValueExp(value=200)
+print(VarExp(id='c'))
+SymTable:
+b --> true
+c --> 100
+Out:
+100
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+print(VarExp(id='c'))
+SymTable:
+b --> true
+c --> 200
+Out:
+100
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+print(VarExp(id='c'))
+SymTable:
+b --> true
+c --> 200
+Out:
+100
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+SymTable:
+b --> true
+c --> 200
+Out:
+100
+200
+FileTable:
+Heap:
+

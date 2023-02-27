@@ -1,0 +1,3242 @@
+PrgState id: 1
+ExeStack:
+(Ref(int) v1;(int cnt;(new(v1, ValueExp(value=2));(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+Ref(int) v1
+(int cnt;(new(v1, ValueExp(value=2));(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+Ref(int) v1
+(int cnt;(new(v1, ValueExp(value=2));(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+(int cnt;(new(v1, ValueExp(value=2));(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))))))
+SymTable:
+v1 --> RefValue(0, int)
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+(int cnt;(new(v1, ValueExp(value=2));(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))))))
+SymTable:
+v1 --> RefValue(0, int)
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+int cnt
+(new(v1, ValueExp(value=2));(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))))))
+SymTable:
+v1 --> RefValue(0, int)
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+int cnt
+(new(v1, ValueExp(value=2));(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))))))
+SymTable:
+v1 --> RefValue(0, int)
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+(new(v1, ValueExp(value=2));(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))))))
+SymTable:
+cnt --> 0
+v1 --> RefValue(0, int)
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+(new(v1, ValueExp(value=2));(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))))))
+SymTable:
+cnt --> 0
+v1 --> RefValue(0, int)
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+new(v1, ValueExp(value=2))
+(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))))
+SymTable:
+cnt --> 0
+v1 --> RefValue(0, int)
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+new(v1, ValueExp(value=2))
+(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))))
+SymTable:
+cnt --> 0
+v1 --> RefValue(0, int)
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))))
+SymTable:
+cnt --> 0
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 1
+ExeStack:
+(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))))
+SymTable:
+cnt --> 0
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 1
+ExeStack:
+newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1))
+(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))))
+SymTable:
+cnt --> 0
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 1
+ExeStack:
+newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1))
+(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))))
+SymTable:
+cnt --> 0
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 1
+ExeStack:
+(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 1
+ExeStack:
+(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 1
+ExeStack:
+Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))))
+(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 1
+ExeStack:
+Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))))
+(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 2
+ExeStack:
+(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 2
+ExeStack:
+(acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 2
+ExeStack:
+(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 2
+ExeStack:
+(acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 2
+ExeStack:
+Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))))
+(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 2
+ExeStack:
+acquire(cnt)
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 2
+ExeStack:
+Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))))
+(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 2
+ExeStack:
+acquire(cnt)
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 1
+ExeStack:
+(Ref(int) v1;(int cnt;(new(v1, ValueExp(value=2));(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+Ref(int) v1
+(int cnt;(new(v1, ValueExp(value=2));(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+Ref(int) v1
+(int cnt;(new(v1, ValueExp(value=2));(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+(int cnt;(new(v1, ValueExp(value=2));(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))))))
+SymTable:
+v1 --> RefValue(0, int)
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+(int cnt;(new(v1, ValueExp(value=2));(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))))))
+SymTable:
+v1 --> RefValue(0, int)
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+int cnt
+(new(v1, ValueExp(value=2));(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))))))
+SymTable:
+v1 --> RefValue(0, int)
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+int cnt
+(new(v1, ValueExp(value=2));(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))))))
+SymTable:
+v1 --> RefValue(0, int)
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+(new(v1, ValueExp(value=2));(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))))))
+SymTable:
+cnt --> 0
+v1 --> RefValue(0, int)
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+(new(v1, ValueExp(value=2));(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))))))
+SymTable:
+cnt --> 0
+v1 --> RefValue(0, int)
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+new(v1, ValueExp(value=2))
+(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))))
+SymTable:
+cnt --> 0
+v1 --> RefValue(0, int)
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+new(v1, ValueExp(value=2))
+(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))))
+SymTable:
+cnt --> 0
+v1 --> RefValue(0, int)
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))))
+SymTable:
+cnt --> 0
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 1
+ExeStack:
+(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))))
+SymTable:
+cnt --> 0
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 1
+ExeStack:
+newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1))
+(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))))
+SymTable:
+cnt --> 0
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 1
+ExeStack:
+newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1))
+(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))))
+SymTable:
+cnt --> 0
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 1
+ExeStack:
+(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 1
+ExeStack:
+(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 1
+ExeStack:
+Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))))
+(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 1
+ExeStack:
+Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))))
+(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 2
+ExeStack:
+(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 2
+ExeStack:
+(acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 2
+ExeStack:
+(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 2
+ExeStack:
+(acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 2
+ExeStack:
+Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))))
+(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 2
+ExeStack:
+acquire(cnt)
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 2
+ExeStack:
+Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))))
+(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 2
+ExeStack:
+acquire(cnt)
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 1
+ExeStack:
+(Ref(int) v1;(int cnt;(new(v1, ValueExp(value=2));(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+Ref(int) v1
+(int cnt;(new(v1, ValueExp(value=2));(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+Ref(int) v1
+(int cnt;(new(v1, ValueExp(value=2));(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+(int cnt;(new(v1, ValueExp(value=2));(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))))))
+SymTable:
+v1 --> RefValue(0, int)
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+(int cnt;(new(v1, ValueExp(value=2));(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))))))
+SymTable:
+v1 --> RefValue(0, int)
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+int cnt
+(new(v1, ValueExp(value=2));(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))))))
+SymTable:
+v1 --> RefValue(0, int)
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+int cnt
+(new(v1, ValueExp(value=2));(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))))))
+SymTable:
+v1 --> RefValue(0, int)
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+(new(v1, ValueExp(value=2));(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))))))
+SymTable:
+cnt --> 0
+v1 --> RefValue(0, int)
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+(new(v1, ValueExp(value=2));(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))))))
+SymTable:
+cnt --> 0
+v1 --> RefValue(0, int)
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+new(v1, ValueExp(value=2))
+(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))))
+SymTable:
+cnt --> 0
+v1 --> RefValue(0, int)
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+new(v1, ValueExp(value=2))
+(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))))
+SymTable:
+cnt --> 0
+v1 --> RefValue(0, int)
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))))
+SymTable:
+cnt --> 0
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 1
+ExeStack:
+(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))))
+SymTable:
+cnt --> 0
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 1
+ExeStack:
+newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1))
+(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))))
+SymTable:
+cnt --> 0
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 1
+ExeStack:
+newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1))
+(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))))
+SymTable:
+cnt --> 0
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 1
+ExeStack:
+(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 1
+ExeStack:
+(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 1
+ExeStack:
+Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))))
+(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 1
+ExeStack:
+Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))))
+(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 2
+ExeStack:
+(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 2
+ExeStack:
+(acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 2
+ExeStack:
+(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 2
+ExeStack:
+(acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 2
+ExeStack:
+Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))))
+(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 2
+ExeStack:
+acquire(cnt)
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 2
+ExeStack:
+Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))))
+(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 2
+ExeStack:
+acquire(cnt)
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 1
+ExeStack:
+(Ref(int) v1;(int cnt;(new(v1, ValueExp(value=2));(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+Ref(int) v1
+(int cnt;(new(v1, ValueExp(value=2));(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+Ref(int) v1
+(int cnt;(new(v1, ValueExp(value=2));(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+(int cnt;(new(v1, ValueExp(value=2));(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))))))
+SymTable:
+v1 --> RefValue(0, int)
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+(int cnt;(new(v1, ValueExp(value=2));(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))))))
+SymTable:
+v1 --> RefValue(0, int)
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+int cnt
+(new(v1, ValueExp(value=2));(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))))))
+SymTable:
+v1 --> RefValue(0, int)
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+int cnt
+(new(v1, ValueExp(value=2));(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))))))
+SymTable:
+v1 --> RefValue(0, int)
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+(new(v1, ValueExp(value=2));(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))))))
+SymTable:
+cnt --> 0
+v1 --> RefValue(0, int)
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+(new(v1, ValueExp(value=2));(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))))))
+SymTable:
+cnt --> 0
+v1 --> RefValue(0, int)
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+new(v1, ValueExp(value=2))
+(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))))
+SymTable:
+cnt --> 0
+v1 --> RefValue(0, int)
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+new(v1, ValueExp(value=2))
+(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))))
+SymTable:
+cnt --> 0
+v1 --> RefValue(0, int)
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))))
+SymTable:
+cnt --> 0
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 1
+ExeStack:
+(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))))
+SymTable:
+cnt --> 0
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 1
+ExeStack:
+newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1))
+(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))))
+SymTable:
+cnt --> 0
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 1
+ExeStack:
+newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1))
+(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))))
+SymTable:
+cnt --> 0
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 1
+ExeStack:
+(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 1
+ExeStack:
+(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 1
+ExeStack:
+Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))))
+(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 1
+ExeStack:
+Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))))
+(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 2
+ExeStack:
+(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 2
+ExeStack:
+(acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 2
+ExeStack:
+(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 2
+ExeStack:
+(acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 2
+ExeStack:
+Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))))
+(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 2
+ExeStack:
+acquire(cnt)
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 2
+ExeStack:
+Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))))
+(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 2
+ExeStack:
+acquire(cnt)
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 3
+ExeStack:
+(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 3
+ExeStack:
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 3
+ExeStack:
+(acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 3
+ExeStack:
+(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 3
+ExeStack:
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 3
+ExeStack:
+(acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 3
+ExeStack:
+acquire(cnt)
+(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 3
+ExeStack:
+wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)))
+(print(ReadHeapExp(VarExp(id='v1')));release(cnt))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 3
+ExeStack:
+acquire(cnt)
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 3
+ExeStack:
+acquire(cnt)
+(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 3
+ExeStack:
+wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)))
+(print(ReadHeapExp(VarExp(id='v1')));release(cnt))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 3
+ExeStack:
+acquire(cnt)
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 3
+ExeStack:
+acquire(cnt)
+(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->20
+
+PrgState id: 3
+ExeStack:
+(print(ReadHeapExp(VarExp(id='v1')));release(cnt))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->20
+
+PrgState id: 3
+ExeStack:
+acquire(cnt)
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->20
+
+PrgState id: 3
+ExeStack:
+acquire(cnt)
+(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->20
+
+PrgState id: 3
+ExeStack:
+(print(ReadHeapExp(VarExp(id='v1')));release(cnt))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->20
+
+PrgState id: 3
+ExeStack:
+acquire(cnt)
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->20
+
+PrgState id: 3
+ExeStack:
+acquire(cnt)
+(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->20
+
+PrgState id: 3
+ExeStack:
+print(ReadHeapExp(VarExp(id='v1')))
+release(cnt)
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->20
+
+PrgState id: 3
+ExeStack:
+acquire(cnt)
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->20
+
+PrgState id: 3
+ExeStack:
+acquire(cnt)
+(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->20
+
+PrgState id: 3
+ExeStack:
+print(ReadHeapExp(VarExp(id='v1')))
+release(cnt)
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->20
+
+PrgState id: 3
+ExeStack:
+acquire(cnt)
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->20
+
+PrgState id: 3
+ExeStack:
+acquire(cnt)
+(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+20
+FileTable:
+Heap:
+1->20
+
+PrgState id: 3
+ExeStack:
+release(cnt)
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+20
+FileTable:
+Heap:
+1->20
+
+PrgState id: 3
+ExeStack:
+acquire(cnt)
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+20
+FileTable:
+Heap:
+1->20
+
+PrgState id: 3
+ExeStack:
+acquire(cnt)
+(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+20
+FileTable:
+Heap:
+1->20
+
+PrgState id: 3
+ExeStack:
+release(cnt)
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+20
+FileTable:
+Heap:
+1->20
+
+PrgState id: 3
+ExeStack:
+acquire(cnt)
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+20
+FileTable:
+Heap:
+1->20
+
+PrgState id: 1
+ExeStack:
+(Ref(int) v1;(int cnt;(new(v1, ValueExp(value=2));(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+Ref(int) v1
+(int cnt;(new(v1, ValueExp(value=2));(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+Ref(int) v1
+(int cnt;(new(v1, ValueExp(value=2));(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+(int cnt;(new(v1, ValueExp(value=2));(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))))))
+SymTable:
+v1 --> RefValue(0, int)
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+(int cnt;(new(v1, ValueExp(value=2));(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))))))
+SymTable:
+v1 --> RefValue(0, int)
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+int cnt
+(new(v1, ValueExp(value=2));(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))))))
+SymTable:
+v1 --> RefValue(0, int)
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+int cnt
+(new(v1, ValueExp(value=2));(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))))))
+SymTable:
+v1 --> RefValue(0, int)
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+(new(v1, ValueExp(value=2));(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))))))
+SymTable:
+cnt --> 0
+v1 --> RefValue(0, int)
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+(new(v1, ValueExp(value=2));(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))))))
+SymTable:
+cnt --> 0
+v1 --> RefValue(0, int)
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+new(v1, ValueExp(value=2))
+(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))))
+SymTable:
+cnt --> 0
+v1 --> RefValue(0, int)
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+new(v1, ValueExp(value=2))
+(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))))
+SymTable:
+cnt --> 0
+v1 --> RefValue(0, int)
+Out:
+FileTable:
+Heap:
+
+PrgState id: 1
+ExeStack:
+(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))))
+SymTable:
+cnt --> 0
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 1
+ExeStack:
+(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))))
+SymTable:
+cnt --> 0
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 1
+ExeStack:
+newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1))
+(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))))
+SymTable:
+cnt --> 0
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 1
+ExeStack:
+newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1))
+(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))))
+SymTable:
+cnt --> 0
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 1
+ExeStack:
+(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 1
+ExeStack:
+(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 1
+ExeStack:
+Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))))
+(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 1
+ExeStack:
+Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))))
+(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 2
+ExeStack:
+(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 2
+ExeStack:
+(acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 2
+ExeStack:
+(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 2
+ExeStack:
+(acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 2
+ExeStack:
+Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))))
+(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 2
+ExeStack:
+acquire(cnt)
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 2
+ExeStack:
+Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))))
+(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 2
+ExeStack:
+acquire(cnt)
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 3
+ExeStack:
+(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 3
+ExeStack:
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 3
+ExeStack:
+(acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 3
+ExeStack:
+(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 3
+ExeStack:
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 3
+ExeStack:
+(acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 3
+ExeStack:
+acquire(cnt)
+(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 3
+ExeStack:
+wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)))
+(print(ReadHeapExp(VarExp(id='v1')));release(cnt))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 3
+ExeStack:
+acquire(cnt)
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 3
+ExeStack:
+acquire(cnt)
+(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 3
+ExeStack:
+wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)))
+(print(ReadHeapExp(VarExp(id='v1')));release(cnt))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 3
+ExeStack:
+acquire(cnt)
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 3
+ExeStack:
+acquire(cnt)
+(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->20
+
+PrgState id: 3
+ExeStack:
+(print(ReadHeapExp(VarExp(id='v1')));release(cnt))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->20
+
+PrgState id: 3
+ExeStack:
+acquire(cnt)
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->20
+
+PrgState id: 3
+ExeStack:
+acquire(cnt)
+(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->20
+
+PrgState id: 3
+ExeStack:
+(print(ReadHeapExp(VarExp(id='v1')));release(cnt))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->20
+
+PrgState id: 3
+ExeStack:
+acquire(cnt)
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->20
+
+PrgState id: 3
+ExeStack:
+acquire(cnt)
+(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->20
+
+PrgState id: 3
+ExeStack:
+print(ReadHeapExp(VarExp(id='v1')))
+release(cnt)
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->20
+
+PrgState id: 3
+ExeStack:
+acquire(cnt)
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->20
+
+PrgState id: 3
+ExeStack:
+acquire(cnt)
+(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->20
+
+PrgState id: 3
+ExeStack:
+print(ReadHeapExp(VarExp(id='v1')))
+release(cnt)
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->20
+
+PrgState id: 3
+ExeStack:
+acquire(cnt)
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->20
+
+PrgState id: 3
+ExeStack:
+acquire(cnt)
+(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+20
+FileTable:
+Heap:
+1->20
+
+PrgState id: 3
+ExeStack:
+release(cnt)
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+20
+FileTable:
+Heap:
+1->20
+
+PrgState id: 3
+ExeStack:
+acquire(cnt)
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+20
+FileTable:
+Heap:
+1->20
+
+PrgState id: 3
+ExeStack:
+acquire(cnt)
+(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+20
+FileTable:
+Heap:
+1->20
+
+PrgState id: 3
+ExeStack:
+release(cnt)
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+20
+FileTable:
+Heap:
+1->20
+
+PrgState id: 3
+ExeStack:
+acquire(cnt)
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+20
+FileTable:
+Heap:
+1->20
+
+PrgState id: 2
+ExeStack:
+(Ref(int) v1;(int cnt;(new(v1, ValueExp(value=2));(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+
+PrgState id: 2
+ExeStack:
+Ref(int) v1
+(int cnt;(new(v1, ValueExp(value=2));(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+
+PrgState id: 2
+ExeStack:
+Ref(int) v1
+(int cnt;(new(v1, ValueExp(value=2));(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+
+PrgState id: 2
+ExeStack:
+(int cnt;(new(v1, ValueExp(value=2));(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))))))
+SymTable:
+v1 --> RefValue(0, int)
+Out:
+FileTable:
+Heap:
+
+PrgState id: 2
+ExeStack:
+(int cnt;(new(v1, ValueExp(value=2));(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))))))
+SymTable:
+v1 --> RefValue(0, int)
+Out:
+FileTable:
+Heap:
+
+PrgState id: 2
+ExeStack:
+int cnt
+(new(v1, ValueExp(value=2));(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))))))
+SymTable:
+v1 --> RefValue(0, int)
+Out:
+FileTable:
+Heap:
+
+PrgState id: 2
+ExeStack:
+int cnt
+(new(v1, ValueExp(value=2));(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))))))
+SymTable:
+v1 --> RefValue(0, int)
+Out:
+FileTable:
+Heap:
+
+PrgState id: 2
+ExeStack:
+(new(v1, ValueExp(value=2));(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))))))
+SymTable:
+cnt --> 0
+v1 --> RefValue(0, int)
+Out:
+FileTable:
+Heap:
+
+PrgState id: 2
+ExeStack:
+(new(v1, ValueExp(value=2));(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))))))
+SymTable:
+cnt --> 0
+v1 --> RefValue(0, int)
+Out:
+FileTable:
+Heap:
+
+PrgState id: 2
+ExeStack:
+new(v1, ValueExp(value=2))
+(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))))
+SymTable:
+cnt --> 0
+v1 --> RefValue(0, int)
+Out:
+FileTable:
+Heap:
+
+PrgState id: 2
+ExeStack:
+new(v1, ValueExp(value=2))
+(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))))
+SymTable:
+cnt --> 0
+v1 --> RefValue(0, int)
+Out:
+FileTable:
+Heap:
+
+PrgState id: 2
+ExeStack:
+(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))))
+SymTable:
+cnt --> 0
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 2
+ExeStack:
+(newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))))
+SymTable:
+cnt --> 0
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 2
+ExeStack:
+newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1))
+(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))))
+SymTable:
+cnt --> 0
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 2
+ExeStack:
+newSemaphore(cnt,ReadHeapExp(VarExp(id='v1')),ValueExp(value=1))
+(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))))
+SymTable:
+cnt --> 0
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 2
+ExeStack:
+(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 2
+ExeStack:
+(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))));(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 2
+ExeStack:
+Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))))
+(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 2
+ExeStack:
+Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))))
+(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 3
+ExeStack:
+(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 3
+ExeStack:
+(acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 3
+ExeStack:
+(Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))));(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 3
+ExeStack:
+(acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 3
+ExeStack:
+Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))))
+(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 3
+ExeStack:
+acquire(cnt)
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 3
+ExeStack:
+Fork((acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))))
+(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 3
+ExeStack:
+acquire(cnt)
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 4
+ExeStack:
+(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 4
+ExeStack:
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 4
+ExeStack:
+(acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 4
+ExeStack:
+(acquire(cnt);(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt)))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 4
+ExeStack:
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 4
+ExeStack:
+(acquire(cnt);(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 4
+ExeStack:
+acquire(cnt)
+(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 4
+ExeStack:
+wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)))
+(print(ReadHeapExp(VarExp(id='v1')));release(cnt))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 4
+ExeStack:
+acquire(cnt)
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 4
+ExeStack:
+acquire(cnt)
+(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 4
+ExeStack:
+wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)))
+(print(ReadHeapExp(VarExp(id='v1')));release(cnt))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 4
+ExeStack:
+acquire(cnt)
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->2
+
+PrgState id: 4
+ExeStack:
+acquire(cnt)
+(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->20
+
+PrgState id: 4
+ExeStack:
+(print(ReadHeapExp(VarExp(id='v1')));release(cnt))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->20
+
+PrgState id: 4
+ExeStack:
+acquire(cnt)
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->20
+
+PrgState id: 4
+ExeStack:
+acquire(cnt)
+(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->20
+
+PrgState id: 4
+ExeStack:
+(print(ReadHeapExp(VarExp(id='v1')));release(cnt))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->20
+
+PrgState id: 4
+ExeStack:
+acquire(cnt)
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->20
+
+PrgState id: 4
+ExeStack:
+acquire(cnt)
+(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->20
+
+PrgState id: 4
+ExeStack:
+print(ReadHeapExp(VarExp(id='v1')))
+release(cnt)
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->20
+
+PrgState id: 4
+ExeStack:
+acquire(cnt)
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->20
+
+PrgState id: 4
+ExeStack:
+acquire(cnt)
+(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->20
+
+PrgState id: 4
+ExeStack:
+print(ReadHeapExp(VarExp(id='v1')))
+release(cnt)
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->20
+
+PrgState id: 4
+ExeStack:
+acquire(cnt)
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+FileTable:
+Heap:
+1->20
+
+PrgState id: 4
+ExeStack:
+acquire(cnt)
+(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+20
+FileTable:
+Heap:
+1->20
+
+PrgState id: 4
+ExeStack:
+release(cnt)
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+20
+FileTable:
+Heap:
+1->20
+
+PrgState id: 4
+ExeStack:
+acquire(cnt)
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+20
+FileTable:
+Heap:
+1->20
+
+PrgState id: 4
+ExeStack:
+acquire(cnt)
+(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+20
+FileTable:
+Heap:
+1->20
+
+PrgState id: 4
+ExeStack:
+release(cnt)
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+20
+FileTable:
+Heap:
+1->20
+
+PrgState id: 4
+ExeStack:
+acquire(cnt)
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+20
+FileTable:
+Heap:
+1->20
+
+PrgState id: 4
+ExeStack:
+acquire(cnt)
+(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+20
+FileTable:
+Heap:
+1->20
+
+PrgState id: 4
+ExeStack:
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+20
+FileTable:
+Heap:
+1->20
+
+PrgState id: 4
+ExeStack:
+acquire(cnt)
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+20
+FileTable:
+Heap:
+1->20
+
+PrgState id: 4
+ExeStack:
+acquire(cnt)
+(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+20
+FileTable:
+Heap:
+1->20
+
+PrgState id: 4
+ExeStack:
+acquire(cnt)
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+20
+FileTable:
+Heap:
+1->20
+
+PrgState id: 4
+ExeStack:
+(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+20
+FileTable:
+Heap:
+1->20
+
+PrgState id: 4
+ExeStack:
+acquire(cnt)
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+20
+FileTable:
+Heap:
+1->20
+
+PrgState id: 4
+ExeStack:
+(print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)));release(cnt))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+20
+FileTable:
+Heap:
+1->20
+
+PrgState id: 4
+ExeStack:
+acquire(cnt)
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+20
+FileTable:
+Heap:
+1->20
+
+PrgState id: 4
+ExeStack:
+print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)))
+release(cnt)
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+20
+FileTable:
+Heap:
+1->20
+
+PrgState id: 4
+ExeStack:
+acquire(cnt)
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+20
+FileTable:
+Heap:
+1->20
+
+PrgState id: 4
+ExeStack:
+print(ArithExp(ReadHeapExp(VarExp(id='v1'))-ValueExp(value=1)))
+release(cnt)
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+20
+FileTable:
+Heap:
+1->20
+
+PrgState id: 4
+ExeStack:
+acquire(cnt)
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+20
+FileTable:
+Heap:
+1->20
+
+PrgState id: 4
+ExeStack:
+release(cnt)
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+20
+19
+FileTable:
+Heap:
+1->20
+
+PrgState id: 4
+ExeStack:
+acquire(cnt)
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+20
+19
+FileTable:
+Heap:
+1->20
+
+PrgState id: 4
+ExeStack:
+release(cnt)
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+20
+19
+FileTable:
+Heap:
+1->20
+
+PrgState id: 4
+ExeStack:
+acquire(cnt)
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+20
+19
+FileTable:
+Heap:
+1->20
+
+PrgState id: 4
+ExeStack:
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+20
+19
+FileTable:
+Heap:
+1->20
+
+PrgState id: 4
+ExeStack:
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+20
+19
+FileTable:
+Heap:
+1->20
+
+PrgState id: 4
+ExeStack:
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)));(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt))))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+20
+19
+FileTable:
+Heap:
+1->20
+
+PrgState id: 4
+ExeStack:
+wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)))
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+20
+19
+FileTable:
+Heap:
+1->20
+
+PrgState id: 4
+ExeStack:
+wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=10)))
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+20
+19
+FileTable:
+Heap:
+1->20
+
+PrgState id: 4
+ExeStack:
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+20
+19
+FileTable:
+Heap:
+1->200
+
+PrgState id: 4
+ExeStack:
+(wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)));(print(ReadHeapExp(VarExp(id='v1')));release(cnt)))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+20
+19
+FileTable:
+Heap:
+1->200
+
+PrgState id: 4
+ExeStack:
+wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)))
+(print(ReadHeapExp(VarExp(id='v1')));release(cnt))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+20
+19
+FileTable:
+Heap:
+1->200
+
+PrgState id: 4
+ExeStack:
+wH(v1ArithExp(ReadHeapExp(VarExp(id='v1'))*ValueExp(value=2)))
+(print(ReadHeapExp(VarExp(id='v1')));release(cnt))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+20
+19
+FileTable:
+Heap:
+1->200
+
+PrgState id: 4
+ExeStack:
+(print(ReadHeapExp(VarExp(id='v1')));release(cnt))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+20
+19
+FileTable:
+Heap:
+1->400
+
+PrgState id: 4
+ExeStack:
+(print(ReadHeapExp(VarExp(id='v1')));release(cnt))
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+20
+19
+FileTable:
+Heap:
+1->400
+
+PrgState id: 4
+ExeStack:
+print(ReadHeapExp(VarExp(id='v1')))
+release(cnt)
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+20
+19
+FileTable:
+Heap:
+1->400
+
+PrgState id: 4
+ExeStack:
+print(ReadHeapExp(VarExp(id='v1')))
+release(cnt)
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+20
+19
+FileTable:
+Heap:
+1->400
+
+PrgState id: 4
+ExeStack:
+release(cnt)
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+20
+19
+400
+FileTable:
+Heap:
+1->400
+
+PrgState id: 4
+ExeStack:
+release(cnt)
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+20
+19
+400
+FileTable:
+Heap:
+1->400
+
+PrgState id: 4
+ExeStack:
+SymTable:
+cnt --> 1
+v1 --> RefValue(1, int)
+Out:
+20
+19
+400
+FileTable:
+Heap:
+1->400
+
