@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LAB5</title>
+	
+</head>
+
+<body>
+	<section>
+		<ul>
+			<li><a href="http://www.scs.ubbcluj.ro">http://www.scs.ubbcluj.ro</a></li>
+			<li><a href="http://www.scs.ubbcluj.ro/landing/">http://www.scs.ubbcluj.ro/landing/</a></li>
+			<li><a href="https://www.cs.ubbcluj.ro/~forest/impulse/#">https://www.cs.ubbcluj.ro/~forest/impulse/#</a></li>
+			<li><a href="https://www.w3schools.com/js/js_examples.asp">https://www.w3schools.com/js/js_examples.asp</a></li>
+			<li><a href="https://www.cs.ubbcluj.ro/~forest/wp/">https://www.cs.ubbcluj.ro/~forest/wp/</a></li>
+			<li><a href="http://www.scs.ubbcluj.ro/webmail/">https://www.scs.ubbcluj.ro/webmail/</a></li>
+		</ul>
+	</section>
+	
+	<button type="button" onclick="deleteLinksToSCS()">delete the links to scs</button>
+	<script>
+		function deleteLinksToSCS() {
+			var check = document.getElementsByTagName("a");
+			
+			for (i=0;i<check.length;i++)
+				if (check[i].href.indexOf("http://www.scs.ubbcluj.ro")==0){
+					check[i].remove();i--;}
+			
+		}
+	</script>
+	
+
+
+
+</body>
+
+
+</html>

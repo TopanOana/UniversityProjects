@@ -1,0 +1,176 @@
+body{
+	margin:0;
+	font-family: Helvetica, sans-serif;
+}
+
+
+.navBar{
+	background-color:black;
+	overflow:hidden;
+	height: 40px;
+}
+
+.navBar a{
+	float: left;
+	text-align: center;
+	padding: 10px;
+	color:white;
+	text-decoration:none;
+	
+}
+
+.navBar a.move{
+	position: relative;
+	left:15%;
+}
+
+.navBar .please{
+	float:right;
+	padding-right:350px;
+}
+
+
+.trending{
+	background-color:white;
+	position: relative;
+	left: 20%;
+}
+
+.trending a{
+	padding-top:25px;
+	padding-right:10px;
+
+	float:left;
+	text-align:center;
+	color:#383838;
+	text-decoration:none;
+	
+	
+
+	font-size:13px;
+	font-weight: bold;
+}
+
+
+.first_column {
+	position: absolute;
+	top:80px;
+	left: 250px;
+	width: 490px;
+	height: 300px;
+	
+	
+}
+
+.first_column_list{
+	list-style-type: none;
+}
+
+
+.first_column_list li a{
+	color:black;
+	text-decoration:none;
+	
+	
+}
+.first_column hr{
+	padding:0px;
+}
+
+.first_column_list li{
+	padding:0px;
+	margin-top: -10px;
+	margin-bottom:-10px;
+	
+
+}
+
+.first_column_list h2{
+	font-size: 36px;
+	text-align: center;
+	margin-bottom: 11px;
+}
+
+.first_column_list p {
+	font-size:14px;
+}
+
+.second_column{
+	position:absolute;
+	top:90px;
+	left: 750px;
+	width: 250px;
+}
+.second_column a {
+	text-decoration:none;
+	color:black;
+}
+
+.second_column > img{
+	width:250px;
+	margin-bottom:-10px;
+	
+}
+
+.text_under_img1{
+	margin-top:-10px;
+	padding-top:0px;
+}
+
+.second_column_list{
+	margin-left:-25px;
+	margin-top:-10px;
+}
+
+
+.second_column_list a{
+	color:black;
+	text-decoration-line:underline;
+	text-decoration-color: gray;
+	font-size: 13px;
+}
+
+.second_column_list li{
+	margin-top:-10px;
+}
+
+.third_column {
+	position: absolute;
+	top:76px;
+	left: 980px;
+	width: 350px;
+	
+}
+
+.third_column_list {
+	list-style-type:none;
+	
+}
+
+
+.third_column_list a{
+	text-decoration:none;
+	
+}
+
+.third_column_list p{
+	font-size:13px;
+	color:gray;
+}
+
+.third_column_list h3{
+	
+	color:black;
+}
+
+.third_column hr{
+	padding: 0px;
+}
+
+.third_column_list li{
+	padding:0px;
+	margin-top: -8px;
+	margin-bottom:-8px;
+	font-weight:normal;
+
+}

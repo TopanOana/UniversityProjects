@@ -1,0 +1,11 @@
+C:\Users\oanam\source\repos\DBMSLab1\DBMSLab1\bin\Debug\DBMSLab1.exe.config
+C:\Users\oanam\source\repos\DBMSLab1\DBMSLab1\bin\Debug\DBMSLab1.exe
+C:\Users\oanam\source\repos\DBMSLab1\DBMSLab1\bin\Debug\DBMSLab1.pdb
+C:\Users\oanam\source\repos\DBMSLab1\DBMSLab1\obj\Debug\DBMSLab1.csproj.AssemblyReference.cache
+C:\Users\oanam\source\repos\DBMSLab1\DBMSLab1\obj\Debug\DBMSLab1.csproj.SuggestedBindingRedirects.cache
+C:\Users\oanam\source\repos\DBMSLab1\DBMSLab1\obj\Debug\DBMSLab1.Form1.resources
+C:\Users\oanam\source\repos\DBMSLab1\DBMSLab1\obj\Debug\DBMSLab1.Properties.Resources.resources
+C:\Users\oanam\source\repos\DBMSLab1\DBMSLab1\obj\Debug\DBMSLab1.csproj.GenerateResource.cache
+C:\Users\oanam\source\repos\DBMSLab1\DBMSLab1\obj\Debug\DBMSLab1.csproj.CoreCompileInputs.cache
+C:\Users\oanam\source\repos\DBMSLab1\DBMSLab1\obj\Debug\DBMSLab1.exe
+C:\Users\oanam\source\repos\DBMSLab1\DBMSLab1\obj\Debug\DBMSLab1.pdb

@@ -1,0 +1,30 @@
+@startuml
+left to right direction
+actor User
+actor Admin
+rectangle DBLS {
+  User --> (Create Private Item)
+  User --> (Add Public Item To Bucket List)
+  User --> (Remove Item From Bucket List)
+  User --> (Update Item From Bucket List)
+  User --> (See Public List)
+  User --> (Login Action)
+  User --> (Settings Page)
+  (Settings Page) <.. (Cancel Account): includes
+  (Settings Page) <.. (Update Account): includes
+  (Login Action) <.. (Create Account): includes
+  (Login Action) <.. (Sign Into Account): includes
+  (Create Private Item) --|> (Add Item)
+  (Add Public Item To Bucket List) --|> (Add Item)
+  (Remove Item From Bucket List) ..> (See Private List): includes
+  (Update Item From Bucket List) ..> (See Private List): includes
+  (Add Item) ..> (See Private List): includes
+  Admin --> (Add Public Item) 
+  Admin --> (Delete Public Item) 
+  Admin --> (Modify Public Item) 
+  Admin --> (Login Action)
+  (Add Public Item) ..> (See Public List): includes 
+  (Delete Public Item) ..> (See Public List): includes 
+  (Modify Public Item) ..> (See Public List): includes 
+}
+@enduml

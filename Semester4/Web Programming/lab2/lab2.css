@@ -1,0 +1,27 @@
+.gradientDiv11{
+	
+	background: linear-gradient(to left, rgba(0,153,255,0), rgba(0,153,255,1), rgba(0,153,255,0));
+
+}
+
+
+
+.topLeft{
+	position: absolute;
+	top:0%;
+	left:0%;
+	height: 100px;
+	width: 200px;
+	border: 2px solid #000000;
+	background-color: rgba(0,153,255,1);
+	
+}
+
+.topLeft:hover{
+	top:100%;
+	left:100%;
+	background-color: rgba(255,0,0,1);
+	transition: all 10s ease;
+}
+
+
