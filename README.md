@@ -25,7 +25,7 @@ All of my projects from university.
 - Computer Networks
 
 ## Semester 4:
-- [Artificial Intelligence](https://github.com/TopanOana/UniversityProjects/tree/main/Semester4/Artificial%20Intelligence/Labs)
+- [Artificial Intelligence](https://github.com/TopanOana/UniversityProjects/tree/main/Semester4/Artificial%20Intelligence)
 - [Database Management Systems](https://github.com/TopanOana/UniversityProjects/tree/main/Semester4/Database%20Management%20Systems)
 - [Software Engineering](https://github.com/TopanOana/UniversityProjects/tree/main/Semester4/Software%20Engineering)
 - [Web Programming](https://github.com/TopanOana/UniversityProjects/tree/main/Semester4/Web%20Programming)
