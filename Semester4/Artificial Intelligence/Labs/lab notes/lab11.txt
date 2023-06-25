@@ -1,0 +1,25 @@
+Steady state genetic algorithm:
+	maintain a fixed size population and repeatedly replace a subset of individuals
+	with newly generated offspring. 
+	- focuses on the evolution of a few individuals at a time
+  steps:
+	1. initialization (create the population)
+	2. evaluation (check the fitness of each individual in the population- optimization problem)
+	3. selection (selecting two parents from the population based on fitness)
+	4. crossover (perform recombination on selected parents to create offspring individuals)
+	5. mutation (apply mutation to the offspring to introduce random changes ~ smol)
+	6. replacement (replace a subset of individuals with the new offspring)
+	7. termination (repeat steps 2-6 until a condition is met)
+
+
+
+Generational genetic algorithm:
+	create a completely new fixed size population at each generation
+  steps:
+	1. initialization (create the population)
+	2. evaluation (check the fitness of each individual in the population - optimization problem)
+	3. selection (selecting two parents from the population based on fitness to serve next generation)
+	4. crossover (perform recombination on selected parents to create offspring individuals)
+	5. mutation (apply mutation to the offspring to introduce random changes ~ smol)
+	6. replacement (replace current population with the new offspring)
+	7. termination (repeat steps 2-6 until a condition is met)

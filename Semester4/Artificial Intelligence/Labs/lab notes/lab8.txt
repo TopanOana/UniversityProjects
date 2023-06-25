@@ -1,0 +1,92 @@
+~LAB 8~
+
+
+K means clustering: 
+	unsupervised learning alg. used for clustering data points into 
+	groups or clusters based on their similarity
+
+used for: image segmentation, document clustering and customer segmentation
+k-means alg => minimize the sum of the squared distances between data points 
+	and their nearest cluster center (centroids)
+
+evaluating clustering results:
+
+metrics: silhouette score || calinski-harabasz index
+
+
+!! silhouette score !!
+
+-> shows how far apart the data points in a cluster are compared to
+	how far apart the data points in other clusters are
+		cohesion and separation are taken into account.
+cohesion: sticking together
+separation is the opposite of cohesion
+
+scores: 
+	-1 == data point is far away from other points in its cluster
+		and close to the points in other clusters
+	 0 == data point is on the edge of two groups
+	 1 == data point is close to the other points in its cluster
+		and far away from other cluster
+
+to calculate the score: 
+ 1. calculate the average silhouette score for each data point in the dataset
+ 2. take the mean of the scores as the silhouette score for the clustering solution
+better performance => higher silhouette score
+
+silhouette score - used to judge the quality of clustering solutions with different 
+	numbers of groups or different methods of clustering
+best nr of clusters for a dataset => CAN be found by comparing silhouette scores
+	for different numbers of clusters.
+
+
+
+!! calinski-harabasz indez !!
+= variance ratio criterion
+
+- measure of how well separated the clusters are in a solution
+ - measures the ratio of the between cluster variance to the within cluster variance
+a higher C-H-I => better clustering performance
+
+CH = (B/k-1)/(W/n-k)
+B=between cluster variance ->sum of squared distances between the cluster centroids and the global mean 
+				weighted by the number of data points in the cluster
+W=within cluster variance -> sum of the squared distanced between each data point and its own cluster centroid
+k=number of clusters
+n=total nr of data points
+higher CHI indicates better separation between clusters
+
+
+
+optimum number of clusters -> elbow method
+plot sum of squared distances  between data points and their cluster centroids
+	- WCSS
+look for the "elbow" in the plot where the rate of decrease in WCSS starts to level off
+
+
+
+
+
+
+cdist function computes the pairwise distances between centroids and data points in the data set
+https://docs.scipy.org/doc/scipy/reference/generated/scipy.spatial.distance.cdist.html
+
+
+similarity measure: sum up distances computed by cdist and divide by nr of clusters => average
+	mean distance between elements => similarity measure
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

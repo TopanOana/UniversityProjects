@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>professor</title>
+    <script src="../WEBEXAM/jquery-3.6.4.js"></script>
+    <script language="JavaScript">
+        var userID;
+        var name;
+        function showProfessorName(data){
+            console.log(data);
+            name=data;
+            $("h2").text("Welcome " + data + "!");
+            return name;
+        }
+
+        function getUserID(data){
+            console.log(data)
+            userID=data;
+            return userID;
+        }
+
+        function showGroups(data){
+            console.log(data);
+            var content = "<ul>"
+            data.forEach(elem=>{
+                console.log(elem['groupID'])
+                content += "<li><a href='#' class='groupID'>" + elem['groupID'] + "</a></li>";
+            })
+            content+="</ul>"
+            $(".groups").html(content)
+            $(".groupID").click(
+                function (){
+                    console.log($(this).text());
+                    $.getJSON("Controller.php", {
+                        action:"getStudentsGradesWithGroupID",
+                        groupID: $(this).text()
+                    }, showGradesByGroupID)
+                }
+            );
+        }
+
+        function logout(){
+            console.log("bye bye rpf")
+            window.location.href="login.html";
+        }
+
+        function showGradesByGroupID(data){
+            $(".studentGroupGrades").html("")
+            console.log(data);
+            var content = "<table><thead><tr><td>NR</td><td>Student</td><td>Course</td><td>Mark</td></tr></thead>";
+            var i =0;
+            data.forEach(elem=>{
+                i++;
+                content += "<tr><td>" + i + "</td><td>" + elem['studentName'] + "</td><td>" + elem['courseName'] +"</td><td>" + elem['mark'] +"</td></tr>"
+
+            })
+
+            content+="</table>"
+            $('#nav').remove();
+            $(".studentGroupGrades").html(content);
+            $(".studentGroupGrades").after("");
+            $(".studentGroupGrades").after('<div id="nav"></div>');
+            var rowsShown = 4;
+            var rowsTotal = $('.studentGroupGrades tbody tr').length;
+            var nrPages = rowsTotal/rowsShown;
+
+            for(i=0;i<nrPages;i++){
+                var pageNR = i+1;
+                $('#nav').append('<a href="#" rel="'+i+'">'+pageNR+'</a> ');
+            }
+            $('.studentGroupGrades tbody tr').hide();
+            $('.studentGroupGrades tbody tr').slice (0, rowsShown).show();
+            $('#nav a:first').addClass('active');
+            $('#nav a').bind('click', function() {
+                $('#nav a').removeClass('active');
+                $(this).addClass('active');
+                var currPage = $(this).attr('rel');
+                var startItem = currPage * rowsShown;
+                var endItem = startItem + rowsShown;
+                $('.studentGroupGrades tbody tr').css('opacity','0.0').hide().slice(startItem, endItem).
+                css('display','table-row').animate({opacity:1}, 300);
+            });
+
+
+        }
+
+        function gradeCheck(row){
+            if(row==null)
+                alert("grade wasn't added");
+            else
+                alert("grade was added/modified");
+        }
+
+
+
+        $(document).ready(function(){
+            $.when(
+                $.get("loginFunctions.php", { action: "getUserID" }),
+                $.get("loginFunctions.php", { action: "getName" })
+            ).then(function(userResponse, nameResponse) {
+                // Extract the response data from the two requests
+                var userID = userResponse[0];
+                var profesorName = nameResponse[0];
+
+                showProfessorName(profesorName);
+                getUserID(userID)
+
+
+                $.getJSON("Controller.php", { action: "getGroupsForProfessor", professorID: userID }, showGroups);
+            });
+            $(".logout").click(
+                function(){
+                    $.get("loginFunctions.php", {action:"logout"}, logout)
+                }
+            );
+            $(".groupID").click(
+                function (){
+                    console.log($(this).text());
+                    $.getJSON("Controller.php", {
+                        action:"getStudentsGradesWithGroupID",
+                        groupID: $(this).text()
+                    }, showGradesByGroupID)
+                }
+            );
+            $(".gradeChange").click(
+                function(){
+                    if ($("#studentName").val()){
+                        if ($("#courseName").val()){
+                            if($("#mark").val()){
+                                $.getJSON("Controller.php",{
+                                    action:"addGrade",
+                                    studentname: $("#studentName").val(),
+                                    coursename: $("#courseName").val(),
+                                    mark: $("#mark").val()
+                                }, gradeCheck)
+                            }
+                            else{
+                                alert("no mark introduced");
+                            }
+                        }
+                        else{
+                            alert("no course name introduced");
+                        }
+                    }
+                    else{
+                        alert("no student name introduced");
+                    }
+
+
+
+                }
+            )
+
+
+            //continue
+
+        });
+
+    </script>
+
+
+</head>
+<body>
+    <h2>Welcome</h2>
+    <h4>Groups:</h4>
+    <div class="groups"></div>
+    <div class="studentGroupGrades"></div>
+
+    <br>
+    <div class="gradeChangeDiv">
+
+        <label for="studentName">StudentName</label>
+        <input type="text" id="studentName">
+        <label for="courseName">CourseName</label>
+        <input type="text" id="courseName">
+        <label for="mark">Mark</label>
+        <input type="number" id="mark">
+        <input type="button" class="gradeChange" value="Add/Modify Grade">
+    </div>
+    <input type="button" class="logout" value="logout">
+</body>
+</html>

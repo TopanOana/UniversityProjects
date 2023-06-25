@@ -1,0 +1,2 @@
+numpy cu chestii de stat si arrays
+torch cu tensors

@@ -1,0 +1,25 @@
+~lab 10~
+
+hill climbing method: 
+	find optimal solution by ITERATIVELY improving the current solution
+	- local search alg.-> only considers solutions that are in the neighbourhood of the
+		current solution
+
+
+steps:
+	1. start with initial state (candidate to the solution of the problem)
+	2. evaluate current state to determine quality | fitness?
+	3. generate set of neighbouring states by making small modifications 
+		to the current one
+	4. evaluate the fitness of each neighbouring state
+	5. select the best neighbouring state and make it the current one
+	6. repeat steps 3-5 until no improvement can be made
+		or a predefined stopping criterion is met
+
+advantages: 
+	- simplicity
+	- ease of implementation
+
+meshgrid -> returns coordinate matrices from coordinate vectors
+
+https://glowingpython.blogspot.com/2012/01/how-to-plot-two-variable-functions-with.html

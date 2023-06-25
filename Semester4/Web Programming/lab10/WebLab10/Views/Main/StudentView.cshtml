@@ -1,0 +1,96 @@
+﻿
+@{
+    Layout = null;
+    ViewBag.Title = "StudentView";
+    ViewData["Title"] = "Student";
+}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Student page</title>
+        <script src="~/Scripts/jquery-3.4.1.js"></script>
+        <script language="JavaScript">
+            var userID;
+            var name;
+
+            function showStudentName(data) {
+
+                console.log(data)
+                name = data
+                console.log("usr" + userID)
+                $("h2").text("Welcome " + data + "!");
+            }
+
+            function getUserID(data) {
+                userID = data;
+                console.log("in getUSERID " + data);
+                return data;
+            }
+
+            function showGrades(data) {
+                var content = "<table><thead><tr><td>Nr</td><td>Course</td><td>Mark</td></tr></thead>";
+                i = 0;
+                data.forEach(elem => {
+                    content += "<tr>";
+                    i++;
+                    console.log(i)
+                    content += "<td>" + i + "</td><td>" + elem.CourseName + "</td><td>" + elem.Mark + "</td></tr>";
+                })
+                content += "</table>";
+                $(".table").html(content);
+
+            }
+
+            $(document).ready(function () {
+                $.when(
+                    $.ajax({
+                        type: 'GET',
+                        url: 'GetUserID'
+                    }),
+                    $.ajax({
+                        type: 'GET',
+                        url: 'GetName'
+                    })
+                ).then(function (userResponse, nameResponse) {
+                    // Extract the response data from the two requests
+                    var userID = userResponse[0];
+                    var studentName = nameResponse[0];
+
+                    showStudentName(studentName);
+
+
+                    $.ajax({
+                        type: 'GET',
+                        url: 'GetStudentGrades',
+                        data:{
+                            studentID: userID
+                        },
+                        success: (data) => {
+                            console.log(data);
+                            showGrades(data);
+                        }
+                    })
+                });
+                $(".logout").click(
+                    function () {
+                        $.ajax({
+                            type: 'GET',
+                            url: 'Logout',
+                            success: () => { window.location.href = "Index"; }
+                        })
+                    }
+                );
+
+            });
+
+
+        </script>
+    </head>
+    <body>
+        <h2>Welcome!</h2>
+        <h3>Grades:</h3>
+        <div class="table"></div>
+        <input type="button" class="logout" value="logout" />
+    </body>
+
+</html>

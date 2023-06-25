@@ -1,0 +1,56 @@
+<h3>Welcome {{professorName}}</h3>
+<h4>See groups</h4>
+<button mat-raised-button (click)="logout()">Logout</button>
+
+<div class="groups">
+  <mat-selection-list>
+    <mat-list-option *ngFor="let gr of groups" [value]="group" (click)="showGradesTable(gr)">
+      {{gr.groupID}}
+    </mat-list-option>
+  </mat-selection-list>
+</div>
+
+
+<div class="groupGrades">
+  <table mat-table [dataSource]="dataSource">
+    <ng-container matColumnDef="nr">
+      <th mat-header-cell *matHeaderCellDef>NR</th>
+      <td mat-cell *matCellDef="let i=index">{{i + 1}}</td>
+    </ng-container>
+    <ng-container matColumnDef="student">
+      <th mat-header-cell *matHeaderCellDef>student</th>
+      <td mat-cell *matCellDef="let el">{{el.studentName}}</td>
+    </ng-container>
+    <ng-container matColumnDef="course">
+      <th mat-header-cell *matHeaderCellDef>course</th>
+      <td mat-cell *matCellDef="let el">{{el.courseName}}</td>
+    </ng-container>
+    <ng-container matColumnDef="mark">
+      <th mat-header-cell *matHeaderCellDef>mark</th>
+      <td mat-cell *matCellDef="let el">{{el.mark}}</td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let elrow; columns: displayedColumns;"></tr>
+  </table>
+  <mat-paginator [pageSize]=4 [length]="length"></mat-paginator>
+
+</div>
+
+<div class="addGrade">
+  <form (submit)="addGrade()">
+    <mat-form-field>
+      <mat-label>Student</mat-label>
+      <input matInput id="studentname" name="studentname" [(ngModel)]="studentname">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Course</mat-label>
+      <input matInput id="coursename" name="coursename" [(ngModel)]="coursename">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Mark</mat-label>
+      <input matInput id="mark" name="mark" [(ngModel)]="mark">
+    </mat-form-field>
+    <button mat-raised-button type="submit">Add/Modify Grade</button>
+  </form>
+
+</div>

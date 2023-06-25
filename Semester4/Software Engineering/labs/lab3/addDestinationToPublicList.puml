@@ -1,0 +1,55 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+actor Admin
+boundary "AddDestination\nForm" as Form
+Admin -> Form : addDestinationToPublicList(destination)
+
+activate Form
+create control  "AddDestination\nControl" as Control
+Form --> Control : << create >>
+deactivate Form
+
+activate Control
+entity PublicDestinationList
+Control -> PublicDestinationList : checkUniqueGeolocationAndTitle()
+deactivate Control
+
+
+
+
+
+Admin -> Form : setGeolocation(geolocation)
+activate Form
+deactivate Form
+
+Admin -> Form : setTitle(title)
+activate Form
+deactivate Form
+
+Admin -> Form : setImage(image)
+activate Form
+deactivate Form
+
+Admin -> Form : setDescription(description)
+activate Form
+deactivate Form
+
+Admin -> Form : setStayDates(staydates)
+activate Form
+deactivate Form
+
+
+
+
+Admin -> Form : submit()
+activate Form
+
+Form -> Control : addDestinationToPublicList(...)
+activate Control
+deactivate Form
+create entity PublicDestination
+Control --> PublicDestination : << create >>
+
+
+@enduml

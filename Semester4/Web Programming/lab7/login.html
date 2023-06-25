@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <script src="../WEBEXAM/jquery-3.6.4.js"></script>
+    <script language="JavaScript">
+
+        function goToStudentWSession(){
+
+            window.location.href="student.html";
+
+        }
+        function goToProfessorWSession(){
+            window.location.href="professor.html";
+        }
+
+        function loginStudent(student){
+            if (student!=null){
+                console.log(student['name']);
+                $.get("loginFunctions.php",
+                    {
+                        action: "loginStudent",
+                        userID: student['id'], name: student['name']
+                    },
+                    goToStudentWSession
+                );
+
+            }
+            else{
+                // console.log("am ajuns");
+                $.getJSON("Controller.php",
+                    { action: "getProfessorByUsernameAndPassword",
+                        username: $('#username').val(), password: $('#password').val()},
+                    function(professor){
+                        if (professor!=null){
+                            console.log(professor)
+                            $.get("loginFunctions.php",
+                                {
+                                    action:"loginProfessor",
+                                    userID: professor['id'], name: professor['name']
+
+                                },
+                                goToProfessorWSession);
+                        }
+                        else{
+                            alert("invalid username and password");
+                        }
+                    }
+
+                )
+            }
+        }
+
+        $(document).ready(function() {
+            $("form").on('submit', (e)=>{
+                e.preventDefault();
+                console.log("aici")
+                $.getJSON(
+                    "Controller.php",
+                    { action: "getStudentByUsernameAndPassword",
+                       username: $('#username').val(), password: $('#password').val()}
+                    , loginStudent
+                );
+            })
+        });
+    </script>
+</head>
+<body>
+
+<h1>Login Page</h1>
+<h3>See grades</h3>
+<form>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username">
+    <br>
+    <label for="password">Password</label>
+    <input type="text" id="password" name="password">
+    <br>
+    <input type="submit" value="Login">
+</form>
+
+
+</body>
+</html>

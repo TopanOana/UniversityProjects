@@ -1,0 +1,55 @@
+~lab7~
+
+Computer vision:
+- teaching a computer to see
+  - options: binary classifications (cat or dog), multi-class classification (cat, dog or chicken), 
+	object detection (is there a car in the frame?), panoptic segmentation (where different objs can be separated)
+
+storing imgs with PyTorch:
+	- grayscale (1, height, width) -> 1 is for the number of color channels
+	- color (3, height, width) -> 3(red green blue) is the number of color channels
+
+
+image = torchvision.io.read_image('corgi.jpg')
+
+
+what is a convolution?:
+- a class of deep neural networks -> most commonly used for visual imagery
+
+main idea: 
+	- units are connected with only a few units from the previous layer
+	- units share weights
+
+
+
+
+
+https://pytorch.org/docs/stable/generated/torch.nn.Conv2d.html
+
+conv_filters = nn.Conv2d(in_channels=1, out_channels=6, kernel_size=(3, 3), stride=1, padding=1)
+in_channels = number of channels in the input image
+out_channels = number of channels produced by the convolution
+kernel_size = size of the convolving kernel
+stride = stride of the convolution
+padding = padding added to all four sides of the input
+      
+
+
+maxpool2d => performs 2d max pooling over an input signal
+max pooling == form of down sampling that reduces the spatial size of an input tensor 
+	while retaining important information about its features
+
+how it works: 
+	- input tensor is divided into non overlapping rectangular regions of a sp. size called pools
+	ex if pooling kernal size = (2,2) => the input tensor will be divided into pools of size (2,2)
+		along the height and width
+
+	- This is the idea of the use of a nn.MaxPool2d() layer: 
+		take the maximum value from a portion of a tensor and disregard the rest.
+
+
+
+
+
+
+

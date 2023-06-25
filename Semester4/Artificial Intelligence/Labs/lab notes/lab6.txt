@@ -1,0 +1,68 @@
+~lab 6~
+
+
+1. prepare data:
+	-> load dataset
+	-> transforming into a good format
+	-> split into training and testing data
+	-> (apply data augmentation techniques)
+
+2. define model architecture ~ using pytorch's neural network modules
+	-> creating layers
+	-> specifying sizes, activation functions, connecting them
+	-> choose optimizer and loss function
+		- optimizer determines how model's weights are updated during traning
+		- loss function measures how well the model is performing on data
+	-> develop a training loop
+		-on validation set (training set), applying the model to the data
+		- calculate loss
+		- updating model weights using optimizer (backward propagation)
+
+3. evaluate model's performance
+	-> applying the model
+	-> calculating predictions
+	-> comparing them to the actual results
+
+4. make adjustments
+	-> changing the optimizer
+	-> adding regularization 
+	-> adjusting the learning rate 
+	-> retrain model
+
+5. save trained model
+
+
+
+PyTorch Training Loop:
+-> pass the data through the model for a number of epochs
+	- pass the data through the model ~ y_pred = model(X_train) 
+		--- performs the forward() method with model obj
+	- calculate the loss value ~ how wrong the predictions are ~ loss = loss_fn(y_pred, y_true)
+	- zero the optimizer gradients to start fresh for each forward pass
+	- perform back propagation on the loss function ~ loss.backward()
+	- step optimizer to update the model's params
+
+
+Machine learning problems: 
+	-> binary classification : target can be one of 2 options
+	-> multiclass classification : target can be one of 2+ options
+	-> multilabel classification : target can be assigned to more than one option
+
+
+nn.Module => superclass basically all PyTorch models inherit from 
+
+
+BCELoss => Binary Cross Entropy Loss
+SGD => stochastic gradient descent
+
+
+Deep Dive Classification problems:
+screenshot in folder.
+
+
+
+plt.cm.RdYlBu => what does this do? -> matplotlib. color map. red yellow blue i think
+
+plt.scatter => plots the points on the graph
+
+https://www.learnpytorch.io/02_pytorch_classification/

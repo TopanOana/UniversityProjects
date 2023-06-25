@@ -1,0 +1,95 @@
+~lab 5~
+
+
+feed forward neural network = artificial neural network wherein 
+	connections between the nodes don't form a cycle
+	- the information only moves in one direction => forward
+
+
+perceptron:
+	-designed to take binary inputs and produce one binary output
+	-uses weights to represent the importance of each input,
+		sum of the values should be greater than a threshold value
+		before making a decision (true or false / 0 or 1)
+	-algorithm:
+	 1. set threshold value
+	 2. multiply all inputs with their weights
+	 3. sum all the results
+	 4. activate the output
+
+	-transfer function = equation of a hyperplane
+	-delta's rule-> algorithm of gradient descent (GDA)
+		1. start with random weights
+		2. determine quality for all input data
+		3. recompute the weights based on the quality
+		4. repeat from step 2 until a max quality is obtained
+
+
+ANN: feed forward neural network:
+	nodes: 
+	  - inputs and outputs
+	  - perform a simple computation through an activation function
+	  - connected by weighted links (like a graph)
+	layers: 
+	  - input layer: contains m nodes (nr of attr of input data)
+	  - output layer: contains r nodes (nr of outputs)
+	  - intermediate layers can be different structures and sizes
+
+simple gradient descent algorithm = each of the training examples
+stochastic gradient descent algorith = random sample subset from the training data
+
+simplest form of ANN:
+ - perceptrons are arranged in layers
+   - first layer take the inputs
+   - last layer produces the outputs
+   - between them are hidden layers
+
+
+design choices for feed-forward ANNs:
+ -linear vs non-linear
+  -linear: can be fit efficiently, but they have a limited model capacity
+ -activation functions:
+   -provide non-linearity
+   -ensure gradients remain large through hiddent layers/units
+   -choices: sigmoid, relu, leaky relu, softplus, tanh, swish
+ -loss functions:
+   -likelihood for a given point
+   -assumes independence
+   -choices: Mean Absolute Error Loss, Mean Squared Error Loss, 
+     Negative Log-Likelihood Loss, Cross-Entropy Loss, Hinge Embedded Loss
+     Mean Absolute Error Loss: loss(x,y) = |x-y|, x - actual value, y - predicted value, for regression
+     Mean Squared Error Loss: loss(x,y) = (x-y)^2,  x - actual value, y - predicted value, for regression
+     Cross-Entropy Loss: used in classifications, measure of the difference between two probability distributions for a given random variable or set of events
+ -output functions:
+	table in picture files
+ 
+universal approximation theorem:
+ -you can think of a neural network as function approximation
+
+
+training a FF-ANN:
+1. initialisation of network weights
+2. while
+   for each train example (xd, td) where d=1,..n
+     activate network and determine output od:
+        forward propagate the info and determine the output of each neuron 
+     modify the weights:
+	establish and backward propagate the error
+          establish the errors of neurons from the output layer
+          backward propagate the errors in the entire network->distribute them on all connections
+          modify the weights
+endwhile
+
+
+back propagation of errors:
+ advantages: gradient descent method, doesn't require normalization of input vectors
+ limitations: won't always find global minimum of error function, trouble crossing plateaus
+    in error function landscape, requires derivatives of activation functions to be known 
+    at network design time
+
+
+	
+documentation for the lab:
+https://machinelearningmastery.com/building-multilayer-perceptron-models-in-pytorch/
+https://machinelearningmastery.com/choose-an-activation-function-for-deep-learning/
+

@@ -1,0 +1,70 @@
+﻿
+@{
+    Layout = null;
+    ViewBag.Title = "LoginView";
+    ViewData["Title"] = "Login";
+}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <script src="~/Scripts/jquery-3.4.1.js"></script>
+        <script language="Javascript">
+
+            function loginProfessor() {
+                $.ajax({
+                    type: 'GET',
+                    url: 'LoginProfessor',
+                    data: {
+                        username: $('#username').val(),
+                        password: $('#password').val()
+                    },
+                    success: () => { window.location.href="ProfessorPage" },
+                    error: () => {
+                        alert("credentials are invalid");
+                    }
+                })
+            }
+
+            $(document).ready(function () {
+                $("form").on('submit', (e) => {
+                    e.preventDefault();
+                    console.log("aici")
+                    $.ajax({
+                        type:'GET',
+                        url: "LoginStudent",
+                        data: {
+                            username: $('#username').val(),
+                            password: $('#password').val()
+                        },
+                        success: () => {
+                            console.log("de ce sunt aici?");
+                            window.location.href = "StudentPage"
+                        },
+                        error: loginProfessor
+                    });
+                })
+            });
+        </script>
+    </head>
+    <body>
+        <h1>Login page</h1>
+        <h3>See grades</h3>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username"/>
+            <br/>
+            <label for="password">Password</label>
+            <input type="text" id="password" name="password"/>
+            <br/>
+            <input type="submit" value="Login" name="LoginButton"/>
+
+        </form>
+    </body>
+
+
+</html>
+
+
+

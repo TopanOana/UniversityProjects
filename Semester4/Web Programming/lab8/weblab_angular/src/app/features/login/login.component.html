@@ -1,0 +1,22 @@
+<h2>Login page!</h2>
+<h3>See grades</h3>
+
+<div class="formComp">
+  <form (submit)="login()">
+    <mat-form-field>
+      <mat-label>Username</mat-label>
+      <input matInput id="username" name="username" [(ngModel)]="username">
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <mat-label>Password</mat-label>
+      <input matInput id="password" name="password" [(ngModel)]="password">
+    </mat-form-field>
+    <br>
+    <button mat-raised-button type="submit">Login</button>
+  </form>
+
+</div>
+
+
+

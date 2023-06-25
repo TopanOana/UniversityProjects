@@ -1,0 +1,62 @@
+@startuml
+abstract Destination{
+ String: geolocation
+ String: title
+ String: image
+ String: description
+ Date[]: stayDates
+}
+
+class PrivateDestination{}
+
+
+
+
+class BucketList{
+ List<Destination>: listDestinations
+ add(Destination dest)
+ delete(Destination dest)
+ update(Destination oldDest, Destination newDest) 
+}
+
+class PublicDestinationList{
+ List<Destination>: listDestinations
+ add(Destination dest)
+ delete(Destination dest)
+ update(Destination oldDest, Destination newDest)
+}
+
+
+abstract AbstractUser{
+ String: username
+ String: password
+ login(String username, String password)
+}
+
+class User{
+ BucketList bucketlist
+ deleteDestination(Destination destination)
+ updateDestination(Destination destination)
+ cancelAccount()
+ createAccount()
+ addDestinationFromPublicList(Destination destination)
+ createNewDestination(Destination destination)
+}
+
+class Admin{
+ addDestinationToPublicList(Destination destination)
+ removeDestinationFromPublicList(Destination destination)
+ updateDestinationInPublicList(Destination oldDest, Destination newDest)
+}
+
+User --|> AbstractUser : extends
+Admin --|> AbstractUser : extends
+
+PrivateDestination --|> Destination: extends
+
+BucketList "1" *-- "*" PrivateDestination : contains
+BucketList "1" *-- "*" Destination: contains
+PublicDestinationList "1" *-- "*" Destination: contains
+User "1" *-- "1" BucketList : has
+Admin "1" *-- "1" PublicDestinationList: rules over
+@enduml

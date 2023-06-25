@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+    <servlet>
+        <servlet-name>LoginController</servlet-name>
+        <servlet-class>weblab.weblab9again.controller.LoginController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginController</servlet-name>
+        <url-pattern>/LoginController</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>LogoutController</servlet-name>
+        <servlet-class>weblab.weblab9again.controller.LogoutController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutController</servlet-name>
+        <url-pattern>/LogoutController</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>TicTacToeController</servlet-name>
+        <servlet-class>weblab.weblab9again.controller.TicTacToeController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TicTacToeController</servlet-name>
+        <url-pattern>/TicTacToeController</url-pattern>
+    </servlet-mapping>
+</web-app>

@@ -1,0 +1,32 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+actor User
+boundary "CancelAccount\nButton" as Button
+User -> Button : cancelAccount(account)
+
+activate Button
+create control  "CancelAccount\nControl" as Control
+Button --> Control : << create >>
+deactivate Button
+
+
+
+User -> Button : confirmCancellation()
+activate Button
+deactivate Button
+
+
+User -> Button : click()
+activate Button
+
+Button -> Control : cancelAccount(...)
+activate Control
+deactivate Button
+create entity Account
+Control --> Account : << delete >>
+
+
+
+
+
+@enduml

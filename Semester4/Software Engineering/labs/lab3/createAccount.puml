@@ -1,0 +1,51 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+actor User
+boundary "CreateAccount\nForm" as Form
+User -> Form : createAccount(account)
+
+activate Form
+create control  "CreateAccount\nControl" as Control
+Form --> Control : << create >>
+deactivate Form
+
+activate Control
+
+Control -> Control : checkUniqueUsername()
+deactivate Control
+
+
+
+
+
+User -> Form : setUsername(username)
+activate Form
+deactivate Form
+
+User -> Form : setPassword(password)
+activate Form
+deactivate Form
+
+
+User -> Form : confirmPassword(password_confirm)
+activate Form
+
+Form -> Form : checkIdenticalPasswordAndConfirmation()
+deactivate Form
+
+
+User -> Form : submit()
+activate Form
+
+Form -> Control : createNewAccount(...)
+activate Control
+deactivate Form
+create entity Account
+Control --> Account : << create >>
+
+
+
+
+
+@enduml

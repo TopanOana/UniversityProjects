@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>student</title>
+    <script src="../WEBEXAM/jquery-3.6.4.js"></script>
+    <script language="JavaScript">
+
+        var userID;
+        var name;
+        function showStudentName(data){
+
+            console.log(data)
+            name = data
+            console.log("usr" + userID)
+            $("h2").text("Welcome " + data + "!");
+        }
+
+        function getUserID(data){
+            userID=data;
+            console.log("in getUSERID " + data);
+            return data;
+        }
+
+        function showGrades(data){
+            var content = "<table><thead><tr><td>Nr</td><td>Course</td><td>Mark</td></tr></thead>";
+            i=0;
+            data.forEach(elem => {
+                content += "<tr>";
+                i++;
+                console.log(i)
+                content+="<td>" + i + "</td><td>"+ elem.name+ "</td><td>"+elem.mark+"</td></tr>";
+            })
+            content+="</table>";
+            $(".table").html(content);
+
+        }
+
+        function logout(){
+            console.log("bye bye")
+            window.location.href="login.html";
+        }
+
+
+        $(document).ready(function(){
+            // $.get("loginFunctions.php",
+            //     {
+            //         action: "getUserID"
+            //     }, getUserID);
+            // $.get("loginFunctions.php",
+            //     {
+            //         action: "getName"
+            //     },
+            //     showStudentName
+            // );
+            //
+            // //aici scriu codul
+            //
+            //
+            // // $.getJSON("Controller.php",
+            // //     {
+            // //         action: "getStudentGrades",
+            // //         studentID: userID
+            // //     }, showGrades);
+            // $.getJSON("Controller.php?action=getStudentGrades&studentID=" + userID, showGrades);
+            $.when(
+                $.get("loginFunctions.php", { action: "getUserID" }),
+                $.get("loginFunctions.php", { action: "getName" })
+            ).then(function(userResponse, nameResponse) {
+                // Extract the response data from the two requests
+                var userID = userResponse[0];
+                var studentName = nameResponse[0];
+
+                showStudentName(studentName);
+
+
+                $.getJSON("Controller.php", { action: "getStudentGrades", studentID: userID }, showGrades);
+            });
+            $(".logout").click(
+                function(){
+                    $.get("loginFunctions.php", {action:"logout"}, logout)
+                }
+            );
+
+        });
+
+  
+    </script>
+</head>
+<body>
+    <h2>Welcome!</h2>
+    <h3>Grades:</h3>
+    <div class="table"></div>
+    <input type="button" class="logout" value="logout">
+</body>
+</html>

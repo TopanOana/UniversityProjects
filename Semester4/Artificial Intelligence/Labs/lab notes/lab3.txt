@@ -1,0 +1,117 @@
+documentatie:
+
+~decision trees~
+
+
+iris dataset:
+	contains 4 features(length & width of sepals and petals) of 50 samples of 3 species of Iris. 
+	the measures were used to create a linear discriminant model to CLASSIFY the species
+	- the classified can be : setosa, versicolor, virginica
+
+
+pandas: used for handling data
+matplotlib: for plotting graphics of functions or stuff like that
+seaborn: library for data visualization-> used for generating informative and pretty statistical graphics
+
+from sklearn:
+	-> preprocessing we use LabelEncoder for encoding target labels with a value between 
+		[0, n_classes-1]
+		-> should be used to encode TARGET VALUES, not input
+		-> can be used to normalize labels, it can also transform non-numerical labels
+		https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.LabelEncoder.html
+
+
+	-> model_selection we use train_test_split for splitting the values between the training set and the test set
+		https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html
+		
+	-> tree we use DecisionTreeClassifier for [..]
+		https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html
+	
+	-> metrics we use accuracy_score for accuracy classification score
+		-> in multilabel classification, this function computes SUBSET accuracy, the set of labels predicted for a sample
+			must EXACTLY match the corresponding set of labels in y_true
+		https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html
+
+	-> tree we use plot_tree in order to plot a decision tree
+		https://scikit-learn.org/stable/modules/generated/sklearn.tree.plot_tree.html
+
+	->model_selection we use GridSearchCV for  exhaustive search over specified param values for an estimator
+		-> important members are fit, predict!!
+		https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html
+
+
+exercise 2: use the method isnull() from the class DataFrame to check if there are empty cells in the dataset. 
+(Hint: check the documentation and use this method with respect to your DataFrame object; use the method .sum() 
+to the result to count the empty cells on columns)
+	i used df_iris.isnull().sum()
+		-> it computes the number of empty cells in each column and prints it out by column
+
+exercise 3: We see that we have some empty cells on some rows. Delete these rows 
+(hint: use the method dropna() from pandas.DataFrame class, with the argument inplace=True). 
+Check the documentation why we use that argument 
+(https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.dropna.html)!
+
+	Keep the DataFrame with valid entries in the same variable.
+	df.dropna(inplace=True)
+
+exercise 4: Divide the dataset in two parts: a set X for features and y for target.
+	features are the data you use
+	target is the thing you want to predict
+		therefore X will be [sepal length,  sepal width, petal length, petal width]
+			y is [iris_name]
+
+
+exercise 5: Create a LabelEncoder object to encode the classes from the target. 
+Fit it with the y list, and encode y with it. 
+(https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.LabelEncoder.html#sklearn.preprocessing.LabelEncoder)
+
+Fitting is an automatic process that makes sure your machine learning models 
+have the individual parameters best suited to solve your specific 
+real-world business problem with a high level of accuracy.
+
+
+fit=> changes  the labels "setosa, versicolor, virginica" into 
+	numbers [0,1,2]
+transform => encodes the list (y) into the numbers fitted earlier
+
+
+exercise 6: Divide the dataset in a training and a testing set as we did it in the 
+previous laboratory with the sklearn function train_test_split. 
+Check the documentation why we use for random_state a fixed value here! 
+(https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html)
+
+random_state = fixed:
+	Controls the shuffling applied to the data before applying the split. 
+	Pass an int for reproducible output across multiple function calls.
+https://builtin.com/data-science/train-test-split
+
+
+
+
+----
+for decisionTreeClassifier :  criterion{“gini”, “entropy”, “log_loss”}, default=”gini”
+	we use entropy: Entropy is an information theory metric that measures the 
+			impurity or uncertainty in a group of observations. 
+			It determines how a decision tree chooses to split data.
+		https://www.section.io/engineering-education/entropy-information-gain-machine-learning/#:~:text=Entropy%20is%20an%20information%20theory,tree%20chooses%20to%20split%20data.
+		https://www.geeksforgeeks.org/gini-impurity-and-entropy-in-decision-tree-ml/
+
+tuning the decision tree by checking the maximum depth, using a gridsearchcv object to check all the different 
+	possibilities for the best decision tree with a good depth
+		fit(X_train, y_train)  Run fit with all sets of parameters.
+
+
+
+The Pearson correlation coefficient (r) is the most common way of measuring a linear correlation. 
+It is a number between –1 and 1 that measures the strength and 
+direction of the relationship between two variables.
+
+
+colormap = plt.cm.viridis -> creates a color map in matplotlib
+	-> viridis transforms a number from 0-1 into a rgb color
+
+sns.heatmap
+
+
+https://youtu.be/ZVR2Way4nwQ
+

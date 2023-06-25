@@ -1,0 +1,15 @@
+.non-game-component{
+	text-align:center;
+}
+
+.game-component{
+	width:1000px;
+	height:1000px;
+	position:relative;
+}
+
+img{
+	height:100px;
+	width:100px;
+	position:absolute;
+}

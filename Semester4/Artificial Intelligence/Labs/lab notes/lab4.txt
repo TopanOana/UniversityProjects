@@ -1,0 +1,77 @@
+lab4:
+
+activation function of a node defines the output of that node given an input/set of inputs.
+
+sigmoid function :
+	- has an S shaped curve
+	- nonlinear => allows the neural network to simulate nonlinear interactions,
+			- greater capacity to describe complex relationships
+	- smoothness => differentiable and smooth which means training techniques 
+			 based on gradients can be used.
+	- boundedness => bounded [0,1], outputs can be interpreted as probabilities,
+			- useful in binary classifications
+	- monotonicity => always increasing/decreasing with respect to its input. 
+			- easy to interpret effect of changes in input variables on the output
+
+
+ReLU (Rectified Linear Unit) function 
+	- simple and effective => widely used.
+
+Tanh (Hyperbolic Tangent) function:
+	- like the sigmoid function, but output is bounded in [-1,1]
+
+Softmax function:
+	- used for output layer of a neural network for multi-class classification 
+	- normalizes output into a probability distribution over classes
+	- calculates a vector s of n real numbers given another vector
+
+Leaky ReLU function:
+	- variation of ReLU that introduces a small non-zero gradient for negative inputs
+
+ELU (Exponential Linear Unit) function:
+	- variation of ReLU that introduces a small negative saturation value for 
+		negative inputs, alpha is a hyperparameter
+	
+Swish Function: 
+	- recent activation function
+	- smooth approximation of the ReLU function
+
+----------------------------------
+instantiating a tensor: 
+	requires_grad = True => PyTorch tracks gradients for the tensor
+
+
+# Create a tensor with requires_grad=True
+x = torch.tensor([1., 2., 3.], requires_grad=True)
+
+# Compute a function y of x 
+y = x.sum()
+
+# Compute gradients of y with respect to x
+y.backward()
+
+# Print gradients of x
+print(x.grad)
+
+----------------------------------------
+Exercise 1: Compute the gradient for the sigmoid activation function in 2 points 
+using pytorch and check it with the known explicit formula
+
+https://pythonguides.com/pytorch-activation-function/
+
+https://medium.com/dejunhuang/learning-day-10-finding-gradients-for-activation-and-loss-functions-in-pytorch-b50082a5d571
+
+
+
+
+perceptron: a single layer neural network 
+-> a linear classifier(binary), used in supervised learning \
+-> and helps classify given input data
+
+
+https://towardsdatascience.com/what-the-hell-is-perceptron-626217814f53#:~:text=Perceptron%20is%20a%20single%20layer,classify%20the%20given%20input%20data.
+
+
+
+
+
