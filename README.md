@@ -29,9 +29,13 @@ All of my projects from university.
 - [Database Management Systems](https://github.com/TopanOana/UniversityProjects/tree/main/Semester4/Database%20Management%20Systems)
 - [Software Engineering](https://github.com/TopanOana/UniversityProjects/tree/main/Semester4/Software%20Engineering)
 - [Web Programming](https://github.com/TopanOana/UniversityProjects/tree/main/Semester4/Web%20Programming)
-- Systems for Design and Implementation
+- [Systems for Design and Implementation](https://github.com/TopanOana/UniversityProjects/tree/main/Semester4/Systems%20for%20Design%20and%20Implementation)
 
-	
-	
+## Semester 5:
+- [Formal Languages and Compiler Design](https://github.com/TopanOana/UniversityProjects/tree/main/Semester5/Formal%20Languages%20and%20Compiler%20Design)
+- [Mobile Applications](https://github.com/TopanOana/UniversityProjects/tree/main/Semester5/Mobile%20Applications)
+- [Parallel and Distributed Programming](https://github.com/TopanOana/UniversityProjects/tree/main/Semester5/Parallel%20and%20Distributed%20Programming)
+- [Public Key Cryptography](https://github.com/TopanOana/UniversityProjects/tree/main/Semester5/Public%20Key%20Cryptography)
+- [Software Security](https://github.com/TopanOana/UniversityProjects/tree/main/Semester5/Software%20Security)
 	
 	
