@@ -1,0 +1,5 @@
+begin
+int a;
+a = 2 + 4;
+printf(a);
+end

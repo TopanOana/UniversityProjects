@@ -1,0 +1,3 @@
+D:/Docs/CLionProjects/Lab5PDP/cmake-build-debug/CMakeFiles/Lab5PDP.dir
+D:/Docs/CLionProjects/Lab5PDP/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Docs/CLionProjects/Lab5PDP/cmake-build-debug/CMakeFiles/rebuild_cache.dir

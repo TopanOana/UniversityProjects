@@ -1,0 +1,24 @@
+Code Review Naomi Tranca: 
+
+->in Lexic.txt
+	line 17
+	you shouldn't have | between letter and {letter|digit}
+		since letter | {letter|digit} is not the same as letter {letter | digit} 
+		in the first case you can get the empty string
+
+-> in tokens.in or lexic.txt 
+	these assignment operators aren't referenced in the syntax file 
+	+=, -=, *= etc so they should be taken out 
+	
+-> tokens.in
+	the keyword 'character' is written but it isn't used in the syntax file
+	so it should be taken out
+
+-> in syntax.in 
+	when declaring an array, you should not be able to declare an array with
+	the number between the [] negative.
+	that should be changed
+
+-> in the syntax file
+	when there is only one statement in the statement-list, there won't be a
+	semicolon at the end and that should be changed for consistency

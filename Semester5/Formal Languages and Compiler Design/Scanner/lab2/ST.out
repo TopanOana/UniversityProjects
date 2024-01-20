@@ -1,0 +1,9 @@
+Symbol table represented as a hash table with coalesced chaining.
+Symbol Table for both constants and identifiers:
+Position | Token
+4 i
+38 sum
+48 0
+49 1
+53 5
+97 a

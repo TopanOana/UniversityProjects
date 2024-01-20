@@ -1,0 +1,25 @@
+<program>::= "begin" <statement-list> "end"
+<statement-list>::= <statement> ";" | <statement> ";" <statement-list>
+<statement>::= <simple-statement> | <structured-statement>
+<simple-statement>::= <declaration-statement> | <assignment-statement> | <input-statement> | <output-statement>
+<declaration-statement>::= <type> <identifier> 
+<type>::= <basic-type> | <array-declaration>
+<basic-type>::= "int" | "char" | "string"
+<array-declaration>::= <basic-type> "[" <number> "]"
+<assignment-statement>::= <assigner> "=" <expression> 
+<assigner>::= <identifier> | <access-array>
+<access-array>::= <identifier> "[" <accesser> "]"
+<accesser>::= <number> | <identifier>
+<expression>::= <term> | <expression> <operator> <term>
+<operator>::= <add-or-subtract> | <multiply-or-divide>
+<add-or-subtract>::= "+" | "-"
+<multiply-or-divide]::= "*" | "/" | "%"
+<term>::= <factor> | <term> <operator> <factor>  
+<factor>::= <assigner> | <constant> | "(" <expression> ")"
+<input-statement>::= "scanf" "(" <assigner> ")"
+<output-statement>::= "printf" "(" <expression> ")"
+<structured-statement>::= <if-statement> | <while-statement>
+<if-statement>::= "if" "(" <condition> ")" "{" <statement-list> "}" "else" "{" <statement-list> "}"
+<while-statement>::= "while" "(" <condition> ")" "{" <statement-list> "}"
+<condition>::= <expression> <relation> <expression>
+<relation>::= "<" | "<=" | ">" | ">=" | "==" | "!="

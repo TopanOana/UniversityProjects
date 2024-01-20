@@ -1,0 +1,6 @@
+Symbol table represented as a hash table with coalesced chaining.
+Symbol Table for both constants and identifiers:
+Position | Token
+50 2
+52 4
+97 a

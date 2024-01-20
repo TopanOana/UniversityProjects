@@ -1,0 +1,58 @@
+@startuml
+
+
+struct Entry<T> {
+    + token : T
+    + nextPosition : int
+}
+
+
+class HashTable<T>{
+    - table : vector<Entry<T>>
+    - size : int
+    - int hashFunction(T element)
+    - int nextEmptyPosition()
+    + HashTable()
+    + HashTable(HashTable &ht)
+    + int addValue(T element)
+    + int position(T element)
+    + int removeValue(T element)
+    + int containsValue(T element)
+    + string toString();
+}
+
+class SymbolTable{
+    - hashTable : HashTable<string>
+    + SymbolTable()
+    + int position(string token)
+    + int removeToken(string token)
+    + int addToken(string token)
+    + string toString();
+}
+
+class Scanner{
+    - symbolTable : SymbolTable
+    - vector<pair<string, int>> programmingInternalForm
+    - vector<string> keywords
+    - string regexForIdentifiers
+    - string regexForCharacterConstants
+    - string regexForStringConstants
+    - string regexForIntegerConstants
+    - void populateTokens()
+    - int addTokenToPIF(string token, int lineNumber)
+    - void writeToOutputFiles()
+    + Scanner()
+    + void scanningAlgorithm(string filepath)
+}
+
+SymbolTable --* Scanner : 1
+HashTable --* SymbolTable : 1
+
+Entry --*  HashTable : 0..*
+
+
+
+
+
+
+@enduml

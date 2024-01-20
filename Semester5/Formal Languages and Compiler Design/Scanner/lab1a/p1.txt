@@ -1,0 +1,32 @@
+begin
+	int a;
+	int b;
+	int c;
+	int maximum;
+
+	scanf(a);
+	scanf(b);
+	scanf(c);
+
+    if (a > b){
+        if (a > c){
+            maximum = a;
+        }
+        else{
+            maximum = c;
+        }
+    }
+    else{
+        if (b > c){
+            maximum = b;
+        }
+        else{
+            maximum = c;
+        }
+    }
+
+    printf(maximum);
+
+
+end
+

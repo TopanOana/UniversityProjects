@@ -1,0 +1,19 @@
+begin
+    int a;
+    int b;
+
+    scanf(a);
+    scanf(b);
+
+    while (a != b){
+        if (a > b){
+            a = a - b;
+	}
+        else{
+            b = b - a;
+	}
+    }
+
+    printf(a);
+
+end

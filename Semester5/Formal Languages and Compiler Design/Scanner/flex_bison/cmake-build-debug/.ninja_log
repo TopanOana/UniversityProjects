@@ -1,0 +1,5 @@
+# ninja log v5
+1	180	7270121215369477	build.ninja	4361cab7ab3238c8
+2	112	7268791101578969	CMakeFiles/flex_bison.dir/lab9.tab.c.obj	c9dfe46d76fde507
+10	118	7268791101649153	CMakeFiles/flex_bison.dir/lex.yy.c.obj	66cfe69914321b0
+119	237	7268791102691888	flex_bison.exe	ec5893203f203a29

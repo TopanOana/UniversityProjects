@@ -1,0 +1,12 @@
+FA.in must adhere to the following BNF:
+<file>::=<states><new_line><alphabet><new_line><initial_state><new_line><final_states><new_line><transitions>
+<states>::= <state> | <state><sequence_of_states>
+<state>::= A | a | B | b | ... | Z | z
+<sequence_of_states>::= , <state> | , <sequence_of_states>
+<new_line>::= \n
+<alphabet>::= <character> | <character><sequence_of_characters>
+<character>::= + | - | * | ... | A | a | ... | Z | z | ... | 0 | ... | 9
+<sequence_of_characters>::= , <character> | , <sequence_of_characters>
+<initial_state>::= <state>
+<final_states>::= <state> | <state><sequence_of_states>
+<transitions>::= <state>,<character>=<state>

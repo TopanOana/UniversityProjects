@@ -1,0 +1,14 @@
+D:\Docs\VisualStudioProjects\repos\Lab4PDP3\Lab4PDP3\bin\Debug\net7.0\Lab4PDP3.exe
+D:\Docs\VisualStudioProjects\repos\Lab4PDP3\Lab4PDP3\bin\Debug\net7.0\Lab4PDP3.deps.json
+D:\Docs\VisualStudioProjects\repos\Lab4PDP3\Lab4PDP3\bin\Debug\net7.0\Lab4PDP3.runtimeconfig.json
+D:\Docs\VisualStudioProjects\repos\Lab4PDP3\Lab4PDP3\bin\Debug\net7.0\Lab4PDP3.dll
+D:\Docs\VisualStudioProjects\repos\Lab4PDP3\Lab4PDP3\bin\Debug\net7.0\Lab4PDP3.pdb
+D:\Docs\VisualStudioProjects\repos\Lab4PDP3\Lab4PDP3\obj\Debug\net7.0\Lab4PDP3.GeneratedMSBuildEditorConfig.editorconfig
+D:\Docs\VisualStudioProjects\repos\Lab4PDP3\Lab4PDP3\obj\Debug\net7.0\Lab4PDP3.AssemblyInfoInputs.cache
+D:\Docs\VisualStudioProjects\repos\Lab4PDP3\Lab4PDP3\obj\Debug\net7.0\Lab4PDP3.AssemblyInfo.cs
+D:\Docs\VisualStudioProjects\repos\Lab4PDP3\Lab4PDP3\obj\Debug\net7.0\Lab4PDP3.csproj.CoreCompileInputs.cache
+D:\Docs\VisualStudioProjects\repos\Lab4PDP3\Lab4PDP3\obj\Debug\net7.0\Lab4PDP3.dll
+D:\Docs\VisualStudioProjects\repos\Lab4PDP3\Lab4PDP3\obj\Debug\net7.0\refint\Lab4PDP3.dll
+D:\Docs\VisualStudioProjects\repos\Lab4PDP3\Lab4PDP3\obj\Debug\net7.0\Lab4PDP3.pdb
+D:\Docs\VisualStudioProjects\repos\Lab4PDP3\Lab4PDP3\obj\Debug\net7.0\Lab4PDP3.genruntimeconfig.cache
+D:\Docs\VisualStudioProjects\repos\Lab4PDP3\Lab4PDP3\obj\Debug\net7.0\ref\Lab4PDP3.dll

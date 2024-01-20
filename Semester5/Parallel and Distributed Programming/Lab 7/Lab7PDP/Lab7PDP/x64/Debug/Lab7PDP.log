@@ -1,0 +1,33 @@
+﻿  main.cpp
+C:\Users\Oana\source\repos\Lab7PDP\Lab7PDP\main.cpp(87,11): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Oana\source\repos\Lab7PDP\Lab7PDP\main.cpp(100,11): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Oana\source\repos\Lab7PDP\Lab7PDP\main.cpp(112,8): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Oana\source\repos\Lab7PDP\Lab7PDP\main.cpp(142,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Oana\source\repos\Lab7PDP\Lab7PDP\main.cpp(151,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Oana\source\repos\Lab7PDP\Lab7PDP\main.cpp(299,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Oana\source\repos\Lab7PDP\Lab7PDP\main.cpp(329,10): warning C4477: 'printf' : format string '%ld' requires an argument of type 'long', but variadic argument 1 has type '_Rep'
+C:\Users\Oana\source\repos\Lab7PDP\Lab7PDP\main.cpp(329,10): warning C4477:         with
+C:\Users\Oana\source\repos\Lab7PDP\Lab7PDP\main.cpp(329,10): warning C4477:         [
+C:\Users\Oana\source\repos\Lab7PDP\Lab7PDP\main.cpp(329,10): warning C4477:             _Rep=__int64
+C:\Users\Oana\source\repos\Lab7PDP\Lab7PDP\main.cpp(329,10): warning C4477:         ]
+  C:\Users\Oana\source\repos\Lab7PDP\Lab7PDP\main.cpp(329,10):
+  consider using '%lld' in the format string
+  C:\Users\Oana\source\repos\Lab7PDP\Lab7PDP\main.cpp(329,10):
+  consider using '%Id' in the format string
+  C:\Users\Oana\source\repos\Lab7PDP\Lab7PDP\main.cpp(329,10):
+  consider using '%I64d' in the format string
+  
+C:\Users\Oana\source\repos\Lab7PDP\Lab7PDP\main.cpp(341,15): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\Oana\source\repos\Lab7PDP\Lab7PDP\main.cpp(361,10): warning C4477: 'printf' : format string '%ld' requires an argument of type 'long', but variadic argument 1 has type '_Rep'
+C:\Users\Oana\source\repos\Lab7PDP\Lab7PDP\main.cpp(361,10): warning C4477:         with
+C:\Users\Oana\source\repos\Lab7PDP\Lab7PDP\main.cpp(361,10): warning C4477:         [
+C:\Users\Oana\source\repos\Lab7PDP\Lab7PDP\main.cpp(361,10): warning C4477:             _Rep=__int64
+C:\Users\Oana\source\repos\Lab7PDP\Lab7PDP\main.cpp(361,10): warning C4477:         ]
+  C:\Users\Oana\source\repos\Lab7PDP\Lab7PDP\main.cpp(361,10):
+  consider using '%lld' in the format string
+  C:\Users\Oana\source\repos\Lab7PDP\Lab7PDP\main.cpp(361,10):
+  consider using '%Id' in the format string
+  C:\Users\Oana\source\repos\Lab7PDP\Lab7PDP\main.cpp(361,10):
+  consider using '%I64d' in the format string
+  
+  Lab7PDP.vcxproj -> C:\Users\Oana\source\repos\Lab7PDP\x64\Debug\Lab7PDP.exe

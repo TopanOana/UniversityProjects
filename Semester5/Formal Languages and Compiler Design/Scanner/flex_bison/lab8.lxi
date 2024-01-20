@@ -1,0 +1,67 @@
+%{
+#include "lab9.tab.h"
+%}
+
+%option noyywrap
+%option caseless
+%option yylineno
+
+LETTER		[A-Za-z]
+DIGIT 		[0-9]
+IDENTIFIER	{LETTER}({LETTER}|{DIGIT})*
+STRINGCONST		["][A-Za-z0-9]*["]
+CHARCONST	"'"[A-Za-z0-9]"'"
+INTEGERCONST 	(0|[+-]?[1-9]({DIGIT})*)
+
+
+%%
+
+[ \t\n]
+
+begin		{return BEGINN;}
+else		{return ELSE;}
+end			{return END;}
+if			{return IF;}
+printf		{return PRINTF;}
+scanf		{return SCANF;}
+int 		{return INT;}
+char  		{return CHAR;}
+string 		{return STRING;}
+while		{return WHILE;}
+"==" 		{return EQUALS;}
+"="			{return ATRIB;}
+"!="		{return NOTEQUAL;}
+"<="		{return LESSEQUAL;}
+"<"			{return LESS;}
+">="		{return GREATEREQUAL;}
+">"			{return GREATER;}
+"/"			{return DIV;}
+"%"			{return MOD;}
+"+" 		{return PLUS;}
+"-" 		{return MINUS;}
+"*" 		{return MULTIPLY;}
+"("			{return OPENPAR;}
+")"			{return CLOSEPAR;}
+"{"			{return OPENBRACKET;}
+"}"			{return CLOSEBRACKET;}
+"["			{return OPENSQUARE;}
+"]"			{return CLOSESQUARE;}
+";"			{return SEMICOLON;}
+
+
+{IDENTIFIER}	{return ID;}
+{INTEGERCONST}	{
+	strcpy(yylval.p_val, yytext);
+	return CONST_INT;
+		}
+{STRINGCONST}	{
+	strcpy(yylval.p_val, yytext);
+	return CONST_STRING;
+		}
+{CHARCONST}	{
+	strcpy(yylval.p_val, yytext);
+	return CONST_CHAR;
+		}
+
+%%
+

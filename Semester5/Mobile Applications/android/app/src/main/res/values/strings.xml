@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BooksTBR</string>
+    <string name="add_book">Add Book</string>
+    <string name="update_book">Update Book</string>
+    <string name="delete_book">Delete Book</string>
+    <string name="title_activity_create_book">CreateBookActivity</string>
+
+</resources>

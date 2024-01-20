@@ -1,0 +1,65 @@
+~ Project Idea ~
+
+Books To Be Read
+
+Any avid reader has a mental list of all the books they would like to read. 
+This application makes managing that list easy, you add the books to a list,
+update the status of the book (from unread to in progress to read), you can 
+remove a book from the list if you don't want to read it anymore or for any 
+other reason. While looking through the books in your list, you can filter 
+them by status or by other characteristics. With an easy to use interface 
+and offline capabilities, this will be the only app you need to manage your
+favourite hobby. 
+
+A book must contain: a title, an author, number of pages, a status, and a genre.
+The title, author and genre will be strings, number of pages will be a positive 
+natural number, and the status will be represented in the backend as an enum
+(UNREAD, IN_PROGRESS, READ), but when shown in the application it will be a string. 
+
+Functionalities: 
+	1. Adding a book to your list:
+		After pressing a + button, you must complete a form that requires 
+		you filling the different fields (title, author, nr of pages, status, 
+		genre). The status will be selected using a dropdown to make sure users 
+		cannot define their own statuses.
+	2. Updating a book's status:
+		You press on the book in the list, it takes you to a details page where
+		there is a button that lets you edit the status of a book, again using a
+		dropdown. After modifying the field, you will be prompted to save the 
+		changes by pressing the save button.
+	3. Looking through the list of books:
+		The default activity is a list of books that you have added where you can 
+		see the title and author and status (maybe). When pressing on an entry, 
+		you can see all the details of the book.
+	4. Removing a book from the list:
+		From the list of books, you must press the book you want to delete, go to
+		the details page, press the delete button, it will confirm your action and
+		then delete the entry, sending you back to the list of books. 
+	5. Filtering the list by status:
+		From the page with the list of books, you press the filter by status, 
+		you are prompted with a dropdown to check which status you want to filter 
+		by, afterwards the list is reloaded with the books that have the status 
+		that you've chosen. A button is there to make sure you can stop filtering,
+		when the list is reloaded with all the books. 
+
+
+In the local database, the first page of 10 books will be stored and any functionalities that
+change the state of the first page of books. Before notifying the server, the local database will 
+store any books that are added to the list and delete any books that the user requested to delete.
+The rest of the books, the next pages, are stored on the remote server and when changing the page 
+on the app, a request to the server will be made to fetch the next page and save those to the 
+local database. When an app is connected to the internet, then the remote database on the server
+will be updated when each operation is made, each update/add/remove request is also sent to the 
+server so that the changes will be made instantaneously. 
+
+When the device is offline, the user will be able to add a book to the list, update its status,
+remove a book, see all the books that are in the local database. You can only update books that 
+are stored locally on the device, a page of 10 books. You can remove books that are on that page,
+you can add books and they will be stored locally until the device connects to the internet. When
+the device connects to the internet, the remote database will be synced with the local one. 
+	
+	
+
+
+
+

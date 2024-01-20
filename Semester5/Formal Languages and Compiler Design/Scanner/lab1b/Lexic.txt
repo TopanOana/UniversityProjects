@@ -1,0 +1,41 @@
+Alphabet:
+	upper and lower case letters of the English alphabet A-Za-z
+	decimal digits 0-9
+	special characters + - * /  % = == < > <= >= [] {} ; space () != " '
+
+
+Lexic:
+	special symbols:
+		operators + - * = == < > <= >= != %
+
+	separators [] {} ; space ()
+
+	keywords int char string scanf printf if else while begin end
+
+	identifiers 
+		<identifier>::= <letter> | <letter><sequence-of-characters>
+		<sequence-of-characters>::= <character> | <character><sequence-of-characters>
+		<character>::= <letter> | <digit>
+		<letter>::= A | a | B | b | ... | Z | z
+		<digit>::= 0 | 1 | ... | 9
+
+	constants 
+	  int
+		<integer>::= 0 | + <number> | - <number>
+		<number>::= <non-zero-digit> | <non-zero-digit><sequence-of-digits>
+		<sequence-of-digits>::= <digit> | <digit><sequence-of-digits>
+		<non-zero-digit>::= 1 | 2 | ... | 9
+	  char
+		<constant-character>::= '<digit>' | '<letter>'
+		<letter>::= A | a | B | b | ... | Z | z
+		<digit>::= 0 | 1 | ... | 9
+	  string 
+		<constant-string>::= "" | "<string>"
+		<string>::= <character> | <character><string>
+		<character>::= <letter> | <digit>		
+		<letter>::= A | a | B | b | ... | Z | z
+		<digit>::= 0 | 1 | ... | 9
+
+
+
+	

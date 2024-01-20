@@ -1,0 +1,9 @@
+program statement_list declaration_statement assignment_statement type output_statement
+begin end ; id int = const + printf ( )
+program
+program -> begin statement_list end
+statement_list -> declaration_statement ; assignment_statement ; output_statement ;
+declaration_statement -> type id
+type -> int
+assignment_statement -> id = const + const
+output_statement -> printf ( id )
