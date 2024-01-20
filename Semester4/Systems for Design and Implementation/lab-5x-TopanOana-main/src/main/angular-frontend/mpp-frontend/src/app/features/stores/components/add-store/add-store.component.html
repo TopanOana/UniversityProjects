@@ -1,0 +1,32 @@
+<h2>Add book</h2>
+<button mat-fab (click)="goBackToOverview()"><mat-icon>arrow_back</mat-icon></button>
+<div *ngIf="loggedIn">
+  <div class="formcomp">
+    <form (submit)="addStore()">
+      <mat-form-field>
+        <mat-label>StoreName</mat-label>
+        <input matInput id="storeName" name="storeName" [(ngModel)]="storeName">
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Address</mat-label>
+        <input matInput id="address" name="address" [(ngModel)]="address">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>contactNumber</mat-label>
+        <input matInput id="contactNumber" name="contactNumber" [(ngModel)]="contactNumber">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>OpeningHour</mat-label>
+        <input matInput id="openingHour" name="openingHour" [(ngModel)]="openingHour">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>closingHour</mat-label>
+        <input matInput id="closingHour" name="closingHour" [(ngModel)]="closingHour">
+      </mat-form-field>
+      <button mat-raised-button type="submit"><mat-icon>save</mat-icon></button>
+    </form>
+
+  </div>
+</div>
+

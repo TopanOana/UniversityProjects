@@ -1,0 +1,8 @@
+<div class="words">
+  <h1>Welcome to the home page</h1>
+  <p>Don't come by again!</p>
+</div>
+<div *ngIf="adminCheck">
+  <button mat-raised-button (click)="goToAdminUsers()">See all users</button>
+  <button mat-raised-button (click)="goToAdminSQLScripts()">Run SQL Scripts</button>
+</div>

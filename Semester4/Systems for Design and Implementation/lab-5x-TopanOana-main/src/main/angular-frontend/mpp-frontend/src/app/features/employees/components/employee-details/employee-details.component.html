@@ -1,0 +1,51 @@
+<h2>Employee details</h2>
+<ng-container *ngIf="employee">
+  <button mat-fab (click)="goBackToOverview()"><mat-icon>arrow_back</mat-icon></button>
+  <button *ngIf="loggedIn" mat-fab (click)="updateEmployee()"><mat-icon>update</mat-icon></button>
+  <button *ngIf="loggedIn" mat-fab (click)="deleteEmployee()"><mat-icon>delete</mat-icon></button>
+
+  <form>
+    <mat-form-field>
+      <mat-label>FirstName</mat-label>
+      <input matInput name="firstName" id="firstName" value="{{firstName}}"  [(ngModel)]="firstName">
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>LastName</mat-label>
+      <input matInput name="lastName" id="lastName" value="{{lastName}}" [(ngModel)]="lastName">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>PhoneNumber</mat-label>
+      <input matInput name="phoneNumber" id="phoneNumber" value="{{phoneNumber}}"  [(ngModel)]="phoneNumber">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Salary</mat-label>
+      <input matInput name="salary" id="salary" value="{{salary}}" [(ngModel)]="salary">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>FullTime</mat-label>
+      <mat-select name ="fullTime" id="fullTime" [(ngModel)]="fullTime">
+        <mat-option [value]="true">True</mat-option>
+        <mat-option [value]="false">False</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Store</mat-label>
+      <input id="store" name="store"
+             placeholder="store"
+             aria-label="Store"
+             matInput
+             [formControl]="formControl"
+             [matAutocomplete]="auto"
+             (keyup)="callSearchFromBackend()">
+      <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayStoreName">
+        <mat-option *ngFor="let store of stores" [value]="store">{{store.storeName}}</mat-option>
+      </mat-autocomplete>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Description</mat-label>
+      <textarea matInput name="description" id="description" value="{{description}}" [(ngModel)]="description"></textarea>
+    </mat-form-field>
+  </form>
+</ng-container>

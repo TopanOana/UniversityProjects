@@ -1,0 +1,35 @@
+<h2>Create an account</h2>
+<div class="formcomp">
+  <form (submit)="register()">
+    <mat-form-field>
+      <mat-label>Username</mat-label>
+      <input matInput id="username" name="username" [(ngModel)]="username">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Password</mat-label>
+      <input matInput id="password" name="password" [(ngModel)]="password">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Confirm password</mat-label>
+      <input matInput id="confirmPassword" name="confirmPassword" [(ngModel)]="confirmPassword">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Email</mat-label>
+      <input matInput id="email" name="email" [(ngModel)]="email">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Bio</mat-label>
+      <input matInput id="bio" name="bio" [(ngModel)]="bio">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Location</mat-label>
+      <input matInput id="location" name="location" [(ngModel)]="location">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Age</mat-label>
+      <input matInput id="age" name="age" [(ngModel)]="age">
+    </mat-form-field>
+    <button mat-raised-button type="submit">Register</button>
+  </form>
+
+</div>

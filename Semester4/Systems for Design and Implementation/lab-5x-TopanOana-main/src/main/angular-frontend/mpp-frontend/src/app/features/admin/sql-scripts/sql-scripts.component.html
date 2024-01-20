@@ -1,0 +1,17 @@
+<h2>SQL Scripts for admin</h2>
+<ng-container >
+  <button mat-raised-button (click)="bulkDelete()">Delete all data</button>
+  <br>
+  <mat-form-field>
+    <mat-label>table</mat-label>
+    <mat-select [(value)]="table" >
+      <mat-option *ngFor="let option of tables" [value]="option">
+        {{option}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <button mat-raised-button (click)="insertIntoTable()">Run populate script</button>
+</ng-container>
+
+

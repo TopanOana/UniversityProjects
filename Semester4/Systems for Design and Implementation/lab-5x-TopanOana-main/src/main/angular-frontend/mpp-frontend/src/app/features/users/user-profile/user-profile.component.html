@@ -1,0 +1,44 @@
+<h2>User Profile</h2>
+<ng-container *ngIf="user">
+
+  <form>
+    <mat-form-field>
+      <mat-label>username</mat-label>
+      <input matInput id="username" name="username" [(ngModel)]="username" readonly>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>email</mat-label>
+      <input matInput id="email" name="email" [(ngModel)]="email" readonly>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>bio</mat-label>
+      <input matInput id="bio" name="bio" [(ngModel)]="bio" readonly>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>location</mat-label>
+      <input matInput id="location" name="location" [(ngModel)]="location" readonly>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>age</mat-label>
+      <input matInput id="age" name="age" [(ngModel)]="age" readonly>
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <mat-label>nrBooks</mat-label>
+      <input matInput id="nrBooks" name="nrBooks" [(ngModel)]="nrBooks" readonly>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>nrStores</mat-label>
+      <input matInput id="nrStores" name="nrStores" [(ngModel)]="nrStores" readonly>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>nrEmployees</mat-label>
+      <input matInput id="nrEmployees" name="nrEmployees" [(ngModel)]="nrEmployees" readonly>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>nrStocks</mat-label>
+      <input matInput id="nrStocks" name="nrStocks" [(ngModel)]="nrStocks" readonly>
+    </mat-form-field>
+  </form>
+</ng-container>

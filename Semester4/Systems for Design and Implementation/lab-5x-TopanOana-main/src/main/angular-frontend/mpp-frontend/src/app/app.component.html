@@ -1,0 +1,18 @@
+<mat-toolbar>
+  <a routerLink="login">Login</a>
+  <a routerLink="register">Register</a>
+  <a routerLink="">Home</a>
+  <a routerLink="books">Books</a>
+  <a routerLink="stores">Stores</a>
+  <a routerLink="employees">Employees</a>
+  <a [matMenuTriggerFor]="statMenu">Statistics</a>
+  <mat-menu #statMenu="matMenu">
+    <a mat-menu-item routerLink="statistics/bookStockStat">BookStockStat</a>
+    <a mat-menu-item routerLink="statistics/storeStockStat">StoreStockStat</a>
+  </mat-menu>
+</mat-toolbar>
+
+
+<router-outlet></router-outlet>
+
+

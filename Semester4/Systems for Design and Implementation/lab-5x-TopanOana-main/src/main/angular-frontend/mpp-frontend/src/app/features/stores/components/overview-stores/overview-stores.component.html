@@ -1,0 +1,82 @@
+<h2>Stores</h2>
+<div class="top-tier">
+  <button mat-fab (click)="goBackToHome()"><mat-icon>arrow_back</mat-icon></button>
+  <button *ngIf="loggedIn" mat-fab (click)="goToAddStore()"><mat-icon>add</mat-icon></button>
+</div>
+
+<div>
+  <table mat-table [dataSource]="dataSource" matSort (matSortChange)="announceSortChange($event)">
+
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef>id</th>
+      <td mat-cell *matCellDef="let i=index" >{{i+1 + pageIndex*pageSize}}</td>
+    </ng-container>
+    <ng-container matColumnDef="storeName">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by storeName">Store Name</th>
+      <td mat-cell *matCellDef="let store">{{store.storeName}}</td>
+    </ng-container>
+    <ng-container matColumnDef="address">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by address">Address</th>
+      <td mat-cell *matCellDef="let store">{{store.address}}</td>
+    </ng-container>
+    <ng-container matColumnDef="contactNumber">
+      <th mat-header-cell *matHeaderCellDef>contactNumber</th>
+      <td mat-cell *matCellDef="let store">{{store.contactNumber}}</td>
+    </ng-container>
+    <ng-container matColumnDef="openingHour">
+      <th mat-header-cell *matHeaderCellDef >Opening Hour</th>
+      <td mat-cell *matCellDef="let store">{{store.openingHour}}</td>
+    </ng-container>
+    <ng-container matColumnDef="closingHour">
+      <th mat-header-cell *matHeaderCellDef>Closing Hour</th>
+      <td mat-cell *matCellDef="let store">{{store.closingHour}}</td>
+    </ng-container>
+    <ng-container matColumnDef="nrBooks">
+      <th mat-header-cell *matHeaderCellDef>NrBooks</th>
+      <td mat-cell *matCellDef="let store">{{store.nrBooks}}</td>
+    </ng-container>
+    <ng-container matColumnDef="nrEmployees">
+      <th mat-header-cell *matHeaderCellDef>nrEmployees</th>
+      <td mat-cell *matCellDef="let store">{{store.nrEmployees}}</td>
+    </ng-container>
+    <ng-container matColumnDef="username">
+      <th mat-header-cell *matHeaderCellDef>username</th>
+      <td mat-cell *matCellDef="let store" (click)="goToUser(store.username)">{{store.username}}</td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let storerow; columns: displayedColumns;"
+        (click)="goToStoreDetails(storerow)"></tr>
+  </table>
+<!--  <mat-paginator aria-label="Select page of employees"-->
+<!--                 showFirstLastButtons-->
+<!--                 [pageSizeOptions]="[5, 10, 20, 50]"-->
+<!--                 [pageSize]="pageSize"-->
+<!--                 [length]="totalStores" (page)="nextPage($event)">-->
+
+<!--  </mat-paginator>-->
+  <div class="my_paginator">
+    <div class="paginator_buttons">
+      <button mat-mini-fab (click)="goToFirstPage()" [disabled]="pageFirst"><mat-icon>skip_previous</mat-icon></button>
+      <button mat-mini-fab (click)="previousPage()" [disabled]="pageFirst"><mat-icon>navigate_before</mat-icon></button>
+      <button mat-mini-fab (click)="nextPage()" [disabled]="pageLast"><mat-icon>navigate_next</mat-icon></button>
+      <button mat-mini-fab (click)="goToLastPage()" [disabled]="pageLast"><mat-icon>skip_next</mat-icon></button>
+      <mat-label> Page: {{pageIndex+1}} of {{nrPages}}</mat-label>
+    </div>
+
+    <div class="page_size">
+      <mat-label>Page size: </mat-label>
+      <mat-select id="pageSizeSelect" name="pageSizeSelect" [(ngModel)]="pageSize" (selectionChange)="changeItPlease()">
+        <mat-option [value]="5">5</mat-option>
+        <mat-option [value]="10">10</mat-option>
+        <mat-option [value]="20">20</mat-option>
+        <mat-option [value]="50">50</mat-option>
+      </mat-select>
+    </div>
+
+  </div>
+
+</div>
+
+
+

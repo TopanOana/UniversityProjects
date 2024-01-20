@@ -1,0 +1,53 @@
+<h2> Add employee</h2>
+<button mat-fab (click)="goBackToOverview()">
+  <mat-icon>arrow_back</mat-icon>
+</button>
+
+<div *ngIf="loggedIn">
+  <div class="formcomp">
+    <form (submit)="addEmployee()">
+      <mat-form-field>
+        <mat-label>FirstName</mat-label>
+        <input matInput id="firstName" name="firstName" [(ngModel)]="firstName">
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>LastName</mat-label>
+        <input matInput id="lastName" name="lastName" [(ngModel)]="lastName">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>PhoneNumber</mat-label>
+        <input matInput id="phoneNumber" name="phoneNumber" [(ngModel)]="phoneNumber">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Salary</mat-label>
+        <input matInput id="salary" name="salary" [(ngModel)]="salary">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>FullTime</mat-label>
+        <mat-select name ="fullTime" id="fullTime" [(ngModel)]="fullTime">
+          <mat-option [value]="true">True</mat-option>
+          <mat-option [value]="false">False</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Store</mat-label>
+        <input id="store" name="store"
+               placeholder="Pick a store"
+               aria-label="Store"
+               matInput
+               [formControl]="formControl"
+               [matAutocomplete]="auto"
+               (keyup) ="callSearchFromBackend()">
+        <mat-autocomplete #auto="matAutocomplete" (optionSelected)="onSelectStore($event)" [displayWith]="displayStoreName">
+          <mat-option *ngFor="let store of stores" [value]="store">{{store.storeName}}</mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+      <button mat-raised-button type="submit"><mat-icon>save</mat-icon></button>
+    </form>
+
+  </div>
+</div>
+
+
+

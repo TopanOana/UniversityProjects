@@ -1,0 +1,81 @@
+<h2>Book details</h2>
+<ng-container *ngIf="book">
+  <button mat-fab (click)="goBackToOverview()"><mat-icon>arrow_back</mat-icon></button>
+  <button *ngIf="loggedIn" mat-fab (click)="updateBook()"><mat-icon>update</mat-icon></button>
+  <button *ngIf="loggedIn" mat-fab (click)="deleteBook()"><mat-icon>delete</mat-icon></button>
+
+  <form>
+    <mat-form-field>
+      <mat-label>Title</mat-label>
+      <input matInput name="title" id="title" value="{{title}}"  [(ngModel)]="title">
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Author</mat-label>
+      <input matInput name="author" id="author" value="{{author}}" [(ngModel)]="author">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>NrPages</mat-label>
+      <input matInput name="nrPages" id="nrPages" value="{{nrPages}}"  [(ngModel)]="nrPages">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Rating</mat-label>
+      <input matInput name="rating" id="rating" value="{{rating}}" [(ngModel)]="rating">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Genre</mat-label>
+      <input matInput name="genre" id="genre" value="{{genre}}" [(ngModel)]="genre">
+    </mat-form-field>
+  </form>
+</ng-container>
+
+
+<div class="stockTable">
+  <table mat-table [dataSource]="dataSource">
+
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef>id</th>
+      <td mat-cell *matCellDef="let i=index" >{{i+1 + pageIndex*pageSize}}</td>
+    </ng-container>
+    <ng-container matColumnDef="storeName">
+      <th mat-header-cell *matHeaderCellDef>storeName</th>
+      <td mat-cell *matCellDef="let stock">{{stock.store.storeName}}</td>
+    </ng-container>
+    <ng-container matColumnDef="quantity">
+      <th mat-header-cell *matHeaderCellDef>quantity</th>
+      <td mat-cell *matCellDef="let stock">{{stock.quantity}}</td>
+    </ng-container>
+
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let stockrow; columns: displayedColumns;"></tr>
+  </table>
+<!--  <mat-paginator aria-label="Select page of stocks"-->
+<!--                 showFirstLastButtons-->
+<!--                 [pageSizeOptions]="[5, 10, 20, 50]"-->
+<!--                 [pageSize]="pageSize"-->
+<!--                 [length]="totalStocks" (page)="nextPage($event)">-->
+
+<!--  </mat-paginator>-->
+
+  <div class="my_paginator">
+    <div class="paginator_buttons">
+      <button mat-mini-fab (click)="goToFirstPage()" [disabled]="pageFirst"><mat-icon>skip_previous</mat-icon></button>
+      <button mat-mini-fab (click)="previousPage()" [disabled]="pageFirst"><mat-icon>navigate_before</mat-icon></button>
+      <button mat-mini-fab (click)="nextPage()" [disabled]="pageLast"><mat-icon>navigate_next</mat-icon></button>
+      <button mat-mini-fab (click)="goToLastPage()" [disabled]="pageLast"><mat-icon>skip_next</mat-icon></button>
+      <mat-label> Page: {{pageIndex+1}} of {{nrPagesPag}}</mat-label>
+    </div>
+
+    <div class="page_size">
+      <mat-label>Page size: </mat-label>
+      <mat-select id="pageSizeSelect" name="pageSizeSelect" [(ngModel)]="pageSize" (selectionChange)="changeItPlease()">
+        <mat-option [value]="5">5</mat-option>
+        <mat-option [value]="10">10</mat-option>
+        <mat-option [value]="20">20</mat-option>
+        <mat-option [value]="50">50</mat-option>
+      </mat-select>
+    </div>
+
+  </div>
+</div>

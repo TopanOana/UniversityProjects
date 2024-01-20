@@ -1,0 +1,31 @@
+<h2>Add stock to store</h2>
+<button mat-fab (click)="goBackToDetails()">
+  <mat-icon>arrow_back</mat-icon>
+</button>
+<div *ngIf="loggedIn">
+  <div class="formcomp">
+    <form (submit)="addStock()">
+      <mat-form-field>
+        <mat-label>Book</mat-label>
+        <input id="book" name="book"
+               placeholder="Pick a book"
+               aria-label="Book"
+               matInput
+               [formControl]="formControl"
+               [matAutocomplete]="auto"
+               (keyup)="callSearchFromBackend()">
+        <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayBookTitle">
+          <mat-option *ngFor="let book of books" [value]="book">{{book.title}}</mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Quantity</mat-label>
+        <input matInput id="quantity" name="quantity" [(ngModel)]="quantity">
+      </mat-form-field>
+      <button mat-raised-button type="submit"><mat-icon>save</mat-icon></button>
+    </form>
+  </div>
+</div>
+
+
+

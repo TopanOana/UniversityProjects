@@ -1,0 +1,23 @@
+button{
+  height:50px;
+}
+h2{
+  text-align: center;
+}
+button:hover{
+  background-color: rebeccapurple;
+  color: white;
+}
+.my_paginator{
+  background-color:dimgrey;
+  color:white;
+  width: available;
+}
+.paginator_buttons{
+  display: inline-block;
+  margin-right: 20px;
+}
+.page_size{
+  display: inline-block;
+  right:0;
+}

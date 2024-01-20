@@ -1,0 +1,31 @@
+<h2>Add book</h2>
+<button mat-fab (click)="goBackToOverview()"><mat-icon>arrow_back</mat-icon></button>
+<div *ngIf="loggedIn">
+  <div class="formcomp">
+    <form (submit)="addBook()">
+
+      <mat-form-field>
+        <mat-label>Title</mat-label>
+        <input matInput id="title" name="title" [(ngModel)]="title">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Author</mat-label>
+        <input matInput id="author" name="author" [(ngModel)]="author">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>NrPages</mat-label>
+        <input matInput id="nrPages" name="nrPages" [(ngModel)]="nrPages">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Rating</mat-label>
+        <input matInput id="rating" name="rating" [(ngModel)]="rating">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Genre</mat-label>
+        <input matInput id="genre" name="genre" [(ngModel)]="genre">
+      </mat-form-field>
+      <button mat-raised-button type="submit"><mat-icon>save</mat-icon></button>
+    </form>
+  </div>
+
+</div>
