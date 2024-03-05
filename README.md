@@ -1,4 +1,4 @@
-# UniversityProjects
+# University Projects
 
 All of my projects from university. 
 
